@@ -1,0 +1,19 @@
+/* Add this in your Tailwind CSS or global stylesheet */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #0f766e;
+    /* Tailwind teal-700 */
+}
+
+.swiper-pagination-bullet {
+    background: #a7f3d0;
+    background-color: #99f6e4;
+    /* Tailwind teal-100 */
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #0f766e;
+    background-color: #0f766e;
+    /* Tailwind teal-700 */
+}
