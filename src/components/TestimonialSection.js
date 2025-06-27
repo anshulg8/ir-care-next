@@ -61,7 +61,7 @@ const TestimonialSection = ({ testimonials = [] }) => {
 
                                 {/* Testimonial Message */}
                                 <p className="text-gray-700 text-base">
-                                    "{testimonial.message}"
+                                    &quot;{testimonial.message}&quot;
                                 </p>
                             </div>
                         </SwiperSlide>

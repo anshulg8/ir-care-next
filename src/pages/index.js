@@ -94,7 +94,7 @@ const Home = () => {
                                 </svg>
                                 <div>
                                     <p className="italic text-gray-700 mb-3" id="doctorTestimonial">
-                                        "In my 12 years as a urologist, PAE has been revolutionary - preserving sexual function while solving urinary obstruction."
+                                        &quot;In my 12 years as a urologist, PAE has been revolutionary - preserving sexual function while solving urinary obstruction.&quot;
                                     </p>
                                     <div className="flex items-center">
                                         <div className="h-10 w-10 rounded-full bg-teal-100 flex items-center justify-center text-teal-800 font-bold mr-3">

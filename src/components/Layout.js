@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
             <InsurancePartners />
             <div className="bg-teal-700 text-white py-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold mb-6">Crafting India's Most Advanced Care Experiences</h2>
+                    <h2 className="text-3xl font-bold mb-6">Crafting India&apos;s Most Advanced Care Experiences</h2>
                     <p className="text-xl mb-8 opacity-90">
                         Speak to our care navigators today. Zero obligation, 100% clarity.
                     </p>

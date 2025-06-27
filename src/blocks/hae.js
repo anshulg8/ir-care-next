@@ -72,7 +72,7 @@ const haeBlock = () => {
             <ul className="list-disc list-inside space-y-2 mb-4 text-base">
                 <li>Have bleeding or itching as your main symptom (not full prolapse)</li>
                 <li>Already tried banding, injections, or surgery without success</li>
-                <li>Can't undergo surgery due to medical conditions or anesthesia risks (heart/lung issues, blood thinners, allergies)</li>
+                <li>Can&apos;t undergo surgery due to medical conditions or anesthesia risks (heart/lung issues, blood thinners, allergies)</li>
                 <li>Want instant recovery and zero pain without complications</li>
             </ul>
 
@@ -80,7 +80,7 @@ const haeBlock = () => {
             <ul className="list-disc list-inside space-y-2 mb-8 text-base">
                 <li>Have Grade 4 prolapse — surgery is needed</li>
                 <li>Have anal fissures, fistulas, or suspected cancer</li>
-                <li>Have external (painful) piles only — HAE isn’t suitable</li>
+                <li>Have external (painful) piles only — HAE isn&apos;t suitable</li>
             </ul>
 
             <div className="bg-teal-50 border border-teal-100 text-gray-800 p-4 rounded-lg mt-8 text-lg">

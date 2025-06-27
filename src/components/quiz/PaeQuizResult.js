@@ -17,11 +17,11 @@ const PaeQuizResult = ({ score, maxScore }) => {
 
             {severity === 'mild' && (
                 <section>
-                    <h2 className="text-2xl font-bold my-4">Your Prostate Symptoms Are Mild – Here's How to Keep Them That Way.</h2>
+                    <h2 className="text-2xl font-bold my-4">Your Prostate Symptoms Are Mild – Here&apos;s How to Keep Them That Way.</h2>
                     <p className="mb-4">
                         Your prostate symptoms currently reflect <b>early-stage Benign Prostatic Hyperplasia (BPH)</b> — a natural enlargement of your prostate gland that commonly affects men after age 50 (and increasingly, in younger men too). Mild symptoms usually include occasional increased urinary urgency or minor changes in urine flow.
                     </p>
-                    <h3 className="text-xl font-semibold my-3">What’s Happening in Your Body:</h3>
+                    <h3 className="text-xl font-semibold my-3">What&apos;s Happening in Your Body:</h3>
                     <ul className="list-disc list-inside space-y-2 mb-8">
                         <li>As you age, hormonal shifts (especially increased levels of dihydrotestosterone, DHT) cause your prostate to slowly grow.</li>
                         <li>Currently, your symptoms indicate minimal obstruction, but BPH often gradually progresses. Approximately <b>15% of men with mild symptoms see significant worsening within a year</b> without proper management.</li>
@@ -40,7 +40,7 @@ const PaeQuizResult = ({ score, maxScore }) => {
                     <p className="mb-4">
                         Your responses suggest <b>moderate Benign Prostatic Hyperplasia (BPH)</b>. Typical symptoms at this stage include frequent night-time urination, weaker urinary flow, or incomplete bladder emptying, significantly affecting quality of life.
                     </p>
-                    <h3 className="text-xl font-semibold my-3">What’s Happening in Your Body:</h3>
+                    <h3 className="text-xl font-semibold my-3">What&apos;s Happening in Your Body:</h3>
                     <ul className="list-disc list-inside space-y-2 mb-8">
                         <li>Your enlarged prostate gland is pressing against your urethra (urine passage), causing bladder muscle strain. Prolonged strain can eventually weaken the bladder, potentially leading to retention or recurrent infections.</li>
                         <li>Without intervention, <b>about 40% of moderate cases progress within 3–5 years</b>.</li>

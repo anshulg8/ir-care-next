@@ -257,4 +257,6 @@ const FormFields = forwardRef(({ procedure = 'General Consultation', onSuccess }
     );
 });
 
+FormFields.displayName = 'FormFields';
+
 export default FormFields;

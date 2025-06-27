@@ -37,7 +37,7 @@ const About = () => {
                     </p>
 
                     <p>
-                        Whether you're facing uterine fibroids, varicose veins, an enlarged prostate, or certain tumors, IR might be the safer, faster alternative you've been looking for.
+                        Whether you&apos;re facing uterine fibroids, varicose veins, an enlarged prostate, or certain tumors, IR might be the safer, faster alternative you&apos;ve been looking for.
                     </p>
                 </div>
             </div>

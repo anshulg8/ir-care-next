@@ -7,10 +7,10 @@ const paeBlock = () => {
         <div className="font-sans leading-relaxed text-gray-700">
             <h2 className="text-2xl font-bold my-4">What Is PAE (Prostatic Artery Embolization)?</h2>
             <p className="mb-4 text-lg">
-                PAE is the latest non-surgical treatment for enlarged prostate, highly popular in Europe and USA in the past 10 years. A hair-thin wire is guided from a tiny pinhole in your wrist to the prostate’s blood vessels. Tiny particles are then inserted into the targeted vessels to block blood flow, shrinking the prostate over the next few weeks—delivering the same result as surgery but with no cuts, no anesthesia, no complications, and no hospital stay.
+                PAE is the latest non-surgical treatment for enlarged prostate, highly popular in Europe and USA in the past 10 years. A hair-thin wire is guided from a tiny pinhole in your wrist to the prostate&apos;s blood vessels. Tiny particles are then inserted into the targeted vessels to block blood flow, shrinking the prostate over the next few weeks—delivering the same result as surgery but with no cuts, no anesthesia, no complications, and no hospital stay.
             </p>
             <p className="mb-8 text-lg">
-                You're fully awake and home in a few hours — without even taking your pants off.
+                You&apos;re fully awake and home in a few hours — without even taking your pants off.
             </p>
 
             <div className="bg-teal-50 border border-teal-100 text-gray-800 p-4 rounded-lg mt-8 text-lg">
@@ -57,7 +57,7 @@ const paeBlock = () => {
 
             <h2 className="text-2xl font-bold my-4">Why Choose PAE?</h2>
             <p className="mb-8 text-lg">
-                PAE is a breakthrough used in the US & Europe for over 15 years. It shrinks the prostate from within—without cutting or removing anything.
+                PAE is a breakthrough used in the US &amp; Europe for over 15 years. It shrinks the prostate from within—without cutting or removing anything.
             </p>
 
             <h2 className="text-2xl font-bold my-4">Is PAE Right for You?</h2>
@@ -68,12 +68,12 @@ const paeBlock = () => {
                 <li>Do not want permanent sexual or urinary side effects</li>
                 <li>Need quick recovery within 1–2 days with minimal downtime</li>
                 <li>Have health risks like heart/lung disease, obesity, sleep apnea, are on blood thinners, or allergic to anesthesia</li>
-                <li>Already had pelvic surgery and can't undergo another</li>
+                <li>Already had pelvic surgery and can&apos;t undergo another</li>
             </ul>
 
             <p className="mb-2 text-lg">PAE may <strong>NOT</strong> be suitable if you:</p>
             <ul className="list-disc list-inside space-y-2 mb-8 text-base">
-                <li>Haven’t tried medications yet (for early cases)</li>
+                <li>Haven&apos;t tried medications yet (for early cases)</li>
                 <li>Have a median lobe blocking the bladder (surgery needed)</li>
                 <li>Have hardened or calcified arteries (PAE might not be feasible)</li>
                 <li>Have a non-prostate cause for urinary issues</li>
