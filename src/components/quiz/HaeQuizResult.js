@@ -1,6 +1,6 @@
 import React from 'react';
 import { proceduresArray } from '../../data.js';
-import ScoreTag from './ScoreTag.jsx';
+import ScoreTag from './ScoreTag.js';
 
 const HaeQuizResult = ({ score, maxScore }) => {
     let severity = '';

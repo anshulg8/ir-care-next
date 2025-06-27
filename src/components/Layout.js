@@ -3,7 +3,7 @@ import Header from './Header';
 import { PHONE_NUMBER, WHATSAPP_LINK } from '../constants';
 import Link from 'next/link';
 import InsurancePartners from './InsurancePartners';
-// import { FaTwitter, FaInstagram } from 'react-icons/fa6';
+import { FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Layout = ({ children }) => {
     return (
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
                         </a>
                     </div>
                     <br />
-                    <p>Limited daily slots - please book in advance</p>
+                    <p>Limited daily slots - Please book in advance</p>
                 </div>
             </div>
 
@@ -54,11 +54,11 @@ const Layout = ({ children }) => {
                             </p>
                             <div className="flex space-x-4">
                                 <a href="#" className="text-gray-400 hover:text-white flex items-center space-x-2">
-                                    {/* <FaTwitter className="h-6 w-6" /> */}
+                                    <FaTwitter className="h-6 w-6" />
                                     <span></span>
                                 </a>
                                 <a href="#" className="text-gray-400 hover:text-white flex items-center space-x-2">
-                                    {/* <FaInstagram className="h-6 w-6" /> */}
+                                    <FaInstagram className="h-6 w-6" />
                                     <span></span>
                                 </a>
                             </div>

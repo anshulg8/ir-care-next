@@ -5,8 +5,8 @@ import CustomLink from '../CustomLink';
 import AppointmentModal from '../AppointmentModal';
 import { paeQuizData } from './data/quizData';
 import PaeQuizResult from './PaeQuizResult';
-import StickyButtons from '../StickyButtons.jsx';
-import { useModal } from '../../context/ModalContext.jsx';
+import StickyButtons from '../StickyButtons.js';
+import { useModal } from '../../context/ModalContext.js';
 
 const PaeQuizPage = () => {
 

@@ -266,7 +266,7 @@ export const centers = [
         address: '32, Sasoon Rd, opposite Railway Station, Central Excise Colony, Sangamvadi, Pune, Maharashtra 411001',
         phone: '020 6681 9999',
         email: ' info@jehangirhospital.com',
-        image: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqwrJZ6Es7LvMppZmwd7bwjIOk0Z8tTlwtOqQQ6phCN1PksUDp6F9BXcECG9nQQATZ9qgb1hg1nRQG3fJn5ne3nfhSx-UbAvwoeoVTxIQl9fC4dOQOPXA4TYGwYzyj_3GAq3Nar=s680-w680-h510-rw',
+        image: 'https://www.indiacancersurgerysite.com/jehangir-hospital-india/images/hospital-building.png',
         description: 'Jehangir Hospital is a 350-bed hospital in Pune, Maharashtra, India. Sir Cowasji Jehangir and Lady Hirabai Jehangir founded the hospital on 6 February 1946.',
         technologies: [
             {

@@ -1,4 +1,3 @@
-// components/Header.jsx
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -13,7 +12,7 @@ const Header = () => {
         { path: '/doctors', label: 'Our Doctors' },
         { path: '/centres', label: 'Our Centres' },
         { path: '/procedures', label: 'Our Procedures' },
-        { path: '/our-procedures', label: 'Treatments' },
+        { path: '/treatments', label: 'Treatments' },
     ];
 
     const isActive = (path) => {

@@ -1,4 +1,3 @@
-// src/pages/IRApplications.jsx
 import React, { useState } from 'react';
 
 const IRApplications = () => {

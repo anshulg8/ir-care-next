@@ -1,4 +1,3 @@
-// components/ScrollToTop.jsx
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 

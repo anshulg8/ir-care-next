@@ -1,7 +1,7 @@
 import React from 'react';
 import { proceduresArray } from '../../data.js';
-import BenefitsCarousel from '../BenefitCarousel.jsx';
-import ScoreTag from './ScoreTag.jsx';
+import ScoreTag from './ScoreTag.js';
+import BenefitsCarousel from '../BenefitCarousel.js';
 
 const UaeQuizResult = ({ score, maxScore }) => {
     let severity = '';
@@ -44,7 +44,7 @@ const UaeQuizResult = ({ score, maxScore }) => {
                     </ul>
 
                     <div className="my-8">
-                        <BenefitsCarousel benefits={procedure.benefitDetails} />
+                        <BenefitsCarousel benefits={procedure?.benefitDetails} />
                     </div>
                 </section>
             )}

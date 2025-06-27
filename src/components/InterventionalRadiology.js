@@ -2,7 +2,7 @@ import React from 'react';
 import SurgeryComparisonTable from './SurgeryComparisonTable';
 import IrTreatableConditions from './IrTreatableConditions';
 import { docsyJourneySteps } from '../data.js';
-import DocsyJourney from './DocsyJourney.jsx';
+import DocsyJourney from './DocsyJourney.js';
 
 const InterventionalRadiology = () => {
     return (

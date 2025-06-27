@@ -142,21 +142,3 @@ const ProcedureDetailPage = () => {
 };
 
 export default ProcedureDetailPage;
-
-
-// pages/procedures/[procedureId].jsx
-// import { useEffect, useState } from 'react';
-// import { useRouter } from 'next/router';
-// import Link from 'next/link';
-
-// export default function ProcedureDetailPage() {
-//     const router = useRouter();
-//     const { procedureId } = router.query;
-
-//     // All hooks inside component
-//     const [loading, setLoading] = useState(true);
-
-//     // component logic and effects...
-
-//     return <div>Procedure ID: {procedureId}</div>;
-// }

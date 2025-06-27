@@ -62,7 +62,7 @@ const ProceduresPage = () => {
                 {/* New Link to Full IR Conditions Page */}
                 <div className="mt-12 text-center">
                     <Link
-                        href="/our-procedures"
+                        href="/treatments"
                         className="inline-block text-teal-600 text-lg font-semibold hover:underline"
                     >
                         Browse other diseases that can be treated using IR &rarr;

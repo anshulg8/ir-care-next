@@ -10,9 +10,9 @@ import FAQSection from './FAQSection';
 import SwiperSection from './SwiperSection';
 import CentersCarousel from './CentersCarousel';
 import { centers, generalFaqs, landingTestimonials } from '../data.js';
-import StickyButtons from './StickyButtons.jsx';
-import ContactFloatingButton from './ContactFloatingButton.jsx';
-import { useModal } from '../context/ModalContext.jsx';
+import StickyButtons from './StickyButtons.js';
+import ContactFloatingButton from './ContactFloatingButton.js';
+import { useModal } from '../context/ModalContext.js';
 
 const Home = () => {
 
