@@ -13,6 +13,7 @@ import HTMLBlockRenderer from '../../components/HTMLBlockRenderer';
 import { useModal } from '../../context/ModalContext';
 import FeaturedDoctorsSection from '../../components/FeaturedDoctorsSection';
 import TestimonialSection from '../../components/TestimonialSection';
+import SEO from '@/components/SEO';
 
 const ProcedureDetailPage = () => {
     const router = useRouter();
@@ -71,73 +72,80 @@ const ProcedureDetailPage = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gray-50 py-12 pt-4">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-                    <div className="p-8 pt-2">
-                        <p className="text-4xl font-bold text-gray-900 mb-4">{procedure.title || procedure.name}</p>
-                        <p className="text-xl font-bold text-gray-900 mb-4">{procedure.headline}</p>
+        <>
+            <SEO
+                title={`${procedure.name} | Docsy`}
+                description={`${procedure.description} | Docsy`}
+                url="https://refer.mydocsy.com"
+            />
+            <div className="min-h-screen bg-gray-50 py-12 pt-4">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <div className="p-8 pt-2">
+                            <p className="text-4xl font-bold text-gray-900 mb-4">{procedure.title || procedure.name}</p>
+                            <p className="text-xl font-bold text-gray-900 mb-4">{procedure.headline}</p>
 
-                        <p className="text-xl text-gray-600 mb-4">
-                            {isMobile && !showFullDescription ? (
-                                <>
-                                    {procedure.description.slice(0, 120)}...
-                                    <button
-                                        onClick={() => setShowFullDescription(true)}
-                                        className="ml-1 text-teal-600 font-medium underline inline"
-                                    >
-                                        See more
-                                    </button>
-                                </>
-                            ) : (
-                                procedure.description
-                            )}
-                        </p>
-
-                        <GoogleFormSubmit procedure={procedure.name} />
-
-                        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-10">
-                            <h3 className="text-lg font-semibold text-yellow-900 mb-2">Not sure what your symptoms mean?</h3>
-                            <p className="text-yellow-800 mb-4">
-                                Unsure whether you have symptoms? Get answers in 2 mins with a free, clinically validated test.
+                            <p className="text-xl text-gray-600 mb-4">
+                                {isMobile && !showFullDescription ? (
+                                    <>
+                                        {procedure.description.slice(0, 120)}...
+                                        <button
+                                            onClick={() => setShowFullDescription(true)}
+                                            className="ml-1 text-teal-600 font-medium underline inline"
+                                        >
+                                            See more
+                                        </button>
+                                    </>
+                                ) : (
+                                    procedure.description
+                                )}
                             </p>
-                            <Link
-                                href={`/quiz/${procedure.slug}`}
-                                className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 rounded-md font-medium transition"
-                            >
-                                Take the Quiz
-                            </Link>
+
+                            <GoogleFormSubmit procedure={procedure.name} />
+
+                            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-10">
+                                <h3 className="text-lg font-semibold text-yellow-900 mb-2">Not sure what your symptoms mean?</h3>
+                                <p className="text-yellow-800 mb-4">
+                                    Unsure whether you have symptoms? Get answers in 2 mins with a free, clinically validated test.
+                                </p>
+                                <Link
+                                    href={`/quiz/${procedure.slug}`}
+                                    className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 rounded-md font-medium transition"
+                                >
+                                    Take the Quiz
+                                </Link>
+                            </div>
+
+                            <div className="my-8">
+                                <BenefitCarousel benefits={procedure.benefitDetails} />
+                            </div>
+
+                            <FeaturedDoctorsSection />
+
+                            <div className="container my-8">
+                                <HTMLBlockRenderer type={procedure.htmlPath} />
+                            </div>
+
+                            {procedure.testimonials?.length > 0 && (
+                                <TestimonialSection testimonials={procedure.testimonials} />
+                            )}
+
+                            <DocsyJourney steps={docsyJourneySteps} />
+
+                            {procedure.faqs?.length > 0 && <FAQSection faqs={procedure.faqs} />}
                         </div>
-
-                        <div className="my-8">
-                            <BenefitCarousel benefits={procedure.benefitDetails} />
-                        </div>
-
-                        <FeaturedDoctorsSection />
-
-                        <div className="container my-8">
-                            <HTMLBlockRenderer type={procedure.htmlPath} />
-                        </div>
-
-                        {procedure.testimonials?.length > 0 && (
-                            <TestimonialSection testimonials={procedure.testimonials} />
-                        )}
-
-                        <DocsyJourney steps={docsyJourneySteps} />
-
-                        {procedure.faqs?.length > 0 && <FAQSection faqs={procedure.faqs} />}
                     </div>
                 </div>
+
+                <StickyButtons
+                    onBookAppointment={() => openModal(procedure)}
+                    onContactClick={() => setShowContactModal(true)}
+                />
+
+                <ContactFloatingButton forceOpen={showContactModal} onClose={() => setShowContactModal(false)} />
+                <AppointmentModal />
             </div>
-
-            <StickyButtons
-                onBookAppointment={() => openModal(procedure)}
-                onContactClick={() => setShowContactModal(true)}
-            />
-
-            <ContactFloatingButton forceOpen={showContactModal} onClose={() => setShowContactModal(false)} />
-            <AppointmentModal />
-        </div>
+        </>
     );
 };
 

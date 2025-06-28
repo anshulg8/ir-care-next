@@ -5,16 +5,22 @@ import Layout from '../components/Layout';
 import ScrollToTop from '../components/ScrollToTop';
 import ContactFloatingButton from '../components/ContactFloatingButton';
 import { ModalProvider } from '../context/ModalContext';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
     return (
-        <Layout>
-            <ScrollToTop />
-            <ContactFloatingButton />
-            <ModalProvider>
-                <Component {...pageProps} />
-            </ModalProvider>
-        </Layout>
+        <>
+            <Head>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <Layout>
+                <ScrollToTop />
+                <ContactFloatingButton />
+                <ModalProvider>
+                    <Component {...pageProps} />
+                </ModalProvider>
+            </Layout>
+        </>
     );
 }
 
