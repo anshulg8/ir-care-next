@@ -6,6 +6,7 @@ import AppointmentModal from '../AppointmentModal';
 import { haeQuizData } from './data/quizData';
 import HaeQuizResult from './HaeQuizResult';
 import SEO from '../SEO';
+import { BASE_URL } from '@/constants';
 
 const HaeQuizPage = () => {
     const formRef = useRef();
@@ -59,8 +60,8 @@ const HaeQuizPage = () => {
         <>
             <SEO
                 title="HAE Quiz | Docsy"
-                description="Search and book appointments with top-rated doctors. Fast, reliable, and easy healthcare access."
-                url="https://refer.mydocsy.com"
+                description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
+                url={`${BASE_URL || ''}/quiz/hemorrhoidal-artery-embolization-hae`}
             />
             <div className="min-h-screen bg-gray-50 py-12">
                 <div className="max-w-3xl mx-auto px-4">

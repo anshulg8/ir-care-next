@@ -6,6 +6,7 @@ import AppointmentModal from '../AppointmentModal';
 import { uaeQuizData } from './data/quizData';
 import UaeQuizResult from './UaeQuizResult';
 import SEO from '../SEO';
+import { BASE_URL } from '@/constants';
 
 const UaeQuizPage = () => {
     const formRef = useRef();
@@ -60,7 +61,7 @@ const UaeQuizPage = () => {
             <SEO
                 title="UAE Quiz | Docsy"
                 description="Search and book appointments with top-rated doctors. Fast, reliable, and easy healthcare access."
-                url="https://refer.mydocsy.com"
+                url={`${BASE_URL || ''}/quiz/uterine-fibroid-embolization-ufe`}
             />
             <div className="min-h-screen bg-gray-50 py-12">
                 <div className="max-w-3xl mx-auto px-4">

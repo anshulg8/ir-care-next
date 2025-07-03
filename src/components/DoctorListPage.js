@@ -1,14 +1,15 @@
 import React from 'react';
 import { featuredDoctors } from '../data';
 import SEO from './SEO';
+import { BASE_URL } from '@/constants';
 
 const DoctorProfiles = () => {
     return (
         <>
             <SEO
                 title="Find Expert Doctors Near You | Docsy"
-                description="Search and book appointments with top-rated doctors. Fast, reliable, and easy healthcare access."
-                url="https://refer.mydocsy.com"
+                description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
+                url={`${BASE_URL || ''}/doctors`}
             />
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
                 <div className="max-w-7xl mx-auto">

@@ -1,3 +1,4 @@
+export const BASE_URL = 'https://refer.mydocsy.com';
 export const PHONE_NUMBER = '+91 909090 1212';
 export const WHATSAPP_LINK = 'https://wa.me/911234567890';
 export const GOOGLE_FORM_ACTION_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScAdQu56kMCUdU5oflF58MIg4x4jsRdKh0-m-E6Clqqvtnyyg/formResponse';

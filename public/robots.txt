@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://refer.mydocsy.com
+
+# Sitemaps
+Sitemap: https://refer.mydocsy.com/sitemap.xml

@@ -1,10 +1,11 @@
 // components/SEO.js
+import { BASE_URL } from '@/constants';
 import Head from 'next/head';
 
 const SEO = ({
     title,
     description,
-    url = 'https://refer.mydocsy.com/',
+    url = BASE_URL,
     image = '',
     type = 'website',
     twitterHandle = '',

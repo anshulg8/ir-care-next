@@ -3,7 +3,7 @@ import Header from './Header';
 import { PHONE_NUMBER, WHATSAPP_LINK } from '../constants';
 import Link from 'next/link';
 import InsurancePartners from './InsurancePartners';
-import { FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Layout = ({ children }) => {
     return (
@@ -53,12 +53,16 @@ const Layout = ({ children }) => {
                                 Skip the Scalpel, Pick the Pinhole - Heal in Hours, not Weeks.
                             </p>
                             <div className="flex space-x-4">
-                                <a href="#" className="text-gray-400 hover:text-white flex items-center space-x-2">
+                                <a href="https://x.com/mydocsy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">
                                     <FaTwitter className="h-6 w-6" />
                                     <span></span>
                                 </a>
-                                <a href="#" className="text-gray-400 hover:text-white flex items-center space-x-2">
+                                <a href="https://www.instagram.com/mydocsy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">
                                     <FaInstagram className="h-6 w-6" />
+                                    <span></span>
+                                </a>
+                                <a href="https://www.facebook.com/mydocsy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">
+                                    <FaFacebook className="h-6 w-6" />
                                     <span></span>
                                 </a>
                             </div>

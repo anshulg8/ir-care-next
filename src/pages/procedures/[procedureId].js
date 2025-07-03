@@ -14,6 +14,7 @@ import { useModal } from '../../context/ModalContext';
 import FeaturedDoctorsSection from '../../components/FeaturedDoctorsSection';
 import TestimonialSection from '../../components/TestimonialSection';
 import SEO from '@/components/SEO';
+import { BASE_URL } from '@/constants';
 
 const ProcedureDetailPage = () => {
     const router = useRouter();
@@ -76,7 +77,7 @@ const ProcedureDetailPage = () => {
             <SEO
                 title={`${procedure.name} | Docsy`}
                 description={`${procedure.description} | Docsy`}
-                url="https://refer.mydocsy.com"
+                url={`${BASE_URL || ''}/procedures/${procedure.slug}`}
             />
             <div className="min-h-screen bg-gray-50 py-12 pt-4">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
