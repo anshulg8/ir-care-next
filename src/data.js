@@ -2,6 +2,7 @@ import { FaMale, FaFemale, FaToiletPaper, FaWalking, FaHospital, FaHeartbeat, Fa
 import DrRochan from './assets/dr-rochan-copy.webp';
 import DrMukul from './assets/dr-mukul-copy.webp';
 import DrLenon from './assets/dr-lenon-copy.webp';
+import DrMandeep from './assets/dr-mandeep.jpeg';
 import DrKB from './assets/dr-kb.png';
 import DrAshwin from './assets/dr-ashwin.jpg';
 import { FaBan, FaChartLine, FaLayerGroup, FaMoneyBillWave, FaStar, FaSyringe } from 'react-icons/fa6';
@@ -95,83 +96,93 @@ export const cards = [
 export const featuredDoctors = [
     {
         id: 1,
-        name: "Dr. Ashwin M Polnaya",
-        designation: "Interventional Radiologist",
-        image: DrAshwin,
-        experience: 18,
-        credentials: [
-            // "Trailblazer in advanced liver cancer therapy — first radioactive IR in Karnataka.",
-            "First in Dakshina Kannada to Perform Radioactive Liver Cancer Therapy",
-            "Affiliated with AJ Hospital, Mangaluru",
-            "Specialized in Minimally Invasive Tumor Treatments",
-            "Expert in TACE & Radioembolization"
-        ],
-        specialty: "Advanced Liver Cancer Management",
-        hospitalIcons: ["https://www.ajhospital.in/images/aj-logo.png", "https://www.fathermuller.edu.in/medical-college/img/father-muller-logo.svg"]
-    },
-    {
-        id: 2,
         name: "Surg. Capt. Dr. Rochan Pant",
         designation: "Vascular & Neuro IR Specialist",
         image: DrRochan,
         experience: 18,
         credentials: [
-            // "Decorated IR veteran with 2,000+ complex vascular interventions. Presidential awardee",
             "Vishisht Seva Medal (President of India Awardee)",
             "Ex-Director, Radiology - Reliance Foundation Hospital",
             "20+ Years Teaching at MUHS, Nasik",
             "18+ Published Research Papers"
         ],
         specialty: "Stroke Intervention, Aortic Aneurysms, Liver Cancer (TACE/RFA)",
-        hospitalIcons: ["https://www.rfhospital.org/images/new-home-img/RF-logo-svg.svg", "https://www.ajhospital.in/images/aj-logo.png"]
+        hospitalIcons: ["https://www.rfhospital.org/images/new-home-img/RF-logo-svg.svg"]
     },
     {
-        id: 3,
+        id: 2,
         name: "Dr. Mukul Mutatkar",
         designation: "Senior Interventional Radiologist",
         image: DrMukul,
         experience: 18,
         credentials: [
-            // "Global imaging expert with 30 yrs of IR innovation. Built Pune’s first high-end MRI centre.",
             "Trained in MRI/CT at USA, Germany, Japan, UK",
             "Founder - OMEGA MRI & PDS CT Scan Centres (Pune)",
             "30+ Years in Advanced Imaging",
             "Specialized in Hepatobiliary Interventions"
         ],
         specialty: "Cross-Border IR Expertise with Global Techniques",
-        hospitalIcons: ["https://poonahospital.org/wp-content/uploads/2022/09/logo_new.png", "https://www.ajhospital.in/images/aj-logo.png"]
+        hospitalIcons: ["https://poonahospital.org/wp-content/uploads/2022/09/logo_new.png"]
+    },
+    {
+        id: 3,
+        name: "Dr. Ashwin M Polnaya",
+        designation: "Interventional Radiologist",
+        image: DrAshwin,
+        experience: 18,
+        credentials: [
+            "First in Dakshina Kannada to Perform Radioactive Liver Cancer Therapy",
+            "Affiliated with AJ Hospital, Mangaluru",
+            "Specialized in Minimally Invasive Tumor Treatments",
+            "Expert in TACE & Radioembolization"
+        ],
+        specialty: "Advanced Liver Cancer Management",
+        hospitalIcons: ["https://www.ajhospital.in/images/aj-logo.png"]
     },
     {
         id: 4,
-        name: "Dr. Keerthiraj B",
-        designation: "Interventional Neuro Radiologist",
-        image: DrKB,
-        experience: 18,
-        credentials: [
-            // "Mangalore’s senior-most leading neuro-IR specialist. 1,500+ life-changing pin-hole procedures.",
-            "First Interventional Neuroradiologist in Dakshina Kannada",
-            "DM in Neuro Imaging & IR (SCTIMST, Trivandrum)",
-            "Pioneer of Pinhole Access Neurovascular Treatments",
-            "Expert in Stroke Management"
-        ],
-        specialty: "Endovascular Neurosurgeries Without Open Surgery",
-        hospitalIcons: ["https://www.manipalhospitals.com/mangalore/assets/images/homepage/manipal-hospitals-mangalore.webp", "https://www.rfhospital.org/images/new-home-img/RF-logo-svg.svg"]
-    },
-    {
-        id: 5,
         name: "Dr. Lenon D'Souza",
         designation: "Vascular Surgeon & IR Specialist",
         image: DrLenon,
         experience: 18,
         credentials: [
-            // "Gold-medalist IR specialist with latest expertise across new & diverse procedure types.",
             "Gold Medalist - Rajiv Gandhi University",
             "Fellowship in Vascular IR (KEM Hospital, Mumbai)",
             "7+ Years in Complex Endovascular Procedures",
             "Ranked #1 in Radiology (RGUHS)"
         ],
         specialty: "Varicose Veins, Diabetic Foot Salvage, Uterine Fibroid Embolization",
-        hospitalIcons: ["https://www.fathermuller.edu.in/medical-college/img/father-muller-logo.svg", "https://www.rfhospital.org/images/new-home-img/RF-logo-svg.svg"]
+        hospitalIcons: ["https://www.fathermuller.edu.in/medical-college/img/father-muller-logo.svg"]
+    },
+    {
+        id: 5,
+        name: "Dr Mandeep Sagar MD FVIR",
+        designation: "EndoVascular and Neuro- Interventional Radiologist ",
+        image: DrMandeep,
+        experience: 4,
+        credentials: [
+            "Gold medalist - SSUHS university in Radiology",
+            "DM in Neuro Imaging & IR (SCTIMST, Trivandrum)",
+            "Pioneer of Pinhole Access Neurovascular Treatments",
+            "Expert in Stroke Management"
+        ],
+        specialty: "Thyroid ablation / Embolization for goitre / thyroid nodules,  Laser / VenaSeal for varicose veins, Acute ischemic stroke thrombectomy, Peripheral Angioplasty for diabetic foot / leg gangrene",
+        hospitalIcons: ["https://www.fathermuller.edu.in/medical-college/img/father-muller-logo.svg"]
+    },
+    {
+        id: 6,
+        name: "Dr. Keerthiraj B",
+        designation: "Interventional Neuro Radiologist",
+        image: DrKB,
+        experience: 18,
+        credentials: [
+            "First Interventional Neuroradiologist in Dakshina Kannada",
+            "DM in Neuro Imaging & IR (SCTIMST, Trivandrum)",
+            "Pioneer of Pinhole Access Neurovascular Treatments",
+            "Expert in Stroke Management"
+        ],
+        specialty: "Endovascular Neurosurgeries Without Open Surgery",
+        hospitalIcons: ["https://www.manipalhospitals.com/mangalore/assets/images/homepage/manipal-hospitals-mangalore.webp"]
     },
 ];
 

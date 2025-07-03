@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://refer.mydocsy.com
+Host: https://mydocsy.com
 
 # Sitemaps
-Sitemap: https://refer.mydocsy.com/sitemap.xml
+Sitemap: https://mydocsy.com/sitemap.xml

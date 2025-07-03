@@ -3,7 +3,7 @@
 procedureSlugs = ["prostatic-artery-embolization-pae", "uterine-fibroid-embolization-ufe", "hemorrhoidal-artery-embolization-hae", "okuno-procedure-tam"]
 
 module.exports = {
-    siteUrl: 'https://refer.mydocsy.com',
+    siteUrl: 'https://mydocsy.com',
     generateRobotsTxt: true,
 
     // Add dynamic routes here
