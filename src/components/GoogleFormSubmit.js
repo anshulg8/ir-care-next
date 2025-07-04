@@ -105,6 +105,14 @@ const GoogleFormSubmit = ({ procedure }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        // Push custom event to dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: "lead_form_submitted",
+            formType: "contact",
+            pagePath: window.location.pathname
+        });
+
         const formBody = new FormData();
         formBody.append(FIELD_NAME_ID, formData.name);
         formBody.append(FIELD_PHONE_ID, formData.phone);
