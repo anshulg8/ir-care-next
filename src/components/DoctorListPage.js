@@ -21,7 +21,13 @@ const DoctorProfiles = () => {
                             <div key={doc.id} className="bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow">
                                 <div className="flex flex-col md:flex-row">
                                     {doc.image.src ? (
-                                        <img src={doc.image.src} alt={doc.name} className="w-full md:w-48 h-64 object-cover" />
+                                        <div className="w-full md:w-48 aspect-[3/4] bg-gray-100">
+                                            <img
+                                                src={doc.image.src}
+                                                alt={doc.name}
+                                                className="w-full h-full object-contain"
+                                            />
+                                        </div>
                                     ) : (
                                         <div className="w-full md:w-48 h-64 bg-blue-100 flex items-center justify-center text-3xl text-teal-600 font-bold">
                                             {doc.name.split(" ")[1]?.charAt(0)}

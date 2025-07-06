@@ -1,10 +1,10 @@
 import { FaMale, FaFemale, FaToiletPaper, FaWalking, FaHospital, FaHeartbeat, FaCut, FaHeart, FaShieldAlt, FaTint, FaRedo, FaSmile, FaCompressArrowsAlt, FaRunning } from 'react-icons/fa';
-import DrRochan from './assets/dr-rochan-copy.webp';
-import DrMukul from './assets/dr-mukul-copy.webp';
-import DrLenon from './assets/dr-lenon-copy.webp';
-import DrMandeep from './assets/dr-mandeep.jpeg';
-import DrKB from './assets/dr-kb.png';
-import DrAshwin from './assets/dr-ashwin.jpg';
+import DrRochan from './assets/cropped-dr-rochan.webp';
+import DrMukul from './assets/cropped-dr-mukul.webp';
+import DrLenon from './assets/cropped-dr-lenon.webp';
+import DrMandeep from './assets/cropped-dr-mandeep.jpeg';
+import DrKB from './assets/cropped-dr-kb.png';
+import DrAshwin from './assets/cropped-dr-ashwin.jpg';
 import { FaBan, FaChartLine, FaLayerGroup, FaMoneyBillWave, FaStar, FaSyringe } from 'react-icons/fa6';
 import img1 from './assets/slider1.png';
 import img2 from './assets/slider2.png';
@@ -89,7 +89,7 @@ export const cards = [
         subtitle: "India’s first end-to-end IR ecosystem with 24 x 7 Care Navigators",
         backgroundImage: img3,
         primaryCTA: "Speak to a Care Navigator",
-        secondaryCTA: "View Success Stories",
+        secondaryCTA: "What Is IR?",
     },
 ];
 
