@@ -68,8 +68,7 @@ const ProcedureSection = () => {
                                             <span className="text-gray-600 text-sm">4.9 (120+ reviews)</span>
                                         </div>
 
-                                        {/* <Link href={`/procedures/${procedure.slug}`}> */}
-                                        <Link href={`/procedures`}>
+                                        <Link href={`/procedures/${procedure.slug}`}>
                                             <button className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm">
                                                 {procedure.cta}
                                             </button>

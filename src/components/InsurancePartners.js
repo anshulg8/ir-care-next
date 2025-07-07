@@ -1,5 +1,6 @@
 import React from 'react';
 import { PHONE_NUMBER } from '../constants';
+import Image from 'next/image';
 
 const logos = [
     'https://images.seeklogo.com/logo-png/30/2/hdfc-life-logo-png_seeklogo-304905.png',
@@ -34,10 +35,12 @@ const InsurancePartners = () => {
                                 key={index}
                                 className="min-w-[100px] bg-white p-4 rounded-lg shadow-xs flex items-center justify-center h-20"
                             >
-                                <img
+                                <Image
                                     src={logo}
                                     alt="Insurance Partner"
                                     className="max-h-12 object-contain"
+                                    width={120}
+                                    height={48}
                                     onError={(e) => {
                                         e.target.style.display = 'none';
                                     }}
