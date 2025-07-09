@@ -14,7 +14,7 @@ import { proceduresArray } from '../data';
 import StatsBanner from './StatsBanner';
 import LeadDr from '../assets/leadform-doc.png';
 
-const procedures = proceduresArray.map(proc => proc.name);
+const procedures = proceduresArray.map(proc => proc.generalName);
 
 const GoogleFormWithProcedureInput = () => {
     const [formData, setFormData] = useState({

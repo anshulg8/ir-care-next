@@ -25,7 +25,7 @@ const StatsBanner = () => {
 
                 {/* Surgeries */}
                 <div className="flex flex-col items-center">
-                    <span className="text-base font-semibold text-orange-600">60+ Keyhole</span>
+                    <span className="text-base font-semibold text-orange-600">60+ Pinhole</span>
                     <span className="text-xs text-gray-600">Surgeries Offered</span>
                 </div>
             </div>
