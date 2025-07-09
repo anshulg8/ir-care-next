@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { FaStar } from 'react-icons/fa';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import ExpandableDescription from './ExpandableDescription';
 
 const CentersCarousel = ({ centers }) => {
     return (
@@ -49,7 +49,7 @@ const CentersCarousel = ({ centers }) => {
                                     )}
 
                                     {/* Certifications as list */}
-                                    {center.certifications && center.certifications.length > 0 && (
+                                    {/* {center.certifications && center.certifications.length > 0 && (
                                         <div className="mt-3">
                                             <h4 className="text-sm font-semibold text-gray-800 mb-1">Certifications:</h4>
                                             <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
@@ -58,14 +58,26 @@ const CentersCarousel = ({ centers }) => {
                                                 ))}
                                             </ul>
                                         </div>
-                                    )}
+                                    )} */}
 
-                                    <Link
+                                    {/* Always show center description */}
+                                    {/* {center.description && (
+                                        <p className="text-sm text-gray-700 mt-3">
+                                            {center.description.length > 100
+                                                ? `${center.description.slice(0, 100)}...`
+                                                : center.description}
+                                        </p>
+                                    )}
+                                    <br /> */}
+
+                                    <ExpandableDescription description={center.description} />
+
+                                    {/* <Link
                                         href="/centres"
                                         className="inline-block mt-4 text-teal-600 hover:underline font-medium text-sm"
                                     >
                                         Learn more →
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                         </SwiperSlide>
