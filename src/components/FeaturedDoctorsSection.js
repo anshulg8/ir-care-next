@@ -34,7 +34,7 @@ const FeaturedDoctorsSection = () => {
                                             alt={doctor.name}
                                             className="w-full h-48 object-cover object-[center_top]"
                                         /> */}
-                                        <div className=" aspect-[3/4] bg-gray-100">
+                                        <div className=" aspect-[3/2] bg-gray-100">
                                             <img
                                                 src={doctor.image.src}
                                                 alt={doctor.name}
