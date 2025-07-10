@@ -12,6 +12,26 @@ import img3 from './assets/slider4.png';
 import Pradeep from './assets/testimonial-pradeep.png';
 import Lakhwinder from './assets/testimonial-lakhwinder.png';
 import Tejal from './assets/testimonial-tejal.png';
+import AJLogo from './assets/logos/aj-logo.png';
+import BombayLogo from './assets/logos/bombay-logo.png';
+import FMLogo from './assets/logos/father-muller-logo.svg';
+import GHLogo from './assets/logos/global-hospital-logo.png';
+import JaslokLogo from './assets/logos/jaslok.png';
+import ManipalLogo from './assets/logos/manipal-hospitals.webp';
+import KMCLogo from './assets/logos/KMC Mangaluru.svg';
+import KEMLogo from './assets/logos/kem.png';
+import RubyHallLogo from './assets/logos/ruby-hall.png';
+import RFLogo from './assets/logos/RF-logo.svg';
+import SahyadriLogo from './assets/logos/SahyadriLogo.webp';
+import SCSLogo from './assets/logos/scs-logo.png';
+import SCTIMSTLogo from './assets/logos/SCTIMST Trivandrum.png';
+import TataMemLogo from './assets/logos/tata-memorial.png';
+import TVCLogo from './assets/logos/the-vascular-centre.webp';
+import AFMCLogo from './assets/logos/AFMC-logo.png';
+import NanavatiLogo from './assets/logos/nanavati.svg';
+import fortisLogo from './assets/logos/fortis.png';
+import hindujaLogo from './assets/logos/hinduja.svg';
+import jehangirLogo from './assets/logos/jehangir.png';
 
 export const usps = [
     {
@@ -97,92 +117,86 @@ export const featuredDoctors = [
     {
         id: 1,
         name: "Surg. Capt. Dr. Rochan Pant",
-        designation: "Vascular & Neuro IR Specialist",
+        designation: "Vascular & Neuro IR",
         image: DrRochan,
-        experience: 18,
+        experience: 30,
         credentials: [
-            "Vishisht Seva Medal (President of India Awardee)",
-            "Ex-Director, Radiology - Reliance Foundation Hospital",
-            "20+ Years Teaching at MUHS, Nasik",
-            "18+ Published Research Papers"
+            "Presidential Vishisht Seva Medal winner ",
+            "Ex-Department Head, Imaging & IR — Reliance Foundation Hosp Mumbai",
+            "30-year Navy & civilian record of complex aortic, stroke and liver cases",
         ],
         specialty: "Stroke Intervention, Aortic Aneurysms, Liver Cancer (TACE/RFA)",
-        hospitalIcons: ["https://www.rfhospital.org/images/new-home-img/RF-logo-svg.svg"]
+        hospitalIcons: [RFLogo, JaslokLogo, GHLogo, AFMCLogo, BombayLogo, NanavatiLogo, fortisLogo, hindujaLogo]
     },
     {
         id: 2,
         name: "Dr. Mukul Mutatkar",
         designation: "Senior Interventional Radiologist",
         image: DrMukul,
-        experience: 18,
+        experience: 35,
         credentials: [
-            "Trained in MRI/CT at USA, Germany, Japan, UK",
-            "Founder - OMEGA MRI & PDS CT Scan Centres (Pune)",
-            "30+ Years in Advanced Imaging",
-            "Specialized in Hepatobiliary Interventions"
+            "Pune’s earliest IR pioneer — 3 decades of first-in-city therapies",
+            "Prolific expertise across IR subspecialities and newer technologies.",
+            "Fellowships in MRI/CT across USA, Germany, Japan & UK"
         ],
         specialty: "Cross-Border IR Expertise with Global Techniques",
-        hospitalIcons: ["https://poonahospital.org/wp-content/uploads/2022/09/logo_new.png"]
+        hospitalIcons: [jehangirLogo, RubyHallLogo, SahyadriLogo]
     },
     {
         id: 3,
         name: "Dr. Ashwin M Polnaya",
-        designation: "Interventional Radiologist",
+        designation: "Interventional Oncology (IR)",
         image: DrAshwin,
-        experience: 18,
+        experience: 10,
         credentials: [
-            "First in Dakshina Kannada to Perform Radioactive Liver Cancer Therapy",
-            "Affiliated with AJ Hospital, Mangaluru",
-            "Specialized in Minimally Invasive Tumor Treatments",
-            "Expert in TACE & Radioembolization"
+            "Dept Head, AJ Hospital’s IR Unit (TACE, Y-90, ablation)",
+            "High-volume complex embolisations with rapid-recovery pathways",
+            "Active clinical trainer for IR residents"
         ],
         specialty: "Advanced Liver Cancer Management",
-        hospitalIcons: ["https://www.ajhospital.in/images/aj-logo.png"]
+        hospitalIcons: [TataMemLogo, AJLogo]
     },
     {
         id: 4,
         name: "Dr. Lenon D'Souza",
-        designation: "Vascular Surgeon & IR Specialist",
+        designation: "Vascular Surgeon & IR",
         image: DrLenon,
-        experience: 18,
+        experience: 14,
         credentials: [
-            "Gold Medalist - Rajiv Gandhi University",
-            "Fellowship in Vascular IR (KEM Hospital, Mumbai)",
-            "7+ Years in Complex Endovascular Procedures",
-            "Ranked #1 in Radiology (RGUHS)"
+            "Gold Medalist & Rank #1 (RGUHS Karnataka University)",
+            "KEM-trained fellowship in endovascular & glue therapies - Asia's busiest IR unit.",
+            "Introduced pain-free Venaseal™ varicose-vein closure to Mangaluru"
         ],
         specialty: "Varicose Veins, Diabetic Foot Salvage, Uterine Fibroid Embolization",
-        hospitalIcons: ["https://www.fathermuller.edu.in/medical-college/img/father-muller-logo.svg"]
+        hospitalIcons: [KEMLogo, SCSLogo, FMLogo, TVCLogo]
     },
     {
         id: 5,
         name: "Dr Mandeep Sagar MD FVIR",
-        designation: "EndoVascular and Neuro- Interventional Radiologist ",
+        designation: "Endovascular & Neuro-IR",
         image: DrMandeep,
         experience: 4,
         credentials: [
-            "Gold medalist - SSUHS university in Radiology",
-            "DM in Neuro Imaging & IR (SCTIMST, Trivandrum)",
-            "Pioneer of Pinhole Access Neurovascular Treatments",
-            "Expert in Stroke Management"
+            "Gold Medalist(SSUHS) with DM Neuro-IR — SCTIMST",
+            "Early adopter of pinhole-access stroke & aneurysm repair",
+            "Youngest faculty driving IR growth in coastal Karnataka"
         ],
         specialty: "Thyroid ablation / Embolization for goitre / thyroid nodules,  Laser / VenaSeal for varicose veins, Acute ischemic stroke thrombectomy, Peripheral Angioplasty for diabetic foot / leg gangrene",
-        hospitalIcons: ["https://www.fathermuller.edu.in/medical-college/img/father-muller-logo.svg"]
+        hospitalIcons: [SCTIMSTLogo, FMLogo]
     },
     {
         id: 6,
         name: "Dr. Keerthiraj B",
-        designation: "Interventional Neuro Radiologist",
+        designation: "Interventional Neuro-Radiologist",
         image: DrKB,
-        experience: 18,
+        experience: 20,
         credentials: [
-            "First Interventional Neuroradiologist in Dakshina Kannada",
-            "DM in Neuro Imaging & IR (SCTIMST, Trivandrum)",
-            "Pioneer of Pinhole Access Neurovascular Treatments",
-            "Expert in Stroke Management"
+            "Dakshina Kannada’s first dedicated neuro-IR specialist)",
+            "DM Neuro-Imaging & IR — SCTIMST; >1 000 aneurysm & AVM cases",
+            "Leads Manipal/KMC endovascular stroke service with <30-min door-to-groin times"
         ],
         specialty: "Endovascular Neurosurgeries Without Open Surgery",
-        hospitalIcons: ["https://www.manipalhospitals.com/mangalore/assets/images/homepage/manipal-hospitals-mangalore.webp"]
+        hospitalIcons: [SCTIMSTLogo, KMCLogo, ManipalLogo]
     },
 ];
 
@@ -230,6 +244,11 @@ export const centers = [
         email: 'info@c3medicare.com',
         image: 'https://i0.wp.com/c3medicare.com/wp-content/uploads/2024/08/1.jpg',
         description: 'C3 MEDICARE is a day-care centre for oncology and interventional radiology procedures that do not require overnight admissions. Our dedicated daycare Centre allows patients quick and efficient single-point admission, treatment, and discharge and reduces the time spent in the hospital.',
+        whyUs: [
+            'Purpose-built day-care IR & oncology clinic – walk-in, walk-out with *zero* overnight stay.',
+            'High-precision angiography suite for stitch-free PAE, UAE, VenaSeal™ & more.',
+            'Transparent, pocket-friendly package pricing published upfront.',
+        ],
         technologies: [
             {
                 name: 'Siemens Artis Q.zen',
@@ -279,6 +298,11 @@ export const centers = [
         email: ' info@jehangirhospital.com',
         image: 'https://www.indiacancersurgerysite.com/jehangir-hospital-india/images/hospital-building.png',
         description: 'Jehangir Hospital is a 350-bed hospital in Pune, Maharashtra, India. Sir Cowasji Jehangir and Lady Hirabai Jehangir founded the hospital on 6 February 1946.',
+        whyUs: [
+            "NABH, NABL & ISO-accredited 350-bed tertiary centre – gold-standard safety.",
+            "Dedicated neuro-vascular cath-lab for complex embolisations & stroke rescue.",
+            "Central location opposite Pune railway station for effortless access & emergency backup."
+        ],
         technologies: [
             {
                 name: 'GE Discovery IGS 740',
@@ -306,44 +330,44 @@ export const centers = [
         doctors: [
         ]
     },
-    {
-        id: 'pune-h',
-        rating: 3.6,
-        reviews: 980,
-        city: 'Pune',
-        area: '',
-        name: 'Poona Hospital',
-        address: '27, near Alka Talkies, Sadashiv Peth, Pune, Maharashtra',
-        phone: '+91 97305 59600',
-        email: 'phrcjr@gmail.com',
-        image: 'https://poonahospital.org/wp-content/uploads/2024/01/Hosptial.jpg',
-        description: 'Poona Hospital & Research Center is a healthcare provider, par excellence, fast establishing it self as a global industry model in the tertiary healthcare system of india.',
-        technologies: [
-            {
-                name: 'Philips Ingenia Elition',
-                description: '3T MRI system with AI-powered imaging',
-                image: ''
-            },
-            {
-                name: 'Siemens Artis pheno',
-                description: 'Hybrid operating room system',
-                image: ''
-            }
-        ],
-        certifications: [
-            'ISO 9001:2015 Certified',
-            'NABH Accreditation',
-            'ISO 15189:2012 Medical Laboratories',
-            'Green OT Certification'
-        ],
-        specialties: [
-            'Vascular Interventions',
-            'Oncological Interventions',
-            'Cardiac Interventions',
-            'Pediatric Interventions'
-        ],
-        doctors: []
-    },
+    // {
+    //     id: 'pune-h',
+    //     rating: 3.6,
+    //     reviews: 980,
+    //     city: 'Pune',
+    //     area: '',
+    //     name: 'Poona Hospital',
+    //     address: '27, near Alka Talkies, Sadashiv Peth, Pune, Maharashtra',
+    //     phone: '+91 97305 59600',
+    //     email: 'phrcjr@gmail.com',
+    //     image: 'https://poonahospital.org/wp-content/uploads/2024/01/Hosptial.jpg',
+    //     description: 'Poona Hospital & Research Center is a healthcare provider, par excellence, fast establishing it self as a global industry model in the tertiary healthcare system of india.',
+    //     technologies: [
+    //         {
+    //             name: 'Philips Ingenia Elition',
+    //             description: '3T MRI system with AI-powered imaging',
+    //             image: ''
+    //         },
+    //         {
+    //             name: 'Siemens Artis pheno',
+    //             description: 'Hybrid operating room system',
+    //             image: ''
+    //         }
+    //     ],
+    //     certifications: [
+    //         'ISO 9001:2015 Certified',
+    //         'NABH Accreditation',
+    //         'ISO 15189:2012 Medical Laboratories',
+    //         'Green OT Certification'
+    //     ],
+    //     specialties: [
+    //         'Vascular Interventions',
+    //         'Oncological Interventions',
+    //         'Cardiac Interventions',
+    //         'Pediatric Interventions'
+    //     ],
+    //     doctors: []
+    // },
     {
         id: 'mangalore-tara',
         rating: 3.7,
@@ -356,6 +380,11 @@ export const centers = [
         email: 'Office@tarahospital.co.in',
         image: 'https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
         description: 'We at Tara Hospital provide the highest quality and affordable treatments to our patients. We have an unwavering commitment to medical ethics.',
+        whyUs: [
+            "24 × 7 emergency cover with pocket-friendly day-case IR packages.",
+            "In-house CT, ultrasound & digital X-ray – all imaging under one roof.",
+            "Walkable from Hampankatta bus & market hubs for easy follow-ups."
+        ],
         technologies: [
             {
                 name: 'Canon Medical Systems Alphenix',
@@ -394,6 +423,11 @@ export const centers = [
         email: 'dean@ajims.edu.in',
         image: 'https://ajims.edu.in/ASPXImages/sliderfirst.jpg',
         description: 'AJIMS is aimed to provide a global perspective of medical education to achieve the national objective of “Health for All”.',
+        whyUs: [
+            "Full-fledged interventional radiology division with hybrid cath-lab.",
+            "Multispecialty quaternary centre backed by 30+ specialties and advanced ICU.",
+            "Spacious private rooms with concierge support for comfortable recovery."
+        ],
         technologies: [
             {
                 name: 'Canon Medical Systems Alphenix',
@@ -433,6 +467,11 @@ export const centers = [
         email: 'drnageshkr@rediffmail.com',
         image: 'https://bookuradmission.com/college_photo/Father%20Muller%20Medical%20College_photo210528093012.jpg',
         description: 'Father Muller Medical College is a private medical school located at Kankanady in Mangaluru, Karnataka. It is a part of the Father Muller Charitable Institutions.',
+        whyUs: [
+            "NABH-accredited teaching hospital with NAAC ‘A’ grade quality.",
+            "Round-the-clock high-volume IR & imaging wing serving Karnataka, Kerala & Goa.",
+            "140-year legacy with full ICU, transplant & neonatal backup on the same campus."
+        ],
         technologies: [
             {
                 name: 'Canon Medical Systems Alphenix',
@@ -517,11 +556,10 @@ export const proceduresArray = [
         cta: "Know More",
         description: "Prostatic Artery Embolization (PAE) uses a remote guided small wire inserted through a tiny pin-hole in your wrist - shrinking the prostate without anesthesia or surgical risk, and without even taking your pants off, getting you home in a few hours. Book your consultation now.",
         benefits: [
-            "Out-patient, local anesthesia — walk in, walk out the same day",
-            "Rapid symptom relief: IPSS scores plunge within weeks and continue improving for 12 months",
-            "< 15 min wrist-access incision — no catheter in most cases",
-            "Keeps intimacy intact: ejaculatory dysfunction ≤ 16 % vs ≈ 50 % with TURP",
-            "Lower complication rate than surgery in randomised trials",
+            "Walk-in, walk-out in hours – tiny wrist puncture, local anaesthesia.",
+            "Urinary trouble drops 40-60 % within weeks; 90 %+ never need surgery.",
+            "Zero sexual side-effects (vs 50 % retrograde ejaculation after TURP).",
+            "No catheter for most; lowest bleed & leak risk of any prostate option.",
         ],
         benefitDetails: [
             {
@@ -624,10 +662,10 @@ export const proceduresArray = [
         description: "Uterine Fibroid Embolization (UFE) uses a remote guided small wire inserted through a tiny pin-hole in your wrist - reducing fibroid size without anesthesia or surgical risk, and without even touching your belly, getting you home in a few hours, while retaining your ability to get pregnant. Book your consultation now.",
         cta: "Know More",
         benefits: [
-            "Out-patient, local anesthesia—walk out in 6 h  ",
-            "Symptom relief in 85–90% of women; bleeding drops within one cycle  ",
-            "Treats every fibroid at once—even 15+ lesions or >10 cm bulk",
-            "Back to work in a week, gym in two"
+            "Keeps your uterus – shrinks every fibroid, pain-free.",
+            "85-90 % see lighter periods & less pain next cycle.",
+            "Home same day; desk work in days, gym in a week.",
+            "Fewer complications and re-ops than hysterectomy or myomectomy."
         ],
         benefitDetails: [
             {
@@ -730,11 +768,10 @@ export const proceduresArray = [
         cta: "Know More",
         description: "Hemorrhoidal Artery Embolization (HAE) uses a remote guided small wire inserted through a tiny pin-hole in your wrist to cut off blood to your anal vessels - stopping the bleeding without anesthesia or surgical risk, and without even taking your pants off, getting you home in a few hours. Book your consultation now.",
         benefits: [
-            "Walk in, walk out the same day",
-            "Virtually Painless",
-            "No Cuts, No Scars, No Risk",
-            "93-100% Technical Success Rate, Long Lasting Relief",
-            "Wide Variety of Payment Options",
+            "Needle-hole treatment – out in 4 hrs, no cutting or stapling.",
+            "Bleeding stops in 24-48 hrs; long-lasting relief like surgery.",
+            "No loss of stool control – a risk with nearly all traditional piles surgeries.",
+            "Back at your desk next day; full activity in a week."
         ],
         benefitDetails: [
             {
@@ -842,11 +879,10 @@ export const proceduresArray = [
         cta: "Know More",
         description: "The Okuno Procedure (Trans-Arterial Micro-Embolization, *TAME*) shuts down the rogue blood vessels that keep pain alive in knees, shoulders, elbows and spine. One tiny wrist puncture, home in hours.",
         benefits: [
-            "Out-patient, local anaesthesia — tiny 0.6 mm catheter; no stitches",
-            "50 – 80 % pain reduction that lasts 1–2 years or longer",
-            "All-star indications: Knee arthritis, frozen shoulder, tennis elbow, facet-back pain, plantar fasciitis",
-            "Fast return to life: Most patients back to desk work next day, sports in 7-14 days",
-            "Zero joint damage: Preserves cartilage, tendons, nerves; repeatable if ever needed",
+            "0.6 mm wrist entry – local anaesthetic, walk out same day.",
+            "Cuts pain 50-80 % for up to two years; repeatable if needed.",
+            "Targets rogue pain causing blood vessels in arthritis, frozen shoulder, tennis elbow & more joint problem – treats the cause, not just symptoms.",
+            "Protects cartilage, tendons & nerves unlike surgery; desk work next day, sports in 1-2 weeks."
         ],
         benefitDetails: [
             {

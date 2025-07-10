@@ -34,7 +34,7 @@ const FeaturedDoctorsSection = () => {
                                             alt={doctor.name}
                                             className="w-full h-48 object-cover object-[center_top]"
                                         /> */}
-                                        <div className="w-full aspect-[3/4] bg-gray-100">
+                                        <div className=" aspect-[3/4] bg-gray-100">
                                             <img
                                                 src={doctor.image.src}
                                                 alt={doctor.name}
@@ -42,17 +42,20 @@ const FeaturedDoctorsSection = () => {
                                             />
                                         </div>
                                         {doctor.hospitalIcons?.length > 0 && (
-                                            <div className="flex gap-3 px-4 py-2">
-                                                {doctor.hospitalIcons.map((icon, i) => (
-                                                    <img
-                                                        key={i}
-                                                        src={icon}
-                                                        alt="Hospital"
-                                                        className="h-6 w-auto object-contain"
-                                                    />
-                                                ))}
+                                            <div className="px-4 py-2 overflow-x-auto">
+                                                <div className="flex gap-3 min-w-max">
+                                                    {doctor.hospitalIcons.map((icon, i) => (
+                                                        <img
+                                                            key={i}
+                                                            src={icon.src}
+                                                            alt="Hospital"
+                                                            className="h-6 w-auto object-contain"
+                                                        />
+                                                    ))}
+                                                </div>
                                             </div>
                                         )}
+
                                     </div>
                                     <div className="p-4">
                                         <h3 className="text-lg font-semibold text-gray-900">{doctor.name}</h3>
@@ -81,11 +84,11 @@ const FeaturedDoctorsSection = () => {
                                                 </li>
                                             ))}
                                         </ul>
-                                        <div className="bg-teal-50 px-3 py-1 rounded-md">
+                                        {/* <div className="bg-teal-50 px-3 py-1 rounded-md">
                                             <p className="text-xs font-medium text-teal-800">
                                                 Specializes in: {doctor.specialty}
                                             </p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -102,13 +105,14 @@ const FeaturedDoctorsSection = () => {
                             className="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                         >
                             <div className="flex flex-col md:flex-row">
-                                <div className="w-full md:w-48 aspect-[3/4] bg-gray-100">
+                                <div className="w-full md:w-48 flex-shrink-0 aspect-[3/4] bg-gray-100">
                                     <img
                                         src={doctor.image.src}
                                         alt={doctor.name}
-                                        className="w-full md:w-48 h-64 object-cover"
+                                        className="w-full h-full object-cover"
                                     />
                                 </div>
+
                                 <div className="p-6 flex-1">
                                     <h3 className="text-2xl font-bold text-gray-900">{doctor.name}</h3>
                                     <p className="inline-block bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
@@ -136,21 +140,27 @@ const FeaturedDoctorsSection = () => {
                                             </li>
                                         ))}
                                     </ul>
-                                    <div className="bg-teal-50 px-4 py-2 rounded-lg inline-block">
+                                    {/* <div className="bg-teal-50 px-4 py-2 rounded-lg inline-block">
                                         <p className="text-sm font-medium text-teal-800">
                                             Specializes in: {doctor.specialty}
                                         </p>
-                                    </div>
+                                    </div> */}
                                     {doctor.hospitalIcons?.length > 0 && (
-                                        <div className="flex gap-3">
-                                            {doctor.hospitalIcons.map((icon, i) => (
-                                                <img
-                                                    key={i}
-                                                    src={icon}
-                                                    alt="Hospital"
-                                                    className="h-6 w-auto object-contain"
-                                                />
-                                            ))}
+                                        <div className="mt-3 max-w-full overflow-x-auto">
+                                            <div className="flex gap-3 min-w-max pr-2">
+
+                                                {doctor.hospitalIcons.map((icon, i) => {
+                                                    console.log(`Rendering icon at index ${i}: ${icon.src}`);
+                                                    return (
+                                                        <img
+                                                            key={i}
+                                                            src={icon.src}
+                                                            alt="Hospital"
+                                                            className="h-6 w-auto object-contain flex-shrink-0"
+                                                        />
+                                                    );
+                                                })}
+                                            </div>
                                         </div>
                                     )}
                                 </div>

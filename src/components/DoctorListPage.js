@@ -54,10 +54,12 @@ const DoctorProfiles = () => {
                                         </ul>
                                         {/* Optional: display logos */}
                                         {doc.hospitalIcons?.length > 0 && (
-                                            <div className="flex gap-4 mt-4">
-                                                {doc.hospitalIcons.map((icon, i) => (
-                                                    <img key={i} src={icon} alt="hospital" className="h-6 w-auto" />
-                                                ))}
+                                            <div className="mt-4 overflow-x-auto">
+                                                <div className="flex gap-4 min-w-max pr-2">
+                                                    {doc.hospitalIcons.map((icon, i) => (
+                                                        <img key={i} src={icon.src} alt="hospital" className="h-6 w-auto flex-shrink-0" />
+                                                    ))}
+                                                </div>
                                             </div>
                                         )}
                                     </div>

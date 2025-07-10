@@ -9,7 +9,7 @@ const ProcedureSection = () => {
                 {/* Section Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-gray-900 mb-3">
-                        Advanced <span className="text-teal-600">Minimally Invasive</span> Solutions
+                        Conditions <span className="text-teal-600">We Treat</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         FDA/EU-approved procedures with faster recovery and better outcomes
@@ -38,7 +38,7 @@ const ProcedureSection = () => {
                                 <div className="p-6">
                                     <div className="flex items-start mb-3">
                                         <h3 className="text-xl font-bold text-gray-900 flex-1">
-                                            {procedure.name}
+                                            {procedure.for}
                                         </h3>
                                         <div className="ml-2 bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
                                             1-2 hrs {/* Placeholder for duration */}
@@ -46,7 +46,7 @@ const ProcedureSection = () => {
                                     </div>
 
                                     <p className="text-teal-600 font-medium mb-4">
-                                        For: {procedure.for}
+                                        For: {procedure.name}
                                     </p>
 
                                     <ul className="space-y-3 mb-6">

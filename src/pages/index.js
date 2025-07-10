@@ -29,13 +29,13 @@ const Home = () => {
             />
             <div className="min-h-screen bg-gray-50">
                 <SwiperSection />
-                <DiseaseIconsGrid />
+                {/* <DiseaseIconsGrid /> */}
+                <ProcedureSection />
                 <DiseaseSearch />
                 <FeaturedDoctorsSection />
                 <CentersCarousel centers={centers} />
                 <WhyChooseUsSection />
                 <HowItWorks />
-                <ProcedureSection />
                 <TestimonialSection testimonials={landingTestimonials} />
                 <FAQSection faqs={generalFaqs} />
 
