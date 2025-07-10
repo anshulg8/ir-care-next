@@ -541,7 +541,6 @@ export const uaeTestimonials = [landingTestimonials[2], landingTestimonials[0], 
 export const haeTestimonials = landingTestimonials;
 export const tameTestimonials = [landingTestimonials[3], landingTestimonials[0], landingTestimonials[1], landingTestimonials[2]];;
 
-
 export const proceduresArray = [
     {
         id: 1,
@@ -549,6 +548,7 @@ export const proceduresArray = [
         markdownPath: './pae.md',
         htmlPath: 'paeBlock',
         name: "Prostatic Artery Embolization (PAE)",
+        img: "🧔🩺",
         generalName: "Prostate Enlargement",
         title: "Treat Enlarged Prostate Without Surgery",
         headline: "Learn about the latest European Pinhole IR technology - now in India & UAE",
@@ -653,6 +653,7 @@ export const proceduresArray = [
         id: 2,
         slug: "uterine-fibroid-embolization-ufe",
         markdownPath: './uae.md',
+        img: "🌸🧬",
         htmlPath: 'uaeBlock',
         title: 'Treat Fibroids Without Surgery',
         name: "Uterine Fibroid Embolization (UFE)",
@@ -760,6 +761,7 @@ export const proceduresArray = [
         slug: "hemorrhoidal-artery-embolization-hae",
         markdownPath: './hae.md',
         htmlPath: 'haeBlock',
+        img: "🚽🩸",
         title: 'Treat Piles Bleeding Without Surgery',
         name: "Hemorrhoidal Artery Embolization (HAE)",
         generalName: "Piles (Hemorrhoids)",
@@ -870,6 +872,7 @@ export const proceduresArray = [
         id: 4,
         slug: "okuno-procedure-tam",
         markdownPath: './tam.md',
+        img: "⚡🤕",
         htmlPath: 'tameBlock',
         title: '',
         name: "OKUNO Procedure (TAME)",
