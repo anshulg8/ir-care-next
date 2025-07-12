@@ -31,8 +31,12 @@ const ProcedureSection = () => {
                                 </div>
 
                                 {/* Image placeholder */}
-                                <div className="h-48 bg-gradient-to-r from-teal-100 to-teal-50 flex items-center justify-center">
-                                    <span className="text-6xl">{procedure.img}</span>
+                                <div className="h-48 bg-gradient-to-r from-teal-100 to-teal-50 flex items-center justify-center pt-6">
+                                    <img
+                                        src={procedure.img.src || procedure.img}
+                                        alt={procedure.name}
+                                        className="h-40 w-auto object-contain"
+                                    />
                                 </div>
 
                                 <div className="p-6">

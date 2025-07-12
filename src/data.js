@@ -32,6 +32,10 @@ import NanavatiLogo from './assets/logos/nanavati.svg';
 import fortisLogo from './assets/logos/fortis.png';
 import hindujaLogo from './assets/logos/hinduja.svg';
 import jehangirLogo from './assets/logos/jehangir.png';
+import fibroid from './assets/fibroid.png';
+import pain from './assets/pain.png';
+import piles from './assets/piles.png';
+import prostate from './assets/prostate.png';
 
 export const usps = [
     {
@@ -548,7 +552,7 @@ export const proceduresArray = [
         markdownPath: './pae.md',
         htmlPath: 'paeBlock',
         name: "Prostatic Artery Embolization (PAE)",
-        img: "🧔🩺",
+        img: prostate,
         generalName: "Prostate Enlargement",
         title: "Treat Enlarged Prostate Without Surgery",
         headline: "Learn about the latest European Pinhole IR technology - now in India & UAE",
@@ -653,7 +657,7 @@ export const proceduresArray = [
         id: 2,
         slug: "uterine-fibroid-embolization-ufe",
         markdownPath: './uae.md',
-        img: "🌸🧬",
+        img: fibroid,
         htmlPath: 'uaeBlock',
         title: 'Treat Fibroids Without Surgery',
         name: "Uterine Fibroid Embolization (UFE)",
@@ -761,7 +765,7 @@ export const proceduresArray = [
         slug: "hemorrhoidal-artery-embolization-hae",
         markdownPath: './hae.md',
         htmlPath: 'haeBlock',
-        img: "🚽🩸",
+        img: piles,
         title: 'Treat Piles Bleeding Without Surgery',
         name: "Hemorrhoidal Artery Embolization (HAE)",
         generalName: "Piles (Hemorrhoids)",
@@ -872,7 +876,7 @@ export const proceduresArray = [
         id: 4,
         slug: "okuno-procedure-tam",
         markdownPath: './tam.md',
-        img: "⚡🤕",
+        img: pain,
         htmlPath: 'tameBlock',
         title: '',
         name: "OKUNO Procedure (TAME)",
