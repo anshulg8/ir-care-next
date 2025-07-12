@@ -14,11 +14,39 @@ import StickyButtons from '../components/StickyButtons';
 import ContactFloatingButton from '../components/ContactFloatingButton';
 import { useModal } from '../context/ModalContext';
 import SEO from '@/components/SEO';
-import { BASE_URL } from '@/constants';
+import { BASE_URL, FB_URL, INSTA_URL, X_URL } from '@/constants';
 
 const Home = () => {
     const [showContactModal, setShowContactModal] = useState(false);
     const { openModal } = useModal();
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": BASE_URL,
+                "url": BASE_URL,
+                "name": "Docsy – Modern Alternatives to Surgery",
+                "description": "Docsy connects patients to top interventional radiologists across India and UAE. Discover pinhole access treatments for fibroids, varicose veins, strokes, and more.",
+                "inLanguage": "en",
+                "publisher": {
+                    "@type": "MedicalOrganization",
+                    "name": "Docsy",
+                    "url": BASE_URL,
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": `${BASE_URL}/trans-logo.png`
+                    },
+                    "sameAs": [X_URL, FB_URL, INSTA_URL],
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressCountry": ["IN", "AE"]
+                    }
+                }
+            },
+        ]
+    }
 
     return (
         <>
@@ -26,6 +54,7 @@ const Home = () => {
                 title="Docsy"
                 description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
                 url={BASE_URL}
+                schemaMarkup={schema}
             />
             <div className="min-h-screen bg-gray-50">
                 <SwiperSection />

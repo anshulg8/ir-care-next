@@ -36,6 +36,7 @@ import fibroid from './assets/fibroid.png';
 import pain from './assets/pain.png';
 import piles from './assets/piles.png';
 import prostate from './assets/prostate.png';
+import { BASE_URL } from './constants';
 
 export const usps = [
     {
@@ -556,7 +557,7 @@ export const proceduresArray = [
         generalName: "Prostate Enlargement",
         title: "Treat Enlarged Prostate Without Surgery",
         headline: "Learn about the latest European Pinhole IR technology - now in India & UAE",
-        for: "BPH (Enlarged Prostate)",
+        for: "Enlarged Prostate (BPH)",
         cta: "Know More",
         description: "Prostatic Artery Embolization (PAE) uses a remote guided small wire inserted through a tiny pin-hole in your wrist - shrinking the prostate without anesthesia or surgical risk, and without even taking your pants off, getting you home in a few hours. Book your consultation now.",
         benefits: [
@@ -662,7 +663,7 @@ export const proceduresArray = [
             "procedureType": "Non-invasive",
             "bodyLocation": "Prostate",
             "medicalSpecialty": "InterventionalRadiology",
-            "url": "https://mydocsy.com/procedures/prostatic-artery-embolization-pae"
+            "url": `${BASE_URL}/procedures/prostatic-artery-embolization-pae`
         }
     },
     {
@@ -674,7 +675,7 @@ export const proceduresArray = [
         title: 'Treat Fibroids Without Surgery',
         name: "Uterine Fibroid Embolization (UFE)",
         generalName: "Fibroids",
-        for: "Symptomatic Fibroids",
+        for: "Fibroids",
         headline: "Learn about the latest European Pinhole IR technology - now in India & UAE",
         description: "Uterine Fibroid Embolization (UFE) uses a remote guided small wire inserted through a tiny pin-hole in your wrist - reducing fibroid size without anesthesia or surgical risk, and without even touching your belly, getting you home in a few hours, while retaining your ability to get pregnant. Book your consultation now.",
         cta: "Know More",
@@ -781,7 +782,7 @@ export const proceduresArray = [
             "procedureType": "Non-invasive",
             "bodyLocation": "Uterus",
             "medicalSpecialty": "InterventionalRadiology",
-            "url": "https://mydocsy.com/procedures/uterine-fibroid-embolization-ufe"
+            "url": `${BASE_URL}/procedures/uterine-fibroid-embolization-ufe`
         }
     },
     {
@@ -794,7 +795,7 @@ export const proceduresArray = [
         name: "Hemorrhoidal Artery Embolization (HAE)",
         generalName: "Piles (Hemorrhoids)",
         headline: "Learn about the latest European Pinhole IR technology - now in India & UAE",
-        for: "Chronic Rectal Bleeding",
+        for: "Piles (Hemorrhoids)",
         cta: "Know More",
         description: "Hemorrhoidal Artery Embolization (HAE) uses a remote guided small wire inserted through a tiny pin-hole in your wrist to cut off blood to your anal vessels - stopping the bleeding without anesthesia or surgical risk, and without even taking your pants off, getting you home in a few hours. Book your consultation now.",
         benefits: [
@@ -905,7 +906,7 @@ export const proceduresArray = [
             "procedureType": "Non-invasive",
             "bodyLocation": "Rectum",
             "medicalSpecialty": "InterventionalRadiology",
-            "url": "https://mydocsy.com/procedures/hemorrhoidal-artery-embolization-hae"
+            "url": `${BASE_URL}/procedures/hemorrhoidal-artery-embolization-hae`
         }
     },
     {
@@ -918,7 +919,7 @@ export const proceduresArray = [
         name: "OKUNO Procedure (TAME)",
         generalName: "Severe Pain",
         headline: "End Chronic Joint & Tendon Pain — Without Surgery or Long Downtime",
-        for: "Chronic Pain (Knee/Shoulder/Back)",
+        for: "Chronic Pain (Back, Shoulder, Ankle)",
         cta: "Know More",
         description: "The Okuno Procedure (Trans-Arterial Micro-Embolization, *TAME*) shuts down the rogue blood vessels that keep pain alive in knees, shoulders, elbows and spine. One tiny wrist puncture, home in hours.",
         benefits: [
@@ -1025,7 +1026,7 @@ export const proceduresArray = [
             "procedureType": "Non-invasive",
             "bodyLocation": "Joints and Tendons (Knee, Shoulder, Spine)",
             "medicalSpecialty": "InterventionalRadiology",
-            "url": "https://mydocsy.com/procedures/okuno-procedure-tam"
+            "url": `${BASE_URL}/procedures/okuno-procedure-tam`
         }
     }
 ];

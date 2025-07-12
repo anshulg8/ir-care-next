@@ -1,14 +1,49 @@
 import React from 'react';
 import SEO from './SEO';
-import { BASE_URL } from '@/constants';
+import { BASE_URL, FB_URL, INSTA_URL, X_URL } from '@/constants';
 
 const About = () => {
+
+    const aboutSchema = {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Us | Docsy",
+        "url": `${BASE_URL}/about`,
+        "description": "We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery.",
+        "mainEntity": {
+            "@type": "MedicalOrganization",
+            "name": "Docsy",
+            "url": BASE_URL,
+            "description": "A healthcare platform focused on interventional radiology — offering modern, image-guided alternatives to conventional surgery across India and UAE.",
+            "sameAs": [X_URL, INSTA_URL, FB_URL],
+            "foundingDate": "2024",
+            "areaServed": ["IN", "AE"],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "availableLanguage": ["English", "Hindi"],
+                "areaServed": ["IN", "AE"]
+            },
+            "hasMission": {
+                "@type": "CreativeWork",
+                "name": "Our Mission",
+                "description": "To empower patients through access to trusted interventional radiology care, and help them choose safe, effective treatments with shorter recovery times and fewer complications."
+            },
+            "hasOfferCatalog": {
+                "@type": "CreativeWork",
+                "name": "Our Vision",
+                "description": "We envision a healthcare system where every patient has access to the least invasive and most advanced treatment options available, guided by expert care and digital convenience."
+            }
+        }
+    };
+
     return (
         <>
             <SEO
                 title="About Us | Docsy"
                 description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
                 url={`${BASE_URL || ''}/about`}
+                schemaMarkup={aboutSchema}
             />
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
                 <div className="max-w-7xl mx-auto">

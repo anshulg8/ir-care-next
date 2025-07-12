@@ -3,12 +3,31 @@ import SEO from './SEO';
 import { BASE_URL } from '@/constants';
 
 const Privacy = () => {
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "PrivacyPolicy",
+        "name": "Privacy Policy | Docsy",
+        "url": `${BASE_URL}/privacy`,
+        "description": "This privacy policy explains how Docsy collects, uses, and protects your personal information when using our website or services.",
+        "inLanguage": "en",
+        "publisher": {
+            "@type": "MedicalOrganization",
+            "name": "Docsy",
+            "url": BASE_URL,
+            "logo": {
+                "@type": "ImageObject",
+                "url": `${BASE_URL}/trans-logo.png`
+            }
+        }
+    };
+
     return (
         <>
             <SEO
                 title="Privacy Policy | Docsy"
                 description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
                 url={`${BASE_URL || ''}/privacy`}
+                schemaMarkup={schemaMarkup}
             />
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
                 <div className="max-w-7xl mx-auto">

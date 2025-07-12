@@ -3,12 +3,30 @@ import SEO from './SEO';
 import { BASE_URL } from '@/constants';
 
 const Terms = () => {
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "TermsOfService",
+        "name": "Terms & Conditions | Docsy",
+        "url": `${BASE_URL}/terms`,
+        "description": "Terms & conditions for using the Docsy platform, including responsibilities, disclaimers, and legal usage limits.",
+        "inLanguage": "en",
+        "publisher": {
+            "@type": "MedicalOrganization",
+            "name": "Docsy",
+            "url": BASE_URL,
+            "logo": {
+                "@type": "ImageObject",
+                "url": `${BASE_URL}/trans-logo.png`
+            }
+        }
+    };
     return (
         <>
             <SEO
                 title="Terms & Conditions | Docsy"
                 description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
                 url={`${BASE_URL || ''}/terms`}
+                schemaMarkup={schemaMarkup}
             />
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
                 <div className="max-w-7xl mx-auto">

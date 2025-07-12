@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import { PHONE_NUMBER, WHATSAPP_LINK } from '../constants';
+import { FB_URL, INSTA_URL, PHONE_NUMBER, WHATSAPP_LINK, X_URL } from '../constants';
 import Link from 'next/link';
 import InsurancePartners from './InsurancePartners';
 import { FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
@@ -53,15 +53,15 @@ const Layout = ({ children }) => {
                                 Skip the Scalpel, Pick the Pinhole - Heal in Hours, not Weeks.
                             </p>
                             <div className="flex space-x-4">
-                                <a href="https://x.com/mydocsy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">
+                                <a href={X_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">
                                     <FaTwitter className="h-6 w-6" />
                                     <span></span>
                                 </a>
-                                <a href="https://www.instagram.com/mydocsy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">
+                                <a href={INSTA_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">
                                     <FaInstagram className="h-6 w-6" />
                                     <span></span>
                                 </a>
-                                <a href="https://www.facebook.com/mydocsy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">
+                                <a href={FB_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">
                                     <FaFacebook className="h-6 w-6" />
                                     <span></span>
                                 </a>

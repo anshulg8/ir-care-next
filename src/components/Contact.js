@@ -3,12 +3,38 @@ import { BASE_URL, PHONE_NUMBER, WHATSAPP_LINK } from '../constants';
 import SEO from './SEO';
 
 const Contact = () => {
+    const contactSchema = {
+        "@context": "https://schema.org",
+        "@type": "MedicalOrganization",
+        "name": "Docsy",
+        "url": `${BASE_URL}/contact`,
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": PHONE_NUMBER,
+                "contactType": "customer support",
+                "areaServed": ["IN", "AE"],
+                "availableLanguage": ["English", "Hindi"],
+            },
+            {
+                "@type": "ContactPoint",
+                "url": WHATSAPP_LINK,
+                "contactType": "customer support",
+                "areaServed": ["IN", "AE"],
+                "availableLanguage": ["English", "Hindi"],
+                "contactOption": "Chat"
+            }
+        ],
+        "sameAs": [WHATSAPP_LINK]
+    };
+
     return (
         <>
             <SEO
                 title="Contact Us | Docsy"
                 description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
                 url={`${BASE_URL || ''}/contact`}
+                schemaMarkup={contactSchema}
             />
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
                 <div className="max-w-7xl mx-auto">

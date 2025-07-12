@@ -50,7 +50,7 @@ const ProcedureSection = () => {
                                     </div>
 
                                     <p className="text-teal-600 font-medium mb-4">
-                                        For: {procedure.name}
+                                        Procedure: {procedure.name}
                                     </p>
 
                                     <ul className="space-y-3 mb-6">
