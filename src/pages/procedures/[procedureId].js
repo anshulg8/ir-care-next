@@ -82,6 +82,7 @@ const ProcedureDetailPage = (props) => {
                 title={`${procedure.name} | Docsy`}
                 description={`${procedure.description} | Docsy`}
                 url={`${BASE_URL || ''}/procedures/${procedure.slug}`}
+                schemaMarkup={procedure.schemaMarkup}
             />
             <div className="min-h-screen bg-gray-50 py-12 pt-4">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

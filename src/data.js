@@ -651,7 +651,19 @@ export const proceduresArray = [
         conventionalTreatment: [
             "TURP", "HoLEP", "Rezum™ steam", "UroLift® clips", "Laser prostate surgery"
         ],
-        irAlternative: "Prostatic Artery Embolization (PAE)"
+        irAlternative: "Prostatic Artery Embolization (PAE)",
+        schemaMarkup: {
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "name": "Prostatic Artery Embolization (PAE)",
+            "alternateName": "Prostate Enlargement Treatment",
+            "description": "Minimally invasive pinhole procedure for enlarged prostate that shrinks the gland without surgery, anesthesia, or hospital stay. Done via wrist puncture with fast recovery and minimal side effects.",
+            "howPerformed": "A catheter is inserted through a tiny pinhole in the wrist and guided to the prostate arteries, where embolic agents are delivered to reduce blood supply, shrinking the prostate.",
+            "procedureType": "Non-invasive",
+            "bodyLocation": "Prostate",
+            "medicalSpecialty": "InterventionalRadiology",
+            "url": "https://mydocsy.com/procedures/prostatic-artery-embolization-pae"
+        }
     },
     {
         id: 2,
@@ -758,7 +770,19 @@ export const proceduresArray = [
         conventionalTreatment: [
             "Open Myomectomy", "Lap Myomectomy", "Hysterectomy", "Hysteroscopic resection", "Laser fibroid removal"
         ],
-        irAlternative: "Uterine Artery Embolization (UAE)"
+        irAlternative: "Uterine Artery Embolization (UAE)",
+        schemaMarkup: {
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "name": "Uterine Fibroid Embolization (UFE)",
+            "alternateName": "Fibroid Treatment Without Surgery",
+            "description": "A non-surgical, image-guided treatment for uterine fibroids that preserves the uterus and reduces bleeding and pain. Performed through a small puncture in the wrist under local anesthesia.",
+            "howPerformed": "A catheter is inserted into the uterine arteries via a tiny incision in the wrist or groin, and embolic particles are injected to block blood flow to the fibroids.",
+            "procedureType": "Non-invasive",
+            "bodyLocation": "Uterus",
+            "medicalSpecialty": "InterventionalRadiology",
+            "url": "https://mydocsy.com/procedures/uterine-fibroid-embolization-ufe"
+        }
     },
     {
         id: 3,
@@ -870,7 +894,19 @@ export const proceduresArray = [
         conventionalTreatment: [
             "Conventional hemorrhoidectomy", "Stapled PPH", "Rubber-band ligation", "Laser piles surgery"
         ],
-        irAlternative: "Hemorrhoidal Artery Embolization (HAE)"
+        irAlternative: "Hemorrhoidal Artery Embolization (HAE)",
+        schemaMarkup: {
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "name": "Hemorrhoidal Artery Embolization (HAE)",
+            "alternateName": "Piles Treatment Without Surgery",
+            "description": "A non-surgical outpatient procedure that treats internal hemorrhoids by blocking the arteries supplying blood to hemorrhoidal tissue. Minimally invasive, done via wrist puncture.",
+            "howPerformed": "A catheter is inserted through the femoral artery and navigated to the hemorrhoidal arteries, which are embolized to cut off blood supply and reduce bleeding.",
+            "procedureType": "Non-invasive",
+            "bodyLocation": "Rectum",
+            "medicalSpecialty": "InterventionalRadiology",
+            "url": "https://mydocsy.com/procedures/hemorrhoidal-artery-embolization-hae"
+        }
     },
     {
         id: 4,
@@ -978,7 +1014,19 @@ export const proceduresArray = [
             "Arthroscopic capsule release", "Total / Partial Knee Replacement",
             "Shoulder replacement", "Spine fusion", "Laminectomy"
         ],
-        irAlternative: "Trans-Arterial Micro-Embolization (TAME)"
+        irAlternative: "Trans-Arterial Micro-Embolization (TAME)",
+        schemaMarkup: {
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "name": "OKUNO Procedure (TAME)",
+            "alternateName": "Trans-Arterial Micro-Embolization for Chronic Pain",
+            "description": "A minimally invasive treatment for chronic joint and tendon pain caused by abnormal blood vessels. Helps reduce inflammation and pain without surgery or downtime.",
+            "howPerformed": "A 0.6mm catheter is inserted through the wrist and used to embolize abnormal vessels that perpetuate inflammation in joints like the knee, shoulder, and spine.",
+            "procedureType": "Non-invasive",
+            "bodyLocation": "Joints and Tendons (Knee, Shoulder, Spine)",
+            "medicalSpecialty": "InterventionalRadiology",
+            "url": "https://mydocsy.com/procedures/okuno-procedure-tam"
+        }
     }
 ];
 

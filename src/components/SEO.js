@@ -9,6 +9,7 @@ const SEO = ({
     image = '',
     type = 'website',
     twitterHandle = '',
+    schemaMarkup = null
 }) => {
     return (
         <Head>
@@ -17,7 +18,14 @@ const SEO = ({
             <meta name="description" content={description} />
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href={url} />
-
+            {schemaMarkup && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(schemaMarkup),
+                    }}
+                />
+            )}
             {/* Open Graph / Facebook */}
             {/* <meta property="og:type" content={type} />
             <meta property="og:title" content={title} />
