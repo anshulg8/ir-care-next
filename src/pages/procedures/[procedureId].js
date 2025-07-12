@@ -16,9 +16,13 @@ import TestimonialSection from '../../components/TestimonialSection';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
 
-const ProcedureDetailPage = () => {
-    const router = useRouter();
-    const { procedureId } = router.query;
+const ProcedureDetailPage = (props) => {
+    // const router = useRouter();
+    // const { procedureId } = router.query;
+
+    const { procedureId: routerSlug } = useRouter();
+    const procedureId = props?.initialProcedureId || routerSlug;
+
 
     const [isMobile, setIsMobile] = useState(false);
     const [showStickyButtons, setShowStickyButtons] = useState(false);
@@ -151,3 +155,25 @@ const ProcedureDetailPage = () => {
 };
 
 export default ProcedureDetailPage;
+
+// Get list of all slugs
+export async function getStaticPaths() {
+    const paths = Object.keys(proceduresMap).map((slug) => ({
+        params: { procedureId: slug },
+    }));
+
+    return {
+        paths,
+        fallback: false, // or 'blocking' if you want on-demand generation
+    };
+}
+
+export async function getStaticProps({ params }) {
+    const procedure = proceduresMap[params.procedureId] || null;
+
+    return {
+        props: {
+            initialProcedureId: params.procedureId,
+        },
+    };
+}
