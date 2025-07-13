@@ -32,10 +32,10 @@ import NanavatiLogo from './assets/logos/nanavati.svg';
 import fortisLogo from './assets/logos/fortis.png';
 import hindujaLogo from './assets/logos/hinduja.svg';
 import jehangirLogo from './assets/logos/jehangir.png';
-import fibroid from './assets/fibroid.png';
-import pain from './assets/pain.png';
-import piles from './assets/piles.png';
-import prostate from './assets/prostate.png';
+import fibroid from './assets/fibroids-169.png';
+import pain from './assets/chronic-pain-169.png';
+import piles from './assets/piles-169.png';
+import prostate from './assets/prostate-169.png';
 import { BASE_URL } from './constants';
 
 export const usps = [

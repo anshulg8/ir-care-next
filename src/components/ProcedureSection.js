@@ -26,16 +26,16 @@ const ProcedureSection = () => {
                                 className="group relative bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100 w-80 flex-shrink-0"
                             >
                                 {/* Decorative ribbon */}
-                                <div className="absolute top-4 right-4 bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+                                <div className="absolute top-4 right-4 bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full z-1">
                                     FDA Approved
                                 </div>
 
                                 {/* Image placeholder */}
-                                <div className="h-48 bg-gradient-to-r from-teal-100 to-teal-50 flex items-center justify-center pt-6">
+                                <div className="relative w-full aspect-[4/3] bg-gradient-to-r from-white-100 to-white-50 flex items-center justify-center">
                                     <img
                                         src={procedure.img.src || procedure.img}
                                         alt={procedure.name}
-                                        className="h-40 w-auto object-contain"
+                                        className="absolute inset-0 w-full h-full object-contain p-4"
                                     />
                                 </div>
 
