@@ -1,6 +1,6 @@
 export const BASE_URL = 'https://mydocsy.com';
 export const PHONE_NUMBER = '+91 80690 61237';
-export const WHATSAPP_LINK = 'https://wa.me/911234567890';
+export const WHATSAPP_LINK = 'https://wa.me/917838807404';
 export const GOOGLE_FORM_ACTION_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScAdQu56kMCUdU5oflF58MIg4x4jsRdKh0-m-E6Clqqvtnyyg/formResponse';
 export const FIELD_NAME_ID = 'entry.1612902465';
 export const FIELD_PHONE_ID = 'entry.321206955';
