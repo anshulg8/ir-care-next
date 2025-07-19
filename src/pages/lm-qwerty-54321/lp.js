@@ -6,8 +6,8 @@ const LPPage = () => {
     return (
         <>
             <Head>
-                <title>Best Birth Control Clinic in Thiruvananthapuram</title>
-                <meta name="description" content="Certified Doctors and Clinics. 100% Legal, Confidential & Safe. Only Patient's Consent Required. Book Free Appointment." />
+                <title>Treat Enlarged Prostate Without Surgery in Mumbai</title>
+                <meta name="description" content="Certified Doctors and Clinics. 100% Legal, Confidential & Safe. Book Free Appointment." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
