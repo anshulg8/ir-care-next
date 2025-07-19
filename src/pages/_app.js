@@ -8,18 +8,23 @@ import { ModalProvider } from '../context/ModalContext';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
+    // Use the layout defined at the page level, if available
+    const getLayout = Component.getLayout || ((page) => (
+        <Layout>
+            <ScrollToTop />
+            <ContactFloatingButton />
+            <ModalProvider>
+                {page}
+            </ModalProvider>
+        </Layout>
+    ));
+
     return (
         <>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Layout>
-                <ScrollToTop />
-                <ContactFloatingButton />
-                <ModalProvider>
-                    <Component {...pageProps} />
-                </ModalProvider>
-            </Layout>
+            {getLayout(<Component {...pageProps} />)}
         </>
     );
 }
