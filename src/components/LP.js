@@ -205,7 +205,7 @@ const LPComponent = () => {
                                 <span className="text-blue-600 text-2xl">💚</span>
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Virtually Painless, No Anesthesia</h3>
-                            <p className="text-gray-600">Unlike surgery, you're fully awake during a PAE since it's painless and doesn't involve putting a thick catheter through your penis opening.</p>
+                            <p className="text-gray-600">Unlike surgery, you&apos;re fully awake during a PAE since it&apos;s painless and doesn&apos;t involve putting a thick catheter through your penis opening.</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -240,10 +240,10 @@ const LPComponent = () => {
                     
                     <div className="space-y-6">
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            PAE is the latest non-surgical treatment for enlarged prostate, highly popular in Europe and USA in the past 10 years. A hair-thin wire is guided from a tiny pinhole in your wrist to the prostate's blood vessels. Tiny particles are then inserted into the targeted vessels to block blood flow, shrinking the prostate over the next few weeks—delivering the same result as surgery but with no cuts, no anesthesia, no complications, and no hospital stay.
+                            PAE is the latest non-surgical treatment for enlarged prostate, highly popular in Europe and USA in the past 10 years. A hair-thin wire is guided from a tiny pinhole in your wrist to the prostate&apos;s blood vessels. Tiny particles are then inserted into the targeted vessels to block blood flow, shrinking the prostate over the next few weeks—delivering the same result as surgery but with no cuts, no anesthesia, no complications, and no hospital stay.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            You're fully awake and home in a few hours — without even taking your pants off.
+                            You&apos;re fully awake and home in a few hours — without even taking your pants off.
                         </p>
                         
                         <div className="bg-blue-50 rounded-xl p-6">
@@ -341,7 +341,7 @@ const LPComponent = () => {
                             </li>
                             <li className="flex items-start">
                                 <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>Already had pelvic surgery and can't undergo another</span>
+                                <span>Already had pelvic surgery and can&apos;t undergo another</span>
                             </li>
                         </ul>
                     </div>
