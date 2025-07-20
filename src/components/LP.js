@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaCheck, FaPhone, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import DrRochan from '../assets/cropped-dr-rochan.webp';
-import logo from '../assets/trans-logo-blue.png';
+import logo from '../assets/trans-logo.png';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -78,13 +78,13 @@ const LPComponent = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center py-4">
                         <div className="flex items-center">
-                            {/* <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-orange-500 rounded-lg mr-3"></div> */}
+                            {/* <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-orange-500 rounded-lg mr-3"></div> */}
                             {/* <span className="text-xl font-bold text-gray-900">Docsy</span> */}
                             <Link href="/" className="flex items-center">
                                 <Image src={logo} alt="Docsy Logo" className="h-20 w-auto" />
                             </Link>
                         </div>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition-colors">
+                        <button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 rounded-full font-medium transition-colors">
                             <FaPhone className="inline mr-2" />
                             Call Now
                         </button>
@@ -134,7 +134,7 @@ const LPComponent = () => {
                             placeholder="Your Name *"
                             value={formData.name}
                             onChange={handleInputChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
                             required
                         />
                         <input
@@ -143,7 +143,7 @@ const LPComponent = () => {
                             placeholder="Mobile Number *"
                             value={formData.mobile}
                             onChange={handleInputChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
                             required
                         />
                         <button
@@ -156,15 +156,15 @@ const LPComponent = () => {
                     </form>
 
                     <div className="flex justify-end">
-                        <div className="w-full bg-blue-100 border-2 border-blue-600 rounded-full px-6 py-3">
-                            <span className="text-blue-800 font-bold">Talk to an Expert for Free</span>
+                        <div className="w-full bg-teal-100 border-2 border-teal-600 rounded-full px-6 py-3">
+                            <span className="text-teal-800 font-bold">Talk to an Expert for Free</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Stats Banner */}
-            <section className="bg-blue-600 py-8">
+            <section className="bg-teal-600 py-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
                         <div>
@@ -194,36 +194,36 @@ const LPComponent = () => {
                     
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="text-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span className="text-blue-600 text-2xl">🏥</span>
+                            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span className="text-teal-600 text-2xl">🏥</span>
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Walk in, walk out the same day</h3>
                             <p className="text-gray-600">PAE takes just a few hours, allowing you to travel & get back to work the next day</p>
                         </div>
                         <div className="text-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span className="text-blue-600 text-2xl">💚</span>
+                            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span className="text-teal-600 text-2xl">💚</span>
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Virtually Painless, No Anesthesia</h3>
                             <p className="text-gray-600">Unlike surgery, you&apos;re fully awake during a PAE since it&apos;s painless and doesn&apos;t involve putting a thick catheter through your penis opening.</p>
                         </div>
                         <div className="text-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span className="text-blue-600 text-2xl">✂️</span>
+                            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span className="text-teal-600 text-2xl">✂️</span>
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">No Cuts, No Scars, No Risk</h3>
                             <p className="text-gray-600">Compared to surgery risks due to the blood loss and cuts (erection and sexual problems, loss of urinary control, urine blockage due to scarring), PAE is safer and risk-free</p>
                         </div>
                         <div className="text-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span className="text-blue-600 text-2xl">💪</span>
+                            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span className="text-teal-600 text-2xl">💪</span>
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Over 90% Technical Success Rate, Long Lasting Relief</h3>
                             <p className="text-gray-600">As effective and durable as surgery, without the pain & complications</p>
                         </div>
                         <div className="text-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span className="text-blue-600 text-2xl">💳</span>
+                            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span className="text-teal-600 text-2xl">💳</span>
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Wide Variety of Payment Options</h3>
                             <p className="text-gray-600">Major insurances covered, cash payment discount available.</p>
@@ -246,9 +246,9 @@ const LPComponent = () => {
                             You&apos;re fully awake and home in a few hours — without even taking your pants off.
                         </p>
                         
-                        <div className="bg-blue-50 rounded-xl p-6">
-                            <p className="text-blue-800">
-                                Want further details on this latest procedure? <span className="font-semibold text-blue-600">Speak to our doctors</span> now - get full clarity with zero obligations.
+                        <div className="bg-teal-50 rounded-xl p-6">
+                            <p className="text-teal-800">
+                                Want further details on this latest procedure? <span className="font-semibold text-teal-600">Speak to our doctors</span> now - get full clarity with zero obligations.
                             </p>
                         </div>
                     </div>
@@ -297,9 +297,9 @@ const LPComponent = () => {
                             </p>
                         </div>
                         
-                        <div className="bg-blue-50 rounded-xl p-6">
-                            <p className="text-blue-800">
-                                Want more clarity on the most effective procedure for your case? <span className="font-semibold text-blue-600">Let our doctors</span> guide you.
+                        <div className="bg-teal-50 rounded-xl p-6">
+                            <p className="text-teal-800">
+                                Want more clarity on the most effective procedure for your case? <span className="font-semibold text-teal-600">Let our doctors</span> guide you.
                             </p>
                         </div>
                     </div>
@@ -320,27 +320,27 @@ const LPComponent = () => {
                         <p className="text-lg text-gray-700 mb-4">PAE may be ideal if you:</p>
                         <ul className="space-y-3 text-gray-700">
                             <li className="flex items-start">
-                                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                                 <span>Have moderate to severe prostate symptoms, and medications have stopped working</span>
                             </li>
                             <li className="flex items-start">
-                                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                                 <span>Have a large prostate (over 80 cc) not suited for surgery</span>
                             </li>
                             <li className="flex items-start">
-                                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                                 <span>Do not want permanent sexual or urinary side effects</span>
                             </li>
                             <li className="flex items-start">
-                                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                                 <span>Need quick recovery within 1–2 days with minimal downtime</span>
                             </li>
                             <li className="flex items-start">
-                                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                                 <span>Have health risks like heart/lung disease, obesity, sleep apnea, are on blood thinners, or allergic to anesthesia</span>
                             </li>
                             <li className="flex items-start">
-                                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                                 <span>Already had pelvic surgery and can&apos;t undergo another</span>
                             </li>
                         </ul>
@@ -351,7 +351,7 @@ const LPComponent = () => {
                             <FaPhone className="inline mr-2" />
                             Book Free Appointment
                         </button>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-colors">
+                        <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-medium transition-colors">
                         Talk to an Expert for Free
                         </button>
                     </div>
@@ -363,26 +363,26 @@ const LPComponent = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                         <div className="flex flex-col items-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                <span className="text-blue-600 font-bold">FDA</span>
+                            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                                <span className="text-teal-600 font-bold">FDA</span>
                             </div>
                             <h3 className="font-bold text-gray-900">USFDA Approved Procedures</h3>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                <span className="text-blue-600 text-2xl">✗</span>
+                            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                                <span className="text-teal-600 text-2xl">✗</span>
                             </div>
                             <h3 className="font-bold text-gray-900">No Stitches</h3>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                <span className="text-blue-600 text-2xl">🔒</span>
+                            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                                <span className="text-teal-600 text-2xl">🔒</span>
                             </div>
                             <h3 className="font-bold text-gray-900">Complete Confidentiality</h3>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                <span className="text-blue-600 text-2xl">☀️</span>
+                            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                                <span className="text-teal-600 text-2xl">☀️</span>
                             </div>
                             <h3 className="font-bold text-gray-900">Day Care Procedure</h3>
                         </div>
@@ -402,7 +402,7 @@ const LPComponent = () => {
                                     <tr>
                                         <th className="px-6 py-4 text-left font-medium text-gray-700">Benefits</th>
                                         <th className="px-6 py-4 text-center font-medium text-gray-700">Others</th>
-                                        <th className="px-6 py-4 text-center font-medium text-blue-600">Docsy</th>
+                                        <th className="px-6 py-4 text-center font-medium text-teal-600">Docsy</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-gray-200">
@@ -412,7 +412,7 @@ const LPComponent = () => {
                                             <span className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full">NO</span>
                                         </td>
                                         <td className="px-6 py-4 text-center">
-                                            <span className="bg-blue-600 text-white px-4 py-2 rounded-full">YES</span>
+                                            <span className="bg-teal-600 text-white px-4 py-2 rounded-full">YES</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -421,7 +421,7 @@ const LPComponent = () => {
                                             <span className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full">NO</span>
                                         </td>
                                         <td className="px-6 py-4 text-center">
-                                            <span className="bg-blue-600 text-white px-4 py-2 rounded-full">YES</span>
+                                            <span className="bg-teal-600 text-white px-4 py-2 rounded-full">YES</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -430,7 +430,7 @@ const LPComponent = () => {
                                             <span className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full">NO</span>
                                         </td>
                                         <td className="px-6 py-4 text-center">
-                                            <span className="bg-blue-600 text-white px-4 py-2 rounded-full">YES</span>
+                                            <span className="bg-teal-600 text-white px-4 py-2 rounded-full">YES</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -439,7 +439,7 @@ const LPComponent = () => {
                                             <span className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full">NO</span>
                                         </td>
                                         <td className="px-6 py-4 text-center">
-                                            <span className="bg-blue-600 text-white px-4 py-2 rounded-full">YES</span>
+                                            <span className="bg-teal-600 text-white px-4 py-2 rounded-full">YES</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -448,7 +448,7 @@ const LPComponent = () => {
                                             <span className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full">SLOW</span>
                                         </td>
                                         <td className="px-6 py-4 text-center">
-                                            <span className="bg-blue-600 text-white px-4 py-2 rounded-full">FAST</span>
+                                            <span className="bg-teal-600 text-white px-4 py-2 rounded-full">FAST</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -457,7 +457,7 @@ const LPComponent = () => {
                                             <span className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full">NO</span>
                                         </td>
                                         <td className="px-6 py-4 text-center">
-                                            <span className="bg-blue-600 text-white px-4 py-2 rounded-full">YES</span>
+                                            <span className="bg-teal-600 text-white px-4 py-2 rounded-full">YES</span>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -470,7 +470,7 @@ const LPComponent = () => {
                             <FaPhone className="inline mr-2" />
                             Book Free Appointment
                         </button>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-colors">
+                        <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-medium transition-colors">
                             Talk to an Expert for Free
                         </button>
                     </div>
@@ -494,15 +494,15 @@ const LPComponent = () => {
                             </p>
                             <div className="space-y-2">
                                 <div className="flex items-center">
-                                    <FaCheck className="text-blue-600 mr-3" />
+                                    <FaCheck className="text-teal-600 mr-3" />
                                     <span className="text-gray-700">30+ Years Experience</span>
                                 </div>
                                 <div className="flex items-center">
-                                    <FaCheck className="text-blue-600 mr-3" />
+                                    <FaCheck className="text-teal-600 mr-3" />
                                     <span className="text-gray-700">Senior Department Heads</span>
                                 </div>
                                 <div className="flex items-center">
-                                    <FaCheck className="text-blue-600 mr-3" />
+                                    <FaCheck className="text-teal-600 mr-3" />
                                     <span className="text-gray-700">International Training & Fellowships</span>
                                 </div>
                             </div>
@@ -640,7 +640,7 @@ const LPComponent = () => {
             </section>
 
             {/* Final CTA Section */}
-            <section className="py-16 bg-blue-900">
+            <section className="py-16 bg-teal-900">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold text-white mb-8">Need Help?</h2>
                     
@@ -649,7 +649,7 @@ const LPComponent = () => {
                             <FaPhone className="inline mr-2" />
                             Book Free Appointment
                         </button>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-colors">
+                        <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-medium transition-colors">
                             Talk to an Expert for Free
                         </button>
                     </div>
