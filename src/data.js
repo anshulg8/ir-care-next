@@ -64,7 +64,7 @@ export const usps = [
         description: [
             "24 × 7 Care Navigator on WhatsApp and phone",
             "End-to-end insurance-claim hand-holding",
-            "Door-to-door pickup & drop + complimentary lounge meal & barista coffee/tea for family and patient",
+            "Round Trip Cab Services, Meals & High Tea for Family included",
         ],
         iconPath:
             "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
@@ -73,24 +73,22 @@ export const usps = [
 
 export const technologies = [
     {
-        title: "JCI-Accredited Facilities",
-        iconPath:
-            "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
+        title: "European Equipment",
+        iconPath: "M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7H3zm5 3h2v4H8v-4zm6 0h2v4h-2v-4z"
     },
     {
-        title: "Siemens/Philips Imaging",
-        iconPath:
-            "M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z",
+        title: "Modern OTs",
+        iconPath: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 13h-2v-2H9v-2h2V9h2v2h2v2h-2v2z"
     },
     {
-        title: "Infection-Controlled OTs",
+        title: "Senior Support Staff",
         iconPath:
-            "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z",
+            "M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z", // person avatar icon
     },
     {
-        title: "Verified Support Staff",
+        title: "5 Star Hospitality",
         iconPath:
-            "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
+            "M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z", // star icon
     },
 ];
 

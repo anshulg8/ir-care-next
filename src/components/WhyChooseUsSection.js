@@ -108,7 +108,7 @@ const WhyChooseUsSection = () => {
                 {/* Premium Centers with Technologies */}
                 <div className="bg-gray-50 p-8 rounded-xl border border-gray-200">
                     <h3 className="text-2xl font-bold text-center text-gray-900 mb-6">
-                        <span className="text-teal-600">Premium Partner Centers</span> with Vetted Technology
+                        <span className="text-teal-600">Premium Partner Centers</span> with Latest Technology
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
                         {technologies.map((tech, index) => (
@@ -132,14 +132,14 @@ const WhyChooseUsSection = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="mt-8 text-center">
+                    {/* <div className="mt-8 text-center">
                         <Link
                             href="/centres"
                             className="inline-block text-teal-600 text-lg font-semibold hover:underline"
                         >
                             Explore all IR partner centers &rarr;
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
