@@ -24,7 +24,7 @@ export default function HeroSection({ heading, bulletPoints }) {
               {heading}
             </h2>
             <ul className="text-sm list-disc pl-4 leading-tight space-y-1">
-            {bulletPoints.map((item, index) => (
+              {bulletPoints.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
               {/* <li>Certified Doctors and Clinics</li>

@@ -11,8 +11,12 @@ import ProcedureInfoSection from '../../components/lp/ProcedureInfoSection';
 import VideoSection from '../../components/lp/VideoSection';
 import FaqSection from '../../components/lp/FaqSection';
 import StickyCTAButtons from '@/components/lp/StickyCTAButtons';
+import prostateImage from '../../assets/prostate-169.png';
+import { proceduresArray } from '@/data';
+import SEO from '@/components/SEO';
+import { BASE_URL } from '@/constants';
 
-const heading = 'Best Birth Control Clinic in Mumbai';
+const heading = 'Best Prostate Control Clinic in Mumbai';
 const bulletPoints = [
   'Certified Doctors and Clinics',
   '100% Legal, Confidential & Safe',
@@ -72,8 +76,6 @@ const comparisonRows = [
 
 const title = "What is PAE?"
 const description = "Prostatic Artery Embolization (PAE) is a minimally invasive procedure used to treat enlarged prostate or BPH. It involves blocking the arteries supplying blood to the prostate, causing it to shrink over time. This technique avoids the need for traditional surgery, has minimal downtime, and preserves sexual function. It’s a safe, outpatient alternative for men looking for long-term relief without invasive intervention."
-import prostateImage from '../../assets/prostate-169.png';
-import { proceduresArray } from '@/data';
 
 const procedureInfoSections = [
   {
@@ -111,6 +113,12 @@ const videoLink = 'https://www.youtube.com/embed/YH3CYQcihk0'
 export default function Page() {
   return (
     <>
+      <SEO
+        title={`${title} | Docsy`}
+        description={`${description} | Docsy`}
+        url={`${BASE_URL || ''}/m/landing`}
+      // schemaMarkup={procedure.schemaMarkup}
+      />
       <HeroSection heading={heading} bulletPoints={bulletPoints} />
       <CtaBlock heading="Book a Free Consultation" />
       <TrustStrip />

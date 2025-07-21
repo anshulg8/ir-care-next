@@ -1,13 +1,13 @@
 import { featuredDoctors } from '@/data';
 import Image from 'next/image';
 
-const doctors = featuredDoctors.slice(0, 4).map((doc) => ({
-    name: doc.name,
-    experience: `${doc.experience} Years of Experience`,
-    image: doc.image,
-    hospitals: doc.hospitalIcons,
-  }));
-  
+const doctors = featuredDoctors.slice(0, 2).map((doc) => ({
+  name: doc.name,
+  experience: `${doc.experience} Years of Experience`,
+  image: doc.image,
+  hospitals: doc.hospitalIcons,
+}));
+
 export default function OurDoctors() {
   return (
     <section className="bg-white px-4 py-6">

@@ -13,12 +13,13 @@ import {
 import StatsBanner from './StatsBanner';
 import LeadDr from '../assets/leadform-doc.png';
 
-const GoogleFormSubmit = ({ procedure }) => {
+const GoogleFormSubmit = ({ procedure, onClose }) => {
     const [formData, setFormData] = useState({ name: '', phone: '', city: '', referralCode: '' });
     const [hasReferral, setHasReferral] = useState(false);
     const [status, setStatus] = useState('');
     const [nearbyCities, setNearbyCities] = useState([]);
     const [isLoadingCities, setIsLoadingCities] = useState(false);
+    const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
     useEffect(() => {
         const fetchNearbyCities = async () => {
@@ -98,6 +99,15 @@ const GoogleFormSubmit = ({ procedure }) => {
         );
     };
 
+    // useEffect(() => {
+    //     // Lock scroll when modal mounts
+    //     document.body.style.overflow = "hidden";
+    //     return () => {
+    //         // Re-enable scroll when modal unmounts
+    //         document.body.style.overflow = "auto";
+    //     };
+    // }, []);
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
@@ -127,18 +137,17 @@ const GoogleFormSubmit = ({ procedure }) => {
             method: 'POST',
             mode: 'no-cors',
             body: formBody,
-        })
-            .then(() => {
-                setStatus('Appointment request submitted!');
-                setFormData({ name: '', phone: '', city: '', referralCode: '' });
-            })
-            .catch(() => setStatus('Submission failed. Try again.'));
+        });
 
+        setFormData({ name: '', phone: '', city: '', referralCode: '' });
+
+        // Show the success popup
+        setShowSuccessPopup(true);
     };
 
     return (
         <>
-            <div className="relative max-w-md mx-auto">
+            <div className="relative w-[80vw] max-w-lg mx-auto max-h-[80vh] overflow-y-auto">
 
                 <div className="absolute top-10 left-4 z-10 text-gray-800">
                     <p className="text-teal-700 text-lg font-semibold leading-tight">Book Free Consult</p>
@@ -271,6 +280,29 @@ const GoogleFormSubmit = ({ procedure }) => {
                     <StatsBanner />
                     {status && <p className="text-sm text-teal-700">{status}</p>}
                 </form>
+
+                {/* Success modal with blurred transparent background */}
+                {showSuccessPopup && (
+                    <div className="fixed inset-0 flex items-center justify-center bg-white/30 backdrop-blur-sm z-40">
+                        <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-sm text-center">
+                            <p className="text-xl font-semibold text-green-700 mb-4">
+                                Appointment requested successfully
+                            </p>
+                            <p className="text-gray-700 mb-6">
+                                Care Navigator from the Docsy team will reach out to you soon.
+                            </p>
+                            <button
+                                onClick={() => {
+                                    setShowSuccessPopup(false); // Close success modal
+                                    onClose(); // Close parent modal
+                                }}
+                                className="bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                )}
             </div>
         </>
     );

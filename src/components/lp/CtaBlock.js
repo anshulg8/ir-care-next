@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FIELD_CITY_ID, FIELD_DISEASE_ID, FIELD_NAME_ID, FIELD_PHONE_ID, GOOGLE_FORM_ACTION_URL, PHONE_NUMBER, YOUR_REFERRAL_CODE_FIELD_ID } from "@/constants";
+import ContactFloatingButton from '../ContactFloatingButton';
 
 export default function CtaBlock({ heading }) {
   const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ export default function CtaBlock({ heading }) {
     procedure: 'PAE',
     referralCode: ''
   });
+
+  const [forceOpen, setForceOpen] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,11 +42,12 @@ export default function CtaBlock({ heading }) {
   return (
     <section className="bg-white px-4 py-8 flex flex-col items-center">
       {/* CTA Button */}
-      <a href={`tel:${PHONE_NUMBER}`} className="block w-full text-center">
-        <button className="w-[90%] bg-[#ff8300] text-white font-semibold py-3 rounded-full text-center text-base shadow-md mb-6">
-          Call an Expert for Free
-        </button>
-      </a>
+      <button
+        onClick={() => setForceOpen(true)}
+        className="w-[90%] bg-[#ff8300] text-white font-semibold py-3 rounded-full text-center text-base shadow-md mb-6"
+      >
+        Call an Expert for Free
+      </button>
 
       {/* Title */}
       <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">{heading}</h3>
@@ -76,6 +80,12 @@ export default function CtaBlock({ heading }) {
           Submit & Talk to Expert
         </button>
       </form>
+
+      {/* Modal component rendered based on forceOpen */}
+      <ContactFloatingButton
+        forceOpen={forceOpen}
+        onClose={() => setForceOpen(false)}
+      />
     </section>
   );
 }

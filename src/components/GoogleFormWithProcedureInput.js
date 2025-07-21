@@ -10,14 +10,12 @@ import {
     PHONE_NUMBER,
     YOUR_REFERRAL_CODE_FIELD_ID,
 } from '../constants';
-// import { proceduresArray } from '../data';
 import StatsBanner from './StatsBanner';
 import LeadDr from '../assets/leadform-doc.png';
 
-// const procedures = proceduresArray.map(proc => proc.generalName);
 const procedures = ["Lumbar radiculopathy (“sciatica”)", "cervical radiculopathy", "chronic low-back pain", "facet-joint arthritis", "sacro-iliac (SIJ) dysfunction", "vertebral compression fracture (osteoporotic / metastatic)", "spinal metastasis pain", "complex regional pain syndrome (CRPS)", "sympathetically-maintained pain", "osteoporosis spine pain", "degenerative disc disease", "herniated disc", "hip/knee/shoulder osteoarthritis", "End-stage renal disease (ESRD)", "chronic kidney disease (CKD) stage 5", "failing AV fistula", "thrombosed AV graft", "central-venous stenosis or occlusion", "superior vena cava (SVC) syndrome", "catheter-dependent haemodialysis", "IVC filter retrieval", "dialysis catheter infection", "hemodialysis access dysfunction", "Symptomatic uterine fibroids (leiomyoma)", "adenomyosis", "post-partum haemorrhage (PPH)", "placenta accreta / increta / percreta", "pelvic congestion syndrome", "ovarian-vein reflux", "varicocele", "male infertility due to varicocele", "benign prostatic hyperplasia (BPH)", "enlarged prostate", "post-partum uterine bleeding", "Hepatocellular carcinoma (HCC)", "cholangiocarcinoma (unresectable)", "neuro-endocrine liver metastases", "colorectal liver metastasis", "renal cell carcinoma mets", "lung oligometastasis", "bone metastasis (osteolytic)", "osteoid osteoma", "primary renal tumour <4 cm", "small peripheral lung tumour", "soft-tissue sarcoma mets", "juv. nasopharyngeal angiofibroma (pre-op)", "meningioma devascularisation", "portal-vein embolisation for FLR hypertrophy", "Obstructive jaundice", "malignant biliary stricture (pancreatic / hilar)", "benign post-transplant biliary stricture", "primary sclerosing cholangitis stricture", "cholangitis", "hydatid liver cyst", "symptomatic simple hepatic cyst", "liver abscess", "hydronephrosis secondary to ureteric obstruction (malignant / benign)", "pyonephrosis", "peritoneal dialysis catheter malfunction", "Unruptured / ruptured intracranial aneurysm", "brain AVM", "dural AV fistula", "spinal AVM", "acute ischemic stroke (large-vessel occlusion)", "MCA thrombosis", "basilar artery thrombosis", "intracranial atherosclerotic disease", "carotid artery stenosis", "vertebral artery stenosis", "carotid-cavernous fistula", "Abdominal aortic aneurysm (AAA)", "thoracic aortic aneurysm (TAA)", "type-B aortic dissection", "penetrating aortic ulcer", "post-EVAR/TEVAR endoleak (type II/III)", "critical limb ischaemia", "superficial femoral artery (SFA) occlusion", "iliac artery occlusive disease", "popliteal artery stenosis", "diabetic foot with PAD", "subclavian steal syndrome", "mesenteric ischaemia (SMA stenosis)", "Oesophageal / gastric variceal bleeding", "refractory ascites", "hepatic encephalopathy (portal-hypertension related)", "Budd–Chiari syndrome", "portal-vein thrombosis", "portal cavernoma", "massive / sub-massive pulmonary embolism", "right-heart-strain PE", "thoracic-duct leak (chylothorax)", "chylous ascites", "lymphatic malformation", "central lymphatic flow disorder", "Piles (Hemorrhoids)"]
 
-const GoogleFormWithProcedureInput = () => {
+const GoogleFormWithProcedureInput = ({ onClose }) => {
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -32,6 +30,7 @@ const GoogleFormWithProcedureInput = () => {
     const [showDropdown, setShowDropdown] = useState(false);
     const [nearbyCities, setNearbyCities] = useState([]);
     const [isLoadingCities, setIsLoadingCities] = useState(false);
+    const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
     // Fetch nearby cities using IP + Overpass API
     useEffect(() => {
@@ -113,6 +112,15 @@ const GoogleFormWithProcedureInput = () => {
         );
     };
 
+    // useEffect(() => {
+    //     // Lock scroll when modal mounts
+    //     document.body.style.overflow = "hidden";
+    //     return () => {
+    //         // Re-enable scroll when modal unmounts
+    //         document.body.style.overflow = "auto";
+    //     };
+    // }, []);
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
@@ -156,17 +164,19 @@ const GoogleFormWithProcedureInput = () => {
             method: 'POST',
             mode: 'no-cors',
             body: formBody,
-        })
-            .then(() => {
-                setStatus('Appointment request submitted!')
-                setFormData({ name: '', phone: '', city: '', referralCode: '', procedure: '' });
-            })
-            .catch(() => setStatus('Submission failed. Try again.'));
+        });
+
+        setFormData({ name: '', phone: '', city: '', referralCode: '', procedure: '' });
+
+        // Show the success popup
+        setShowSuccessPopup(true);
     };
 
     return (
         <>
+            {/* <div className="relative w-[80vw] max-w-lg mx-auto max-h-[80vh] overflow-y-auto"> */}
             <div className="relative max-w-md mx-auto">
+
                 <div className="absolute top-10 left-4 z-10 text-gray-800">
                     <p className="text-teal-700 text-lg font-semibold leading-tight">Book Free Consult</p>
                     {/* <p className="text-lg font-semibold leading-tight">Appointment</p> */}
@@ -329,6 +339,29 @@ const GoogleFormWithProcedureInput = () => {
                     <StatsBanner />
                     {status && <p className="text-sm text-teal-700">{status}</p>}
                 </form>
+
+                {/* Success modal with blurred transparent background */}
+                {showSuccessPopup && (
+                    <div className="fixed inset-0 flex items-center justify-center bg-white/30 backdrop-blur-sm z-40">
+                        <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-sm text-center">
+                            <p className="text-xl font-semibold text-green-700 mb-4">
+                                Appointment requested successfully
+                            </p>
+                            <p className="text-gray-700 mb-6">
+                                Care Navigator from the Docsy team will reach out to you soon.
+                            </p>
+                            <button
+                                onClick={() => {
+                                    setShowSuccessPopup(false); // Close success modal
+                                    onClose(); // Close parent modal
+                                }}
+                                className="bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                )}
             </div>
         </>
     );
