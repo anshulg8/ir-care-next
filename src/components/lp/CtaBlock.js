@@ -46,7 +46,7 @@ export default function CtaBlock({ heading }) {
         onClick={() => setForceOpen(true)}
         className="w-[90%] bg-[#ff8300] text-white font-semibold py-3 rounded-full text-center text-base shadow-md mb-6"
       >
-        Call an Expert for Free
+        Speak to a Urologist for Free
       </button>
 
       {/* Title */}
@@ -77,7 +77,7 @@ export default function CtaBlock({ heading }) {
           type="submit"
           className="w-[90%] bg-[#ff8300] text-white font-semibold py-3 rounded-full text-base mx-auto block shadow-md"
         >
-          Submit & Talk to Expert
+          Submit & Speak to a Urologist for Free
         </button>
       </form>
 

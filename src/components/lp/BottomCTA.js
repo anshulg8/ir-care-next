@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import ContactFloatingButton from '../ContactFloatingButton';
-import { WHATSAPP_LINK } from '@/constants';
 
 export default function BottomCTA() {
   const [forceOpen, setForceOpen] = useState(false);
@@ -11,7 +10,7 @@ export default function BottomCTA() {
         onClick={() => setForceOpen(true)}
         className="w-full bg-[#ff8300] text-white font-semibold py-3 rounded-full text-center text-base shadow-md"
       >
-        Talk to an Expert for Free
+        Speak to a Urologist for Free
       </button>
 
       <button

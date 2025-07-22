@@ -28,7 +28,7 @@ export default function StickyCTAButtons() {
           onClick={() => setForceOpen(true)}
           className="flex-1 bg-[#ff8300] text-white text-sm font-semibold py-3 rounded-full"
         >
-          Talk to an Expert
+          Speak to a Urologist
         </button>
 
         {/* Book Free Appointment */}
