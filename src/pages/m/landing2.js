@@ -18,7 +18,7 @@ import { BASE_URL } from '@/constants';
 
 const heading = 'Skip Prostate Surgery — Choose Painless PAE Today';
 const bulletPoints = [
-    'Certified Top Doctors (20+ years experience), USFDA Approved',
+    'Certified Top Doctors (20+ years experience)',
     'No Cuts, No Catheter, No Hospital Stay',
     '2-Hour Procedure with Same-Day Discharge'
 ]
