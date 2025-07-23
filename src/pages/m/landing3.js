@@ -16,7 +16,7 @@ import { proceduresArray } from '@/data';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
 
-const heading = 'Skip Prostate Surgery — Choose Painless PAE Today';
+const heading = 'Fast BPH Relief — No Hospital Stay';
 const bulletPoints = [
     'Certified Doctors & USFDA Approved',
     'No Cuts, No Catheter, No Hospital Stay',
