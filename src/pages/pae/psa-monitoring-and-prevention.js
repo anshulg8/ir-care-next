@@ -90,12 +90,13 @@ const procedureInfoSections = [
             'Meet a Vascular Specialist for Advice',
             'We Recommend the Right Next Step',
             'No Unnecessary Scans or Treatment',
+            'Expert-led guidance and care coordination if cancer is detected',
         ],
     },
     {
         title: 'If BPH, Here’s What Happens in PAE',
         points: [
-            'Confirmed BPH? Our Superspecialists guide you between choosing TURP surgery or the new, advanced PAE — a 2-hour, painless, non-surgical procedure that shrinks the prostate by inserting a pin-hole camera through your wrist. No taking pants off, no cuts, no penile catheter placement, and you go home same day.',
+            'Our Superspecialists guide you between choosing TURP surgery or the new, advanced PAE — a 2-hour, painless, non-surgical procedure that shrinks the prostate by inserting a pin-hole camera through your wrist.',
             'No General Anaesthesia Needed',
             'Stay Awake, Talk During Procedure',
             'Walk Out Same Day, No Admission'
@@ -107,7 +108,6 @@ const procedureInfoSections = [
             'We Track Progress With Free Follow-Ups at 1 month, 3 months and 6 months',
             'PAE Patients Improve Within Weeks',
             'Confidently Resume Daily Life',
-            'Expert-led guidance and care coordination if cancer is detected',
         ],
     },
 ];
