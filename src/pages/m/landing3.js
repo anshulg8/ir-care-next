@@ -46,10 +46,10 @@ const benefits = [
     {
         title: 'Why Choose Docsy?',
         points: [
-            '20+ Yrs Experienced Specialists',
-            'Only Senior Vascular Specialists',
-            'Free Pickup & Drop Provided',
-            'Nutritious Meals for Family'
+            'Only Senior Vascular Specialists (20+ yrs exp)',
+            '6 World-Class Centres with Latest US Technology',
+            'End-to-End Insurance Claims Processing Handholding',
+            'Free Pickup & Drop, Meals For Family',
         ],
         bg: '#faf8fd',
     },
@@ -83,7 +83,7 @@ const comparisonRows = [
 ];
 
 const title = "Go Home Same Day. No Recovery Time"
-const description = "PAE is a modern, image-guided alternative to TURP and laser prostate surgery. Performed by a Vascular Specialist, it takes ~2 hours and avoids cuts, catheter, or long recovery. Patients walk out the same day."
+const description = "Prostate Artery Embolization(PAE) is a modern, image-guided alternative to TURP and laser prostate surgery. Performed by a Vascular Specialist, it takes ~2 hours and avoids cuts, catheter, or long recovery. Patients walk out the same day."
 
 const procedureInfoSections = [
     {
