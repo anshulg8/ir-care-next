@@ -46,10 +46,10 @@ const benefits = [
     {
         title: 'Why Choose Docsy?',
         points: [
-            'Free Pickup & Drop Provided',
-            'Nutritious Meals for Family',
             '20+ Yrs Experienced Specialists',
-            'Only Senior Vascular Specialists'
+            'Only Senior Vascular Specialists',
+            'Free Pickup & Drop Provided',
+            'Nutritious Meals for Family'
         ],
         bg: '#faf8fd',
     },
