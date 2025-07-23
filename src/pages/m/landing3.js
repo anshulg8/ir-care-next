@@ -109,7 +109,7 @@ const procedureInfoSections = [
         title: 'What to Expect After PAE?',
         points: [
             'Home same day—no admission',
-            'Normal activity in 1–2 days',
+            'Normal activity in 1–2 days, Regular workouts in a Week',
             'No catheter or wound dressing',
             'Improvement within 2–4 weeks'
         ],

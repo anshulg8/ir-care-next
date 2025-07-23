@@ -108,7 +108,7 @@ const procedureInfoSections = [
         title: 'What to Expect After PAE?',
         points: [
             'Discharge within 3–4 hours',
-            'Resume work in 1–2 days',
+            'Resume work in 1–2 days, Back to Gym in a Week',
             'No catheter or bandage needed',
             'Gradual improvement over 2–4 weeks'
         ],
