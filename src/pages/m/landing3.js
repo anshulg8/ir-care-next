@@ -28,7 +28,7 @@ const benefits = [
         title: 'Quick Recovery Without Surgery',
         points: [
             '2-Hour PAE, Back home the same day',
-            'No Anaesthesia- Related Downtime',
+            'No sedation or general anesthesia needed',
             'Resume Normal Routine in 1–2 Days',
         ],
         bg: '#fff9f2',
