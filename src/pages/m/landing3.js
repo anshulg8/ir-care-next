@@ -18,37 +18,38 @@ import { BASE_URL } from '@/constants';
 
 const heading = 'Skip Prostate Surgery — Choose Painless PAE Today';
 const bulletPoints = [
-    'Certified Top Doctors (20+ years experience), USFDA Approved',
+    'Certified Doctors & USFDA Approved',
     'No Cuts, No Catheter, No Hospital Stay',
-    '2-Hour Procedure with Same-Day Discharge'
+    'Free Cab Pickup & Drop, Meals for Family',
 ]
 
 const benefits = [
     {
-        title: 'Benefits of Scar-Free PAE',
+        title: 'Quick Recovery Without Surgery',
         points: [
-            '2-Hour Procedure, Home Same Day',
-            'No Wound, No General Anaesthesia, No Penile Catheter',
-            'Most Men With BPH Are Eligible',
+            '2-Hour PAE, Back home the same day',
+            'No Anaesthesia- Related Downtime',
+            'Resume Normal Routine in 1–2 Days',
         ],
         bg: '#fff9f2',
     },
     {
-        title: "Why Avoid TURP or Laser Surgery?",
+        title: "TURP Slows Recovery, Adds Risk",
         points: [
-            '5% risk of permanent urine leakage',
-            'Stricture (6% risk) can be life threatening, needs emergency surgery',
-            '7% chance of permanent erectile dysfunction (sexual erection issue) after TURP',
+            'TURP Slows Recovery, Adds Risk',
+            '5% face risk of lifelong urine incontinence ',
+            '6% develop stricture needing emergency surgery',
+            '7% risk permanent sexual erection issues (ED)'
         ],
         bg: '#f5f8fb',
     },
     {
         title: 'Why Choose Docsy?',
         points: [
-            'Only Senior Vascular Specialists (20+ yrs exp)',
-            '6 World-Class Centres with Latest US Technology',
-            'End-to-End Insurance Claims Processing Handholding',
-            'Free Pickup & Drop, Meals For Family',
+            'Free Pickup & Drop Provided',
+            'Nutritious Meals for Family',
+            '20+ Yrs Experienced Specialists',
+            'Only Senior Vascular Specialists'
         ],
         bg: '#faf8fd',
     },
@@ -66,59 +67,59 @@ const benefits = [
 ];
 
 const features = [
-    { icon: '✅', label: '17+ Yrs Avg. Doctor Experience' },
-    { icon: '✂️', label: '100% Surgery-Free BPH Relief' },
-    { icon: '🔒', label: 'No Recovery Delay' },
-    { icon: '🏥', label: '6 NABH-Certified Locations' },
+    { icon: '✅', label: 'Same - Day Discharge Process' },
+    { icon: '✂️', label: 'USFDA-Approved Non-Surgical Care' },
+    { icon: '🔒', label: 'Fast, Safe Recovery Protocol' },
+    { icon: '🏥', label: 'Performed Only by Specialists' },
 ];
 
 const comparisonRows = [
-    ['Needs General Anaesthesia', 'Yes', 'No'],
-    ['Fully awake in PAE(only Local Anaesthesia)', 'No', 'Yes'],
-    ['Painful Penile Catheter 3 - 5 days post surgery', 'Yes', 'No'],
-    ['Need to take pants off', 'Yes', 'No'],
+    ['Long Hospital Stay', 'Yes', 'No'],
+    ['Return Same Day', 'No', 'Yes'],
+    ['Painful Catheter Use', 'Yes', 'No'],
+    ['Recovery Can Disrupt Work', 'Yes', 'No'],
     ['Sexual dysfunction possibility', 'Yes', 'No'],
-    ['Risk of Nerve Damage', 'Yes', 'No'],
+    ['Minimizes Life Disruption', 'No', 'Yes'],
 ];
 
-const title = "No Surgery. Just Relief. Walk Out Free"
-const description = "PAE is a USFDA-approved, superior, non-surgical alternative to TURP (including bipolar, channel & saline), GreenLight laser surgery and Rezum steam therapy. It shrinks the prostate via a pinhole procedure done by a vascular specialist—no cutting, no hospital stay, no catheter. Unlike TURP or it's other alternatives, PAE avoids the risk of permanent Erectile Dysfunction, Incontinence, urine leakage or even potentially life-threatening Stricture complication."
+const title = "Go Home Same Day. No Recovery Time"
+const description = "PAE is a modern, image-guided alternative to TURP and laser prostate surgery. Performed by a Vascular Specialist, it takes ~2 hours and avoids cuts, catheter, or long recovery. Patients walk out the same day."
 
 const procedureInfoSections = [
     {
         title: 'How to Prepare for Your PAE Procedure',
         points: [
-            'Blood and urine test before PAE',
-            'MRI or Ultrasound to confirm',
-            '6-hr fasting before your procedure',
-            'Tell us all your medications',
-            'Minimal paperwork, zero admission'
+            'Blood and urine test required',
+            'MRI/Ultrasound for confirmation',
+            'No food 6 hours before PAE',
+            'Share all ongoing medications',
+            'Minimal prep, zero overnight stay(Unless Insurance Mandated (Daycare Coverage Not Provided)',
         ],
     },
     {
         title: 'What Happens During the PAE Procedure',
         points: [
-            'Vascular Specialist inserts a thin tube via wrist or groin to block prostate arteries. Procedure is painless, lasts 30–60 minutes, and uses no cuts or general anaesthesia.',
-            'Only local anaesthesia used',
+            'Your Vascular Specialist inserts a microcatheter through the wrist/groin to block prostate arteries. No surgery, no pain, and you stay awake. Entire process lasts around 2 hours.',
+            'Local anaesthesia, not general',
             'No pain or surgical incision',
-            'Stay awake and relaxed throughout'
+            'You\'re awake the whole time',
         ],
     },
     {
         title: 'What to Expect After PAE?',
         points: [
-            'Discharge within 3–4 hours',
-            'Resume work in 1–2 days',
-            'No catheter or bandage needed',
-            'Gradual improvement over 2–4 weeks'
+            'Home same day—no admission',
+            'Normal activity in 1–2 days',
+            'No catheter or wound dressing',
+            'Improvement within 2–4 weeks'
         ],
     },
 ];
 
-const videoTitle = 'Real Stories of Painless PAE – Watch Now'
+const videoTitle = 'See How PSA + PAE Transformed Lives'
 const videoLink = 'https://www.youtube.com/embed/YH3CYQcihk0'
 
-export default function Page2() {
+export default function Page3() {
     return (
         <>
             <SEO
