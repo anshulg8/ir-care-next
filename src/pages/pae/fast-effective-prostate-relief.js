@@ -11,14 +11,14 @@ import ProcedureInfoSection from '../../components/lp/ProcedureInfoSection';
 import VideoSection from '../../components/lp/VideoSection';
 import FaqSection from '../../components/lp/FaqSection';
 import StickyCTAButtons from '@/components/lp/StickyCTAButtons';
-import prostateImage from '../../assets/prostate-169.png';
+import prostateImage from '@/assets/prostate-169.png';
 import { proceduresArray } from '@/data';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
 
 const heading = 'Fast BPH Relief — No Hospital Stay';
 const bulletPoints = [
-    'Certified Doctors & USFDA Approved',
+    'Certified Senior Superspecialists, US - FDA & EU Approved',
     'No Cuts, No Catheter, No Hospital Stay',
     'Free Cab Pickup & Drop, Meals for Family',
 ]

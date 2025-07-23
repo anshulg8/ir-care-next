@@ -11,7 +11,7 @@ import ProcedureInfoSection from '../../components/lp/ProcedureInfoSection';
 import VideoSection from '../../components/lp/VideoSection';
 import FaqSection from '../../components/lp/FaqSection';
 import StickyCTAButtons from '@/components/lp/StickyCTAButtons';
-import prostateImage from '../../assets/prostate-169.png';
+import prostateImage from '@/assets/prostate-169.png';
 import { proceduresArray } from '@/data';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
