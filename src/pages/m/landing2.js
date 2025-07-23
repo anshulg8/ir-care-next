@@ -16,98 +16,106 @@ import { proceduresArray } from '@/data';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
 
-const heading = 'Skip TURP Surgery — Discover Safer PAE Option';
+const heading = 'Skip Prostate Surgery — Choose Painless PAE Today';
 const bulletPoints = [
-    'Certified Doctors & USFDA Approved',
+    'Certified Top Doctors (20+ years experience), USFDA Approved',
     'No Cuts, No Catheter, No Hospital Stay',
-    'Only Patient Consent Required*'
+    '2-Hour Procedure with Same-Day Discharge'
 ]
 
 const benefits = [
     {
-        title: 'Benefits of Prostate Embolization',
+        title: 'Benefits of Scar-Free PAE',
         points: [
-            '20 Min Procedure, Discharge in 3 Hrs',
-            'No Wound, No General Anaesthesia',
-            'All Men with BPH Are Eligible',
+            '2-Hour Procedure, Home Same Day',
+            'No Wound, No General Anaesthesia, No Penile Catheter',
+            'Most Men With BPH Are Eligible',
         ],
         bg: '#fff9f2',
     },
     {
-        title: "Why Should You Avoid Traditional TURP Surgery?",
+        title: "Why Avoid TURP or Laser Surgery?",
         points: [
-            'Bleeding, Incontinence, or Stricture',
-            'Side Effects: Catheter, Anaesthesia Risks',
-            'Possible Sexual Complications',
+            '5% risk of permanent urine leakage',
+            'Stricture (6% risk) can be life threatening, needs emergency surgery',
+            '7% chance of permanent erectile dysfunction (sexual erection issue) after TURP',
         ],
         bg: '#f5f8fb',
     },
     {
         title: 'Why Choose Docsy?',
         points: [
-            'Free Pickup & Drop',
-            'NABH-Accredited PAE Clinics',
-            'No Cost EMI on PAE',
-            'Performed by Vascular Specialists',
+            'Only Senior Vascular Specialists (20+ yrs exp)',
+            '6 World-Class Centres with Latest US Technology',
+            'End-to-End Insurance Claims Processing Handholding',
+            'Free Pickup & Drop, Meals For Family',
         ],
         bg: '#faf8fd',
     },
     {
-        title: 'When Is PAE Eligible as a Medical Procedure?',
-        points: ['Requires PAE Expert\'s Approval', 'Must Have Symptomatic BPH'],
+        title: 'Who is a Good Candidate for PAE?',
+        points: [
+            'Patients with multiple health conditions (comorbidities)',
+            'Those who cannot undergo general anesthesia',
+            'Older adults with high surgical risk',
+            'Men who prefer to avoid surgery',
+            'Those concerned about sexual side effects',
+        ],
         bg: '#fff9f2',
     },
 ];
 
 const features = [
-    { icon: '✅', label: 'USFDA Approved Treatment' },
-    { icon: '✂️', label: 'No Stitches or Hospital Stay' },
-    { icon: '🔒', label: '100% Confidential & Private' },
-    { icon: '🏥', label: 'Daycare Procedure – Go Home the same day' },
+    { icon: '✅', label: '17+ Yrs Avg. Doctor Experience' },
+    { icon: '✂️', label: '100% Surgery-Free BPH Relief' },
+    { icon: '🔒', label: 'No Recovery Delay' },
+    { icon: '🏥', label: '6 NABH-Certified Locations' },
 ];
 
 const comparisonRows = [
-    ['Lifetime Follow-up Consultations', 'No', 'Yes'],
-    ['24×7 Dedicated Care Buddy', 'No', 'Yes'],
-    ['No Cost EMI', 'No', 'Yes'],
-    ['Pickup & Drop Service', 'No', 'Yes'],
-    ['Discharge Process', 'Slow', 'Fast'],
-    ['Minimum Paperwork', 'No', 'Yes'],
+    ['Needs General Anaesthesia', 'Yes', 'No'],
+    ['Fully awake in PAE(only Local Anaesthesia)', 'No', 'Yes'],
+    ['Painful Penile Catheter 3 - 5 days post surgery', 'Yes', 'No'],
+    ['Need to take pants off', 'Yes', 'No'],
+    ['Sexual dysfunction possibility', 'Yes', 'No'],
+    ['Risk of Nerve Damage', 'Yes', 'No'],
 ];
 
-const title = "What is PAE for Prostate?"
-const description = "Prostatic Artery Embolization (PAE) is a modern, minimally invasive procedure used to treat Benign Prostatic Hyperplasia (BPH). Unlike TURP, PAE requires no hospital stay, stitches, or general anesthesia. It’s performed by an interventional radiologist who blocks blood flow to the prostate’s enlarged area, shrinking it naturally. It is USFDA-approved and recognized by the European Urology Association. PAE is outpatient, safe for elderly patients, and does not affect sexual function — a common concern with surgical options."
+const title = "No Surgery. Just Relief. Walk Out Free"
+const description = "PAE is a USFDA-approved, superior, non-surgical alternative to TURP (including bipolar, channel & saline), GreenLight laser surgery and Rezum steam therapy. It shrinks the prostate via a pinhole procedure done by a vascular specialist—no cutting, no hospital stay, no catheter. Unlike TURP or it's other alternatives, PAE avoids the risk of permanent Erectile Dysfunction, Incontinence, urine leakage or even potentially life-threatening Stricture complication."
 
 const procedureInfoSections = [
     {
-        title: 'How to Prepare for Your PAE Appointment',
+        title: 'How to Prepare for Your PAE Procedure',
         points: [
-            'Carry Government-Issued ID',
-            'Inform Us About Current Medications',
-            'Do Not Shave or Self-Prep',
-            'Avoid Eating or Drinking 6 Hrs Prior',
+            'Blood and urine test before PAE',
+            'MRI or Ultrasound to confirm',
+            '6-hr fasting before your procedure',
+            'Tell us all your medications',
+            'Minimal paperwork, zero admission'
         ],
     },
     {
         title: 'What Happens During the PAE Procedure',
         points: [
-            'Full Privacy & Minimal Pain',
-            'Procedure Time: ~45 Minutes',
-            'Discharge on the same day',
+            'Vascular Specialist inserts a thin tube via wrist or groin to block prostate arteries. Procedure is painless, lasts 30–60 minutes, and uses no cuts or general anaesthesia.',
+            'Only local anaesthesia used',
+            'No pain or surgical incision',
+            'Stay awake and relaxed throughout'
         ],
     },
     {
-        title: 'Post-Procedure Recovery Guide',
+        title: 'What to Expect After PAE?',
         points: [
-            'Rest: Avoid Strain for a Day or Two',
-            'Complete Your Prescribed Medicines',
-            'Follow-Up as Advised by Doctor',
-            'Avoid Sexual Activity for 1 Week',
+            'Discharge within 3–4 hours',
+            'Resume work in 1–2 days',
+            'No catheter or bandage needed',
+            'Gradual improvement over 2–4 weeks'
         ],
     },
 ];
 
-const videoTitle = 'Listen to our Experts'
+const videoTitle = 'Real Stories of Painless PAE – Watch Now'
 const videoLink = 'https://www.youtube.com/embed/YH3CYQcihk0'
 
 export default function Page2() {

@@ -625,7 +625,7 @@ export const proceduresArray = [
             {
                 id: 4,
                 question: "Is there a risk of prostate cancer being missed?",
-                answer: "We screen PSA, DRE and imaging.PAE does not preclude future biopsy if ever needed."
+                answer: "We screen PSA, DRE and imaging. PAE does not preclude future biopsy if ever needed."
             },
         ],
         testimonials: paeTestimonials,
