@@ -18,7 +18,7 @@ import { BASE_URL } from '@/constants';
 
 const heading = 'Fast BPH Relief — No Hospital Stay';
 const bulletPoints = [
-    'Certified Top Doctors',
+    'Certified Doctors & USFDA Approved',
     'No Cuts, No Catheter, No Hospital Stay',
     'Free Cab Pickup & Drop, Meals for Family',
 ]
