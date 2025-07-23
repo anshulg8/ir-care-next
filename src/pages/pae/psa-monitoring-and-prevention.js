@@ -79,7 +79,7 @@ const comparisonRows = [
 ];
 
 const title = "One PSA Test. Many Possibilities."
-const description = "If your PSA is elevated, the cause might be cancer, infection, or BPH. We help you know the difference. If it turns out to be BPH, our Vascular Specialists offer PAE — a non-surgical, superior, low-risk option to restore quality of life without needing any cuts, catheter insertion or hospital stay."
+const description = "If your PSA is elevated, the cause might be cancer, infection, or BPH. We help you know the difference. If it turns out to be BPH, our Vascular Specialists offer PAE — a non-surgical, superior, low-risk option to restore quality of life without needing any cuts, catheter insertion or hospital stay. If cancer is detected instead, we guide you to the right specialists for further care."
 
 const procedureInfoSections = [
     {
@@ -106,8 +106,8 @@ const procedureInfoSections = [
         points: [
             'We Track Progress With Free Follow-Ups at 1 month, 3 months and 6 months',
             'PAE Patients Improve Within Weeks',
-            'Avoid Surgery & Long-Term Risks',
-            'Confidently Resume Daily Life'
+            'Confidently Resume Daily Life',
+            'Expert-led guidance and care coordination if cancer is detected',
         ],
     },
 ];
