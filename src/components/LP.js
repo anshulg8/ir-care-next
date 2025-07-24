@@ -40,7 +40,7 @@ const LPComponent = () => {
         },
         {
             question: "How long does PAE take and what's the recovery time?",
-            answer: "The PAE procedure takes about 1-2 hours. You can go home the same day and return to normal activities within 1-2 days. Most patients experience significant symptom improvement within 2-4 weeks."
+            answer: "The PAE procedure takes about 1-2 hours. You can go home the same day and return to normal activities within 1-2 days. "
         },
         {
             question: "Am I a good candidate for PAE?",
@@ -107,10 +107,10 @@ const LPComponent = () => {
                                 Prostatic Artery Embolization (PAE) uses a remote guided small wire inserted through a tiny pin-hole in your wrist - shrinking the prostate without anesthesia or surgical risk, and without even taking your pants off, getting you home in a few hours. Book your consultation now.
                             </p>
                         </div>
-                        
+
                         <div className="flex justify-center">
                             <div className="w-80 h-96 bg-gray-300 rounded-lg flex items-center justify-center">
-                            <img
+                                <img
                                     src={DrRochan.src}
                                     alt='Dr. Rochan'
                                     className="w-full h-full object-cover"
@@ -126,7 +126,7 @@ const LPComponent = () => {
             <section className="py-12 bg-white">
                 <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold text-gray-900 mb-8">Book Free Consultation</h2>
-                    
+
                     <form onSubmit={handleSubmit} className="space-y-4 mb-8">
                         <input
                             type="text"
@@ -191,7 +191,7 @@ const LPComponent = () => {
             <section className="py-16 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Key Benefits</h2>
-                    
+
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="text-center">
                             <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -237,7 +237,7 @@ const LPComponent = () => {
                 {/* <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"> */}
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-8">What Is PAE (Prostatic Artery Embolization)?</h2>
-                    
+
                     <div className="space-y-6">
                         <p className="text-lg text-gray-700 leading-relaxed">
                             PAE is the latest non-surgical treatment for enlarged prostate, highly popular in Europe and USA in the past 10 years. A hair-thin wire is guided from a tiny pinhole in your wrist to the prostate&apos;s blood vessels. Tiny particles are then inserted into the targeted vessels to block blood flow, shrinking the prostate over the next few weeks—delivering the same result as surgery but with no cuts, no anesthesia, no complications, and no hospital stay.
@@ -245,7 +245,7 @@ const LPComponent = () => {
                         <p className="text-lg text-gray-700 leading-relaxed">
                             You&apos;re fully awake and home in a few hours — without even taking your pants off.
                         </p>
-                        
+
                         <div className="bg-teal-50 rounded-xl p-6">
                             <p className="text-teal-800">
                                 Want further details on this latest procedure? <span className="font-semibold text-teal-600">Speak to our doctors</span> now - get full clarity with zero obligations.
@@ -259,11 +259,11 @@ const LPComponent = () => {
             <section className="py-16 bg-gray-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-8">How Is a Large Prostate Affecting You?</h2>
-                    
+
                     <p className="text-lg text-gray-700 leading-relaxed mb-8">
                         The prostate is a walnut-shaped organ surrounding your urinary passage. As men age, the prostate enlarges due to male hormones. This can block urine flow, causing a weak stream, frequent night urination, and disruptions to daily life. If untreated, it can lead to medical emergencies like acute retention (sudden urinary block), requiring emergency hospitalization and catheter insertion to drain the bladder.
                     </p>
-                    
+
                     {/* <div className="bg-yellow-50 rounded-xl p-6 border border-yellow-200">
                         <h3 className="text-xl font-bold text-yellow-800 mb-4">Not sure what your symptoms mean?</h3>
                         <p className="text-yellow-700 mb-4">Stop guessing - take the free 2 min clinically validated test now.</p>
@@ -278,7 +278,7 @@ const LPComponent = () => {
             <section className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-8">Your Treatment Options</h2>
-                    
+
                     <div className="space-y-8">
                         <div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Early Stages:</h3>
@@ -286,7 +286,7 @@ const LPComponent = () => {
                                 Pills (alpha blockers work in days, 5-alpha reductase inhibitors take months) help reduce symptoms temporarily but are ineffective in advanced stages.
                             </p>
                         </div>
-                        
+
                         <div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Advanced Stages:</h3>
                             <p className="text-lg text-gray-700 mb-4">
@@ -296,7 +296,7 @@ const LPComponent = () => {
                                 Traditional surgeries (TURP, laser, Rezum) remove part of the prostate via the penis using shaving, steam, or lasers. These come with risks — permanent sexual or urinary issues (5–10%) due to nerve damage, and a 3–5% chance of urethral stricture, a painful blockage caused by scar tissue.
                             </p>
                         </div>
-                        
+
                         <div className="bg-teal-50 rounded-xl p-6">
                             <p className="text-teal-800">
                                 Want more clarity on the most effective procedure for your case? <span className="font-semibold text-teal-600">Let our doctors</span> guide you.
@@ -310,11 +310,11 @@ const LPComponent = () => {
             <section className="py-16 bg-gray-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Choose PAE?</h2>
-                    
+
                     <p className="text-lg text-gray-700 mb-8">
                         PAE is a breakthrough used in the US & Europe for over 15 years. It shrinks the prostate from within—without cutting or removing anything.
                     </p>
-                    
+
                     <div className="mb-8">
                         <h3 className="text-xl font-bold text-gray-900 mb-6">Is PAE Right for You?</h3>
                         <p className="text-lg text-gray-700 mb-4">PAE may be ideal if you:</p>
@@ -352,7 +352,7 @@ const LPComponent = () => {
                             Book Free Appointment
                         </button>
                         <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-medium transition-colors">
-                        Talk to an Expert for Free
+                            Talk to an Expert for Free
                         </button>
                     </div>
                 </div>
@@ -366,7 +366,7 @@ const LPComponent = () => {
                             <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
                                 <span className="text-teal-600 font-bold">FDA</span>
                             </div>
-                            <h3 className="font-bold text-gray-900">USFDA Approved Procedures</h3>
+                            <h3 className="font-bold text-gray-900">US-FDA Approved Procedures</h3>
                         </div>
                         <div className="flex flex-col items-center">
                             <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
@@ -394,7 +394,7 @@ const LPComponent = () => {
             <section className="py-16 bg-gray-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Docsy Vs Others</h2>
-                    
+
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                         <div className="overflow-x-auto">
                             <table className="w-full">
@@ -482,7 +482,7 @@ const LPComponent = () => {
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">Meet Our Specialists</h2>
                     <p className="text-center text-gray-600 mb-12">Senior Dept Heads, Top Hospitals, Average 20+ years experience</p>
-                    
+
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="w-full h-64 bg-gray-300 rounded-lg flex items-center justify-center">
                             <span className="text-gray-600">Doctor Image Placeholder</span>
@@ -595,7 +595,7 @@ const LPComponent = () => {
             <section className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Learn About PAE</h2>
-                    
+
                     <div className="bg-gray-900 rounded-lg aspect-video flex items-center justify-center">
                         <div className="text-center text-white">
                             <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -613,7 +613,7 @@ const LPComponent = () => {
             <section className="py-16 bg-gray-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
-                    
+
                     <div className="space-y-4">
                         {faqs.map((faq, index) => (
                             <div key={index} className="bg-white rounded-lg shadow-md">
@@ -643,7 +643,7 @@ const LPComponent = () => {
             <section className="py-16 bg-teal-900">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold text-white mb-8">Need Help?</h2>
-                    
+
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium transition-colors">
                             <FaPhone className="inline mr-2" />

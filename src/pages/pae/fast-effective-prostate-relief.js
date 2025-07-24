@@ -56,7 +56,7 @@ const benefits = [
     {
         title: 'Who is a Good Candidate for PAE?',
         points: [
-            'Patients with multiple health conditions (comorbidities)',
+            'Patients with multiple conditions like Diabetes, Asthma, COPD, Heart disease',
             'Those who cannot undergo general anesthesia',
             'Older adults with high surgical risk',
             'Men who prefer to avoid surgery',
@@ -68,7 +68,7 @@ const benefits = [
 
 const features = [
     { icon: '✅', label: 'Same - Day Discharge Process' },
-    { icon: '✂️', label: 'USFDA-Approved Non-Surgical Care' },
+    { icon: '✂️', label: 'US-FDA Approved Non-Surgical Care' },
     { icon: '🔒', label: 'Fast, Safe Recovery Protocol' },
     { icon: '🏥', label: 'Performed Only by Specialists' },
 ];
@@ -77,13 +77,13 @@ const comparisonRows = [
     ['Long Hospital Stay', 'Yes', 'No'],
     ['Return Same Day', 'No', 'Yes'],
     ['Painful Catheter Use', 'Yes', 'No'],
-    ['Recovery Can Disrupt Work', 'Yes', 'No'],
+    ['Strictures leading to possibile emergency surgery', 'Yes', 'No'],
     ['Sexual dysfunction possibility', 'Yes', 'No'],
     ['Minimizes Life Disruption', 'No', 'Yes'],
 ];
 
 const title = "Go Home Same Day. No Recovery Time"
-const description = "Prostate Artery Embolization(PAE) is a modern, image-guided alternative to TURP and laser prostate surgery. Performed by a Vascular Specialist, it takes ~2 hours and avoids cuts, catheter, or long recovery. Patients walk out the same day."
+const description = "Prostate Artery Embolization (PAE) is a modern, image-guided alternative to TURP and laser prostate surgery. Performed by a Vascular Specialist, it takes ~2 hours and avoids cuts, catheter, or long recovery. Patients walk out the same day."
 
 const procedureInfoSections = [
     {
@@ -111,12 +111,12 @@ const procedureInfoSections = [
             'Home same day—no admission',
             'Normal activity in 1–2 days, Regular workouts in a Week',
             'No catheter or wound dressing',
-            'Improvement within 2–4 weeks'
+            'Sustained Improvement in Symptoms within 4-6 weeks, clinically same results as surgery'
         ],
     },
 ];
 
-const videoTitle = 'See How PSA + PAE Transformed Lives'
+const videoTitle = 'See How PAE Transformed Lives'
 const videoLink = 'https://www.youtube.com/embed/YH3CYQcihk0'
 
 export default function Page3() {

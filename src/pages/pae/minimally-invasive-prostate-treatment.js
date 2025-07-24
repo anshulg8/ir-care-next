@@ -55,7 +55,7 @@ const benefits = [
     {
         title: 'Who is a Good Candidate for PAE?',
         points: [
-            'Patients with multiple health conditions (comorbidities)',
+            'Patients with multiple conditions like Diabetes, Asthma, COPD, Heart disease',
             'Those who cannot undergo general anesthesia',
             'Older adults with high surgical risk',
             'Men who prefer to avoid surgery',
@@ -82,7 +82,7 @@ const comparisonRows = [
 ];
 
 const title = "No Surgery. Just Relief. Walk Out Free"
-const description = "Prostate Artery Embolization(PAE) is a USFDA-approved, superior, non-surgical alternative to TURP (including bipolar, channel & saline), GreenLight laser surgery and Rezum steam therapy. It shrinks the prostate via a pinhole procedure done by a vascular specialist—no cutting, no hospital stay, no catheter. Unlike TURP or it's other alternatives, PAE avoids the risk of permanent Erectile Dysfunction, Incontinence(urine leakage) or even potentially life-threatening Stricture complication."
+const description = "Prostate Artery Embolization (PAE) is a US-FDA approved, superior, non-surgical alternative to TURP (including bipolar, channel & saline), GreenLight laser surgery and Rezum steam therapy. It shrinks the prostate via a pinhole procedure done by a vascular specialist—no cutting, no hospital stay, no catheter. Unlike TURP or it's other alternatives, PAE avoids the risk of permanent Erectile Dysfunction, Incontinence (urine leakage) or even potentially life-threatening Stricture complication."
 
 const procedureInfoSections = [
     {
@@ -98,7 +98,7 @@ const procedureInfoSections = [
     {
         title: 'What Happens During the PAE Procedure',
         points: [
-            'Vascular Specialist inserts a thin tube via wrist or groin to block prostate arteries. Procedure is painless, lasts 30–60 minutes, and uses no cuts or general anaesthesia.',
+            'Vascular Specialist inserts a thin tube via wrist or groin to block prostate arteries. Procedure is painless, lasts 1.5-2 hours, and uses no cuts or general anaesthesia.',
             'Only local anaesthesia used',
             'No pain or surgical incision',
             'Stay awake and relaxed throughout'
@@ -110,7 +110,7 @@ const procedureInfoSections = [
             'Discharge within 3–4 hours',
             'Resume work in 1–2 days, Back to Gym in a Week',
             'No catheter or bandage needed',
-            'Gradual improvement over 2–4 weeks'
+            'Sustained Improvement in Symptoms within 4-6 weeks, clinically same results as surgery'
         ],
     },
 ];

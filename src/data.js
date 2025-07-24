@@ -22,7 +22,13 @@ import KMCLogo from './assets/logos/KMC Mangaluru.svg';
 import KEMLogo from './assets/logos/kem.png';
 import RubyHallLogo from './assets/logos/ruby-hall.png';
 import RFLogo from './assets/logos/RF-logo.svg';
+import PoonaLogo from './assets/logos/poona.png';
 import SahyadriLogo from './assets/logos/SahyadriLogo.webp';
+import BhartiLogo from './assets/logos/bharti-logo.png';
+import DeenanathLogo from './assets/logos/deenanath-logo.png';
+import JoshiLogo from './assets/logos/Joshi-Hospital-Logo.png';
+import InamdarLogo from './assets/logos/logo-inamdar.svg';
+import SymbiosisLogo from './assets/logos/symbiosis-logo.png';
 import SCSLogo from './assets/logos/scs-logo.png';
 import SCTIMSTLogo from './assets/logos/SCTIMST Trivandrum.png';
 import TataMemLogo from './assets/logos/tata-memorial.png';
@@ -143,7 +149,7 @@ export const featuredDoctors = [
             "Fellowships in MRI/CT across USA, Germany, Japan & UK"
         ],
         specialty: "Cross-Border IR Expertise with Global Techniques",
-        hospitalIcons: [jehangirLogo, RubyHallLogo, SahyadriLogo]
+        hospitalIcons: [jehangirLogo, SymbiosisLogo, DeenanathLogo, RubyHallLogo, PoonaLogo, BhartiLogo, JoshiLogo, InamdarLogo]
     },
     {
         id: 3,

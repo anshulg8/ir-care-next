@@ -19,7 +19,7 @@ import { BASE_URL } from '@/constants';
 const heading = 'Worried About High PSA? We Can Help';
 const bulletPoints = [
     'Consult Senior Urologists',
-    'Get Diagnosis - Prostate Cancer or Just Enlarged Prostate(BPH)?',
+    'Get Diagnosis - Prostate Cancer or Just Enlarged Prostate (BPH)?',
     '100% Confidential, Fast Reporting'
 ]
 
