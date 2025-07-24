@@ -36,7 +36,7 @@ export default function HeroSection({ heading, bulletPoints }) {
           {/* Doctor Image */}
           <div className="w-1/2 flex justify-end items-start">
             <Image
-              src="/doctor.png"
+              src="/doctor3-min.png"
               alt="Doctor"
               width={150}
               height={150}

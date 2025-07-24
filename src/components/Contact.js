@@ -1,5 +1,5 @@
 import React from 'react';
-import { BASE_URL, PHONE_NUMBER, WHATSAPP_LINK } from '../constants';
+import { BASE_URL, DEFAULT_PAGE_DESCRIPTION, PHONE_NUMBER, WHATSAPP_LINK } from '../constants';
 import SEO from './SEO';
 
 const Contact = () => {
@@ -32,7 +32,7 @@ const Contact = () => {
         <>
             <SEO
                 title="Contact Us | Docsy"
-                description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
+                description={DEFAULT_PAGE_DESCRIPTION}
                 url={`${BASE_URL || ''}/contact`}
                 schemaMarkup={contactSchema}
             />

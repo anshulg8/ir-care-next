@@ -1,14 +1,14 @@
 import React from 'react';
 import { ourAllProcedures } from '../data';
 import SEO from './SEO';
-import { BASE_URL } from '@/constants';
+import { BASE_URL, DEFAULT_PAGE_DESCRIPTION } from '@/constants';
 
 const IrConditionsAndProcedures = () => {
     return (
         <>
             <SEO
                 title="IR Conditions & Procedures | Docsy"
-                description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
+                description={DEFAULT_PAGE_DESCRIPTION}
                 url={`${BASE_URL || ''}/treatments`}
             />
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-100">

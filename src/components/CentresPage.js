@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { centers } from '../data.js';
 import SEO from './SEO.js';
-import { BASE_URL } from '@/constants.js';
+import { BASE_URL, DEFAULT_PAGE_DESCRIPTION } from '@/constants.js';
 
 const CentresPage = () => {
     const [selectedCity, setSelectedCity] = useState('Mumbai');
@@ -24,7 +24,7 @@ const CentresPage = () => {
         <>
             <SEO
                 title="Our Professional Centres | Docsy"
-                description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
+                description={DEFAULT_PAGE_DESCRIPTION}
                 url={`${BASE_URL || ''}/centres`}
             />
             <div className="min-h-screen bg-gray-50 py-12">

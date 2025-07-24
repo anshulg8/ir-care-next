@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from './SEO';
-import { BASE_URL, FB_URL, INSTA_URL, X_URL } from '@/constants';
+import { BASE_URL, DEFAULT_PAGE_DESCRIPTION, FB_URL, INSTA_URL, X_URL } from '@/constants';
 
 const About = () => {
 
@@ -9,7 +9,7 @@ const About = () => {
         "@type": "AboutPage",
         "name": "About Us | Docsy",
         "url": `${BASE_URL}/about`,
-        "description": "We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery.",
+        "description": DEFAULT_PAGE_DESCRIPTION,
         "mainEntity": {
             "@type": "MedicalOrganization",
             "name": "Docsy",
@@ -41,7 +41,7 @@ const About = () => {
         <>
             <SEO
                 title="About Us | Docsy"
-                description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
+                description={DEFAULT_PAGE_DESCRIPTION}
                 url={`${BASE_URL || ''}/about`}
                 schemaMarkup={aboutSchema}
             />

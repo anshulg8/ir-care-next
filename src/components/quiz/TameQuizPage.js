@@ -6,7 +6,7 @@ import AppointmentModal from '../AppointmentModal';
 import { tameQuizData } from './data/quizData';
 import TameQuizResult from './TameQuizResult';
 import SEO from '../SEO';
-import { BASE_URL } from '@/constants';
+import { BASE_URL, DEFAULT_PAGE_DESCRIPTION } from '@/constants';
 
 const TameQuizPage = () => {
   const formRef = useRef();
@@ -126,7 +126,7 @@ const TameQuizPage = () => {
     <>
       <SEO
         title="TAME Quiz | Docsy"
-        description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
+        description={DEFAULT_PAGE_DESCRIPTION}
         url={`${BASE_URL || ''}/quiz/okuno-procedure-tam`}
       />
       <div className="min-h-screen bg-gray-50 py-12">

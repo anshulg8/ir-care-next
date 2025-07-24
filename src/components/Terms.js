@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from './SEO';
-import { BASE_URL } from '@/constants';
+import { BASE_URL, DEFAULT_PAGE_DESCRIPTION } from '@/constants';
 
 const Terms = () => {
     const schemaMarkup = {
@@ -24,7 +24,7 @@ const Terms = () => {
         <>
             <SEO
                 title="Terms & Conditions | Docsy"
-                description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
+                description={DEFAULT_PAGE_DESCRIPTION}
                 url={`${BASE_URL || ''}/terms`}
                 schemaMarkup={schemaMarkup}
             />

@@ -14,7 +14,7 @@ import StickyButtons from '../components/StickyButtons';
 import ContactFloatingButton from '../components/ContactFloatingButton';
 import { useModal } from '../context/ModalContext';
 import SEO from '@/components/SEO';
-import { BASE_URL, FB_URL, INSTA_URL, X_URL } from '@/constants';
+import { BASE_URL, DEFAULT_PAGE_DESCRIPTION, FB_URL, INSTA_URL, X_URL } from '@/constants';
 
 const Home = () => {
     const [showContactModal, setShowContactModal] = useState(false);
@@ -52,7 +52,7 @@ const Home = () => {
         <>
             <SEO
                 title="Docsy"
-                description="We are a patient-first platform committed to making minimally invasive, image-guided treatments more accessible to people everywhere. By partnering with best vetted interventional radiology (IR) centers and specialists, we provide safe, modern alternatives to traditional surgery."
+                description={DEFAULT_PAGE_DESCRIPTION}
                 url={BASE_URL}
                 schemaMarkup={schema}
             />
