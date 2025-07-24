@@ -12,6 +12,7 @@ export default function CtaBlock({ heading }) {
   });
 
   const [forceOpen, setForceOpen] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,6 +21,13 @@ export default function CtaBlock({ heading }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "lp_lead_form_submitted",
+      formType: "contact",
+      pagePath: window.location.pathname
+    });
 
     const formBody = new FormData();
     formBody.append(FIELD_NAME_ID, formData.name);
@@ -35,7 +43,8 @@ export default function CtaBlock({ heading }) {
     });
 
     // Optional: Clear form or show feedback
-    alert('Thank you! Our expert will contact you shortly.');
+    // alert('Thank you! Our expert will contact you shortly.');
+    setShowSuccessModal(true);
     setFormData({ name: '', phone: '', city: '', procedure: '', referralCode: '' });
   };
 
@@ -80,6 +89,24 @@ export default function CtaBlock({ heading }) {
           Submit & Speak to a Urologist for Free
         </button>
       </form>
+
+      {showSuccessModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm z-40">
+          <div className="bg-white rounded-lg shadow-lg px-6 py-4 max-w-sm w-full text-center">
+            <h4 className="text-lg font-semibold mb-2 text-green-700">Appointment requested successfully</h4>
+            <p className="text-sm text-gray-700 mb-4">
+              Care Navigator from the Docsy team will reach out to you soon.
+            </p>
+            <button
+              onClick={() => setShowSuccessModal(false)}
+              // className="bg-[#ff8300] text-white py-2 px-4 rounded-md text-sm font-medium"
+              className="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Modal component rendered based on forceOpen */}
       <ContactFloatingButton

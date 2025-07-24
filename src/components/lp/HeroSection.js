@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function HeroSection({ heading, bulletPoints }) {
   return (
-    <section className="relative h-[30vh] w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden bg-white">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -11,37 +11,37 @@ export default function HeroSection({ heading, bulletPoints }) {
           fill
           className="object-cover"
         />
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div> */}
+        {/* <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" /> */}
+        {/* <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" /> */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-start justify-center pt-12">
-        <div className="w-full max-w-md px-4 flex justify-between items-start">
-          {/* Left Text */}
-          <div className="w-1/2 text-black space-y-2">
-            <h2 className="text-lg font-bold leading-snug">
-              {/* Best Prostate Clinic in Mumbai */}
-              {heading}
-            </h2>
+      <div className="relative z-10 px-4 py-6 flex items-start justify-center">
+        <div className="w-full max-w-3xl flex justify-between items-start gap-4">
+          {/* Left Text Section */}
+          <div className="flex-1 min-w-[150px] max-w-[60%] text-black space-y-3">
+            <h2 className="text-base font-bold leading-snug">{heading}</h2>
             <ul className="text-sm list-disc pl-4 leading-tight space-y-1">
               {bulletPoints.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
-              {/* <li>Certified Doctors and Clinics</li>
-              <li>100% Legal, Confidential & Safe</li>
-              <li>Only Patient's Consent Required</li> */}
             </ul>
           </div>
 
-          {/* Doctor Image */}
-          <div className="w-1/2 flex justify-end items-start">
+          {/* Right Doctor Image Section */}
+          <div className="flex flex-col items-center min-w-[120px] max-w-[40%]">
             <Image
               src="/doctor3-min.png"
               alt="Doctor"
-              width={150}
-              height={150}
+              width={120}
+              height={120}
               className="object-contain"
             />
+            <div className="text-center mt-2">
+              <p className="text-sm font-semibold text-black">Dr. Kanishk Patil, Urologist</p>
+              <p className="text-xs text-gray-600">MCh (Uro), FRCS (UK)</p>
+            </div>
           </div>
         </div>
       </div>

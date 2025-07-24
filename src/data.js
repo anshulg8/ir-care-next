@@ -661,12 +661,12 @@ export const proceduresArray = [
             "@context": "https://schema.org",
             "@type": "MedicalProcedure",
             "name": "Prostatic Artery Embolization (PAE)",
-            "alternateName": "Prostate Enlargement Treatment",
-            "description": "Minimally invasive pinhole procedure for enlarged prostate that shrinks the gland without surgery, anesthesia, or hospital stay. Done via wrist puncture with fast recovery and minimal side effects.",
-            "howPerformed": "A catheter is inserted through a tiny pinhole in the wrist and guided to the prostate arteries, where embolic agents are delivered to reduce blood supply, shrinking the prostate.",
+            "alternateName": ["Enlarged Prostate Treatment", "TURP Minimally Invasive Alternative"],
+            "description": "Minimally invasive, premium pinhole procedure for enlarged prostate that shrinks the gland without surgery, anesthesia, or hospital stay. Done via wrist puncture with fast recovery and minimal side effects. US-FDA and EU Approved procedures done by top vascular specialists (20+ years experience) at India's top centres with the latest equipment, including Mumbai, Pune and Mangalore.",
+            "howPerformed": "A catheter is inserted through a tiny pinhole in the wrist and guided to the prostate arteries under real-time X ray guidance, where blood vessel blocking embolic agents are delivered to reduce blood supply, shrinking the prostate.",
             "procedureType": "Non-invasive",
-            "bodyLocation": "Prostate",
-            "medicalSpecialty": "InterventionalRadiology",
+            "bodyLocation": ["Prostate", "Urinary Tract", "Bladder", "Kidney"],
+            "medicalSpecialty": ["Urology", "InterventionalRadiology"],
             "url": `${BASE_URL}/procedures/prostatic-artery-embolization-pae`
         }
     },
@@ -780,12 +780,18 @@ export const proceduresArray = [
             "@context": "https://schema.org",
             "@type": "MedicalProcedure",
             "name": "Uterine Fibroid Embolization (UFE)",
-            "alternateName": "Fibroid Treatment Without Surgery",
-            "description": "A non-surgical, image-guided treatment for uterine fibroids that preserves the uterus and reduces bleeding and pain. Performed through a small puncture in the wrist under local anesthesia.",
+            "alternateName": [
+                "Fibroid Treatment Without Surgery",
+                "Non-Surgical Uterine Fibroid Removal"
+            ],
+            "description": "Uterine Fibroid Embolization (UFE) is a non-surgical, image-guided, daycare (2-hour) procedure to treat uterine fibroids while preserving the uterus. It offers minimal blood loss, fast recovery, and is a uterus-sparing alternative to hysterectomy. The procedure can help maintain fertility and keep pregnancy possible in many cases. Performed through a small wrist or groin puncture under local anesthesia by expert interventional radiologists.",
             "howPerformed": "A catheter is inserted into the uterine arteries via a tiny incision in the wrist or groin, and embolic particles are injected to block blood flow to the fibroids.",
             "procedureType": "Non-invasive",
             "bodyLocation": "Uterus",
-            "medicalSpecialty": "InterventionalRadiology",
+            "medicalSpecialty": [
+                "InterventionalRadiology",
+                "Gynecology"
+            ],
             "url": `${BASE_URL}/procedures/uterine-fibroid-embolization-ufe`
         }
     },
