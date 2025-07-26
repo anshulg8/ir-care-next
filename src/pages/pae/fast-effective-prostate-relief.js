@@ -133,15 +133,15 @@ export default function Page3() {
             <TrustStrip />
             <OurDoctors />
             <BenefitsSection benefits={benefits} />
-            <BottomCTA />
+            <BottomCTA sectionId={"afterBenefits"} />
             <FeatureHighlights features={features} />
             <ComparisonTable rows={comparisonRows} />
-            <BottomCTA />
+            <BottomCTA sectionId={"afterComparison"} />
             <WhatIsPAE title={title} description={description} image={prostateImage} />
             <ProcedureInfoSection procedureInfo={procedureInfoSections} />
             <VideoSection videoTitle={videoTitle} videoLink={videoLink} />
             <FaqSection faqs={proceduresArray[0].faqs} />
-            <BottomCTA />
+            <BottomCTA sectionId={"afterFaqs"} />
             {/* <DisclaimerSection /> */}
             <StickyCTAButtons />
         </>

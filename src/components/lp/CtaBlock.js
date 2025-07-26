@@ -52,7 +52,18 @@ export default function CtaBlock({ heading }) {
     <section className="bg-white px-4 py-8 flex flex-col items-center">
       {/* CTA Button */}
       <button
-        onClick={() => setForceOpen(true)}
+        onClick={() => {
+          setForceOpen(true)
+
+          // Fire GTM event with specific location
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'lp_contact_cta_click',
+            cta_source: "top",
+            pagePath: window.location.pathname
+          });
+        }}
+
         className="w-[90%] bg-[#ff8300] text-white font-semibold py-3 rounded-full text-center text-base shadow-md mb-6"
       >
         Speak to a Urologist for Free

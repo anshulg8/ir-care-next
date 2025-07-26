@@ -211,8 +211,8 @@ export const featuredDoctors = [
 
 export const howItWorks = [
     {
-        title: "Free Video Consult",
-        desc: "IR specialist reviews symptoms, scans & scores(IPSS / fibroid size / bleeding grade).",
+        title: "First Consultation",
+        desc: "Specialist reviews medical history in detail along with tests imaging scans, recommending any missing investigations.",
         icon: "🩺",
         time: "15 min",
         color: "bg-teal-500 text-white",

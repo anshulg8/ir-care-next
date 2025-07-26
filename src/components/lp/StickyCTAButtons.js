@@ -25,7 +25,16 @@ export default function StickyCTAButtons() {
       <div className="fixed bottom-0 left-0 right-0 z-50 bg-white px-4 py-4 shadow-t flex justify-between gap-2 border-t border-gray-200">
         {/* Talk to Expert */}
         <button
-          onClick={() => setForceOpen(true)}
+          onClick={() => {
+            setForceOpen(true)
+
+            // Fire GTM event with specific location
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'lp_sticky_contact_cta_click',
+              pagePath: window.location.pathname
+            });
+          }}
           className="flex-1 bg-[#ff8300] text-white text-sm font-semibold py-3 rounded-full"
         >
           Speak to a Urologist
@@ -33,7 +42,16 @@ export default function StickyCTAButtons() {
 
         {/* Book Free Appointment */}
         <button
-          onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+
+            // Fire GTM event with specific location
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'lp_sticky_booking_cta_click',
+              pagePath: window.location.pathname
+            });
+          }}
           className="flex-1 bg-white text-teal-700 border border-teal-600 text-sm font-semibold py-3 rounded-full shadow-sm"
         >
           Book Free Appointment
