@@ -64,7 +64,7 @@ const ContactFloatingButton = ({ forceOpen, onClose }) => {
                         <h3 className="text-xl font-semibold text-gray-900 mb-2">Need Help?</h3>
                         <p className="text-gray-700 mb-4">Call us or drop a WhatsApp message to book a consultation:</p>
 
-                        <div className="space-y-3">
+                        {/* <div className="space-y-3">
                             <a href={`tel:${PHONE_NUMBER}`} className="block text-lg font-medium text-teal-600 hover:underline">
                                 📞 {PHONE_NUMBER}
                             </a>
@@ -77,7 +77,42 @@ const ContactFloatingButton = ({ forceOpen, onClose }) => {
                             >
                                 💬 Message on WhatsApp
                             </a>
+                        </div> */}
+
+                        <div className="space-y-3">
+                            <a
+                                href={`tel:${PHONE_NUMBER}`}
+                                onClick={() => {
+                                    window.dataLayer = window.dataLayer || [];
+                                    window.dataLayer.push({
+                                        event: "click_call",
+                                        cta_source: "Call Button",
+                                    });
+                                }}
+                                className="block text-lg font-medium text-teal-600 hover:underline"
+                            >
+                                📞 {PHONE_NUMBER}
+                            </a>
+
+                            {/* <p className="text-sm text-gray-500">Give us a missed call</p> */}
+
+                            <a
+                                href={WHATSAPP_LINK}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => {
+                                    window.dataLayer = window.dataLayer || [];
+                                    window.dataLayer.push({
+                                        event: "click_whatsapp",
+                                        cta_source: "WhatsApp Button",
+                                    });
+                                }}
+                                className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium"
+                            >
+                                💬 Message on WhatsApp
+                            </a>
                         </div>
+
 
                         <button
                             onClick={handleClose}

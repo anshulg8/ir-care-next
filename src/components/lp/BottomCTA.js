@@ -15,7 +15,7 @@ export default function BottomCTA({ sectionId }) {
           window.dataLayer.push({
             event: 'lp_contact_cta_click',
             cta_source: sectionId,
-            pagePath: window.location.pathname
+            // pagePath: window.location.pathname // GTM captures it automatically
           });
         }}
         className="w-full bg-[#ff8300] text-white font-semibold py-3 rounded-full text-center text-base shadow-md"
@@ -32,7 +32,7 @@ export default function BottomCTA({ sectionId }) {
           window.dataLayer.push({
             event: 'lp_booking_cta_click',
             cta_source: sectionId,
-            pagePath: window.location.pathname
+            // pagePath: window.location.pathname // GTM captures it automatically
           });
 
         }}

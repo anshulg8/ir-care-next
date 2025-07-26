@@ -26,7 +26,7 @@ export default function CtaBlock({ heading }) {
     window.dataLayer.push({
       event: "lp_lead_form_submitted",
       formType: "contact",
-      pagePath: window.location.pathname
+      // pagePath: window.location.pathname // GTM captures it automatically
     });
 
     const formBody = new FormData();
@@ -60,7 +60,7 @@ export default function CtaBlock({ heading }) {
           window.dataLayer.push({
             event: 'lp_contact_cta_click',
             cta_source: "top",
-            pagePath: window.location.pathname
+            // pagePath: window.location.pathname // GTM captures it automatically
           });
         }}
 

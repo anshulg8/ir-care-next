@@ -32,7 +32,7 @@ export default function StickyCTAButtons() {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
               event: 'lp_sticky_contact_cta_click',
-              pagePath: window.location.pathname
+              // pagePath: window.location.pathname // GTM captures it automatically
             });
           }}
           className="flex-1 bg-[#ff8300] text-white text-sm font-semibold py-3 rounded-full"
@@ -49,7 +49,7 @@ export default function StickyCTAButtons() {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
               event: 'lp_sticky_booking_cta_click',
-              pagePath: window.location.pathname
+              // pagePath: window.location.pathname // GTM captures it automatically
             });
           }}
           className="flex-1 bg-white text-teal-700 border border-teal-600 text-sm font-semibold py-3 rounded-full shadow-sm"

@@ -147,7 +147,7 @@ const GoogleFormWithProcedureInput = ({ onClose }) => {
         window.dataLayer.push({
             event: "lead_form_submitted",
             formType: "contact",
-            pagePath: window.location.pathname
+            // pagePath: window.location.pathname // GTM captures it automatically
         });
 
         const formBody = new FormData();
