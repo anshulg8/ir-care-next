@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/chat",
+            "destination": "https://wa.me/917838807404?text=Hi%20there!",
+            "permanent": true
+        }
+    ]
+}
