@@ -42,6 +42,15 @@ import fibroid from './assets/fibroids-169.png';
 import pain from './assets/chronic-pain-169.png';
 import piles from './assets/piles-169.png';
 import prostate from './assets/prostate-169.png';
+import DrMama from '@/assets/dr-mama.jpeg';
+import Anshul from '@/assets/anshul.jpeg';
+import Advay from '@/assets/advay.jpeg';
+import PELogo from '@/assets/pharmeasy.png';
+import IITR from '@/assets/iitr.png';
+import IITB from '@/assets/iitb.png';
+import MIT from '@/assets/mit.png';
+import HCAH from '@/assets/hcah.svg';
+import Harvard from '@/assets/harvard.png';
 import { BASE_URL } from './constants';
 
 export const usps = [
@@ -1322,3 +1331,48 @@ export const ourAllProcedures = [
         ]
     }
 ]
+
+export const founders = [
+    {
+        name: 'Dr Advay Aundhekar',
+        title: 'AFMC, IIT Bombay',
+        image: Advay,
+        linkedIn: "https://www.linkedin.com/in/dr-advay-aundhekar-3926b4142/",
+        degrees: "MBBS, Biodesign Fellow",
+        affiliations: [
+            { name: 'AFMC', logo: AFMCLogo },
+            { name: 'IIT Bombay', logo: IITB }
+        ],
+        bio: `Dr Advay Aundhekar is a 3rd generation doctor and entrepreneur who started Docsy while in med school. An alumnus of AFMC Pune, he has a Bioengineering & Biodesign Fellowship from IIT Bombay, and 7+ years experience building and selling health-tech across public and private healthcare systems in India & Middle East.
+
+Dr Advay is committed to building innovative healthcare delivery models leveraging the right technology for the right use case, and in the process aligning stakeholder incentives across providers, payers & pharma to deliver robust health outcomes to our patients sustainably at scale.`
+    },
+    {
+        name: 'Anshul Garg',
+        title: 'IIT Roorkee, PharmEasy, HCAH',
+        image: Anshul,
+        linkedIn: "https://www.linkedin.com/in/anshulgarg8/",
+        affiliations: [
+            { name: 'IIT Roorkee', logo: IITR },
+            { name: 'PharmEasy', logo: PELogo },
+            { name: 'HCAH', logo: HCAH }
+        ],
+        bio: `Anshul Garg studied Computer Science & Engineering at IIT Roorkee and has over a decade of experience building at top Indian startups, including leading healthcare companies like PharmEasy (where he built the diagnostics vertical from scratch) and Healthcare At Home India (where he led a challenging core technical stack transition across engineering teams).
+
+Anshul is passionate about crafting seamless digital care experiences for our patients by building from a first principles perspective, incorporating patient-centric design and behavioural science paradigms into health-tech systems.`
+    },
+    {
+        name: 'Dr Khuzaima Mama',
+        title: 'Harvard Medical School, MIT',
+        image: DrMama,
+        linkedIn: "",
+        degrees: "MD, PhD",
+        affiliations: [
+            { name: 'Harvard Medical School', logo: Harvard },
+            { name: 'MIT', logo: MIT }
+        ],
+        bio: `Dr Khuzaima Mama (MD, PhD) is a serial entrepreneur and alumnus of the prestigious Harvard Medical School & MIT-run Health Sciences & Technology (HST) program. Having deep expertise in Molecular Oncology, he has worked at premier global oncology institutions in USA. After experiencing first hand the acute struggle cancer patients face throughout their care journey in India, Dr Mama dedicated a significant part of his life to pioneering a unique, multi-stakeholder led care navigation system, helping treat more than 65,000 patients (35,000+ pro bono) over two decades.
+
+Along this journey, he noticed a massive gap patients face in accessing high quality yet affordable minimally invasive treatments, then founding an Interventional Radiology centre that provides advanced image-guided diagnosis and treatment modalities in a daycare setting. Dr Mama is focused on ensuring supply side provider alignment, as well as building robust clinical & quality control protocols, in order to consistently deliver objectively world-class health experiences and outcomes to all our patients.`
+    }
+];

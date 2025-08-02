@@ -3,20 +3,29 @@ import { PHONE_NUMBER } from '../constants';
 import Image from 'next/image';
 
 const logos = [
-    'https://images.seeklogo.com/logo-png/30/2/hdfc-life-logo-png_seeklogo-304905.png',
-    'https://images.seeklogo.com/logo-png/30/1/icici-prudential-life-insurance-logo-png_seeklogo-307031.png',
-    'https://images.seeklogo.com/logo-png/38/1/aditya-birla-group-logo-png_seeklogo-385778.png',
-    'https://images.seeklogo.com/logo-png/30/1/star-health-insurance-logo-png_seeklogo-303863.png',
-    'https://images.seeklogo.com/logo-png/24/1/national-insurance-company-india-logo-png_seeklogo-241702.png',
-    'https://images.seeklogo.com/logo-png/12/2/sbi-life-insurance-logo-png_seeklogo-123116.png',
-    'https://images.seeklogo.com/logo-png/30/2/max-life-insurance-logo-png_seeklogo-304906.png',
-    'https://images.seeklogo.com/logo-png/17/1/pnb-metlife-logo-png_seeklogo-174731.png',
-    'https://images.seeklogo.com/logo-png/23/1/lic-india-logo-png_seeklogo-236964.png',
-    'https://images.seeklogo.com/logo-png/21/1/kotak-life-insurance-logo-png_seeklogo-212711.png',
-    'https://images.seeklogo.com/logo-png/30/1/tata-aia-life-logo-png_seeklogo-304926.png',
-    'https://images.seeklogo.com/logo-png/50/1/reliance-general-insurance-logo-png_seeklogo-503447.png',
-    'https://images.seeklogo.com/logo-png/30/2/bajaj-allianz-life-insurance-logo-png_seeklogo-307030.png',
-    'https://images.seeklogo.com/logo-png/25/2/bajaj-allianz-logo-png_seeklogo-259277.png'
+    'https://www.hdfcergo.com/images/default-source/car/logo_hdfc.png',
+    'https://www.nivabupa.com/home-page-images/logo-bar-images/Niva-Bupa-Logo.svg',
+    'https://www.careinsurance.com/images/care_health_insurance_logo.svg',
+    'https://www.adityabirlacapital.com/healthinsurance/assets/img/abhi-logo-new.png',
+    'https://www.starhealth.in/lp/img/star_health_logo_big.svg',
+    'https://www.tataaig.com/TataAigLogoNew.svg',
+    'https://www.manipalcigna.com/image/layout_set_logo?img_id=432304',
+    'https://www.iffcotokio.co.in/content/dam/iffcotokio/iffco-images/headerlogo-25-years.png',
+    'https://navi.com/static/media/naviLogo.c2380d7b.svg',
+    'https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/digit.svg',
+    'https://www.sbigeneral.in/home_new/assets-revamp/images/sbig-logo.svg',
+    'https://www.icicilombard.com/docs/default-source/assets/home-revamp/images/il-logo.png',
+    // 'https://images.seeklogo.com/logo-png/30/1/star-health-insurance-logo-png_seeklogo-303863.png',
+    // 'https://images.seeklogo.com/logo-png/24/1/national-insurance-company-india-logo-png_seeklogo-241702.png',
+    // 'https://images.seeklogo.com/logo-png/12/2/sbi-life-insurance-logo-png_seeklogo-123116.png',
+    // 'https://images.seeklogo.com/logo-png/30/2/max-life-insurance-logo-png_seeklogo-304906.png',
+    // 'https://images.seeklogo.com/logo-png/17/1/pnb-metlife-logo-png_seeklogo-174731.png',
+    // 'https://images.seeklogo.com/logo-png/23/1/lic-india-logo-png_seeklogo-236964.png',
+    // 'https://images.seeklogo.com/logo-png/21/1/kotak-life-insurance-logo-png_seeklogo-212711.png',
+    // 'https://images.seeklogo.com/logo-png/30/1/tata-aia-life-logo-png_seeklogo-304926.png',
+    // 'https://images.seeklogo.com/logo-png/50/1/reliance-general-insurance-logo-png_seeklogo-503447.png',
+    // 'https://images.seeklogo.com/logo-png/30/2/bajaj-allianz-life-insurance-logo-png_seeklogo-307030.png',
+    // 'https://images.seeklogo.com/logo-png/25/2/bajaj-allianz-logo-png_seeklogo-259277.png'
 ];
 
 const InsurancePartners = () => {

@@ -5,7 +5,7 @@ export default function VideoSection({ videoTitle, videoLink }) {
         {videoTitle}
       </h2>
 
-      <div className="aspect-w-16 aspect-h-9 w-full rounded-lg overflow-hidden shadow-md">
+      <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
         <iframe
           className="w-full h-full"
           src={videoLink}

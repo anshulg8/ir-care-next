@@ -113,7 +113,7 @@ const procedureInfoSections = [
 ];
 
 const videoTitle = 'See How PSA Guided the Right Treatment'
-const videoLink = 'https://www.youtube.com/embed/YH3CYQcihk0'
+const videoLink = 'https://www.youtube.com/embed/9zEgpuenvLU'
 
 export default function Page3() {
     return (

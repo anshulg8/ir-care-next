@@ -116,7 +116,7 @@ const procedureInfoSections = [
 ];
 
 const videoTitle = 'Real Stories of Painless PAE – Watch Now'
-const videoLink = 'https://www.youtube.com/embed/YH3CYQcihk0'
+const videoLink = 'https://www.youtube.com/embed/9zEgpuenvLU'
 
 export default function Page2() {
     return (
