@@ -1361,18 +1361,18 @@ Dr Advay is committed to building innovative healthcare delivery models leveragi
 
 Anshul is passionate about crafting seamless digital care experiences for our patients by building from a first principles perspective, incorporating patient-centric design and behavioural science paradigms into health-tech systems.`
     },
-    {
-        name: 'Dr Khuzaima Mama',
-        title: 'Harvard Medical School, MIT',
-        image: DrMama,
-        linkedIn: "",
-        degrees: "MD, PhD",
-        affiliations: [
-            { name: 'Harvard Medical School', logo: Harvard },
-            { name: 'MIT', logo: MIT }
-        ],
-        bio: `Dr Khuzaima Mama (MD, PhD) is a serial entrepreneur and alumnus of the prestigious Harvard Medical School & MIT-run Health Sciences & Technology (HST) program. Having deep expertise in Molecular Oncology, he has worked at premier global oncology institutions in USA. After experiencing first hand the acute struggle cancer patients face throughout their care journey in India, Dr Mama dedicated a significant part of his life to pioneering a unique, multi-stakeholder led care navigation system, helping treat more than 65,000 patients (35,000+ pro bono) over two decades.
+    //     {
+    //         name: 'Dr Khuzaima Mama',
+    //         title: 'Harvard Medical School, MIT',
+    //         image: DrMama,
+    //         linkedIn: "",
+    //         degrees: "MD, PhD",
+    //         affiliations: [
+    //             { name: 'Harvard Medical School', logo: Harvard },
+    //             { name: 'MIT', logo: MIT }
+    //         ],
+    //         bio: `Dr Khuzaima Mama (MD, PhD) is a serial entrepreneur and alumnus of the prestigious Harvard Medical School & MIT-run Health Sciences & Technology (HST) program. Having deep expertise in Molecular Oncology, he has worked at premier global oncology institutions in USA. After experiencing first hand the acute struggle cancer patients face throughout their care journey in India, Dr Mama dedicated a significant part of his life to pioneering a unique, multi-stakeholder led care navigation system, helping treat more than 65,000 patients (35,000+ pro bono) over two decades.
 
-Along this journey, he noticed a massive gap patients face in accessing high quality yet affordable minimally invasive treatments, then founding an Interventional Radiology centre that provides advanced image-guided diagnosis and treatment modalities in a daycare setting. Dr Mama is focused on ensuring supply side provider alignment, as well as building robust clinical & quality control protocols, in order to consistently deliver objectively world-class health experiences and outcomes to all our patients.`
-    }
+    // Along this journey, he noticed a massive gap patients face in accessing high quality yet affordable minimally invasive treatments, then founding an Interventional Radiology centre that provides advanced image-guided diagnosis and treatment modalities in a daycare setting. Dr Mama is focused on ensuring supply side provider alignment, as well as building robust clinical & quality control protocols, in order to consistently deliver objectively world-class health experiences and outcomes to all our patients.`
+    //     }
 ];
