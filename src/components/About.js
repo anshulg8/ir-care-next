@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { founders } from '@/data';
 
-export default function About() {
+export default function About({ founders }) {
     const [openBioIndex, setOpenBioIndex] = useState(null);
+
+    // TODO: LinkedIn
 
     const toggleBio = (index) => {
         setOpenBioIndex(openBioIndex === index ? null : index);
