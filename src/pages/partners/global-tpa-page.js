@@ -136,6 +136,11 @@ const GlobalPatientAccessProgram = () => {
                     </a>
                 </div>
             </section>
+            <section className="bg-white text-center py-10 px-4 border-t border-gray-100">
+                <p className="text-sm text-gray-500 max-w-3xl mx-auto">
+                    ISVIR guideline references and detailed clinical protocols available upon request. <br /> All facilities NABH accredited; data infrastructure ISO 27001 certified.
+                </p>
+            </section>
         </>
     );
 };

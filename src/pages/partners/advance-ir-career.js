@@ -1,68 +1,68 @@
 import React from 'react';
-import { CheckCircle, Stethoscope, Link2, ShieldCheck, BookUser, HeartPulse, LayoutDashboard, FileText, PhoneCall } from 'lucide-react';
+import { CheckCircle, HeartPulse, Plane, BookOpenCheck, FileText, Users, Stethoscope, BadgeCheck, UserCheck } from 'lucide-react';
 import { BASE_URL } from '@/constants';
 import SEO from '@/components/SEO';
 
 const features = [
     {
         icon: <CheckCircle className="w-6 h-6 text-teal-600" />,
-        title: 'Evidence-first triage',
-        description: 'All interventions vetted against Indian Society of Interventional Radiology (ISVIR) guidelines.*',
+        title: 'Top-quartile pay',
+        description: 'Minimal after-hours load; urgent cases routed to a dedicated night pool.',
     },
     {
-        icon: <BookUser className="w-6 h-6 text-teal-600" />,
-        title: 'Shared-care earnings',
-        description: 'Receive automated payouts for follow-ups and care navigation, not just the first consult.',
+        icon: <BadgeCheck className="w-6 h-6 text-teal-600" />,
+        title: 'Latest tech exposure',
+        description: 'If it’s FDA-approved and evidence-backed, you’ll use it first.',
     },
     {
-        icon: <HeartPulse className="w-6 h-6 text-teal-600" />,
-        title: 'Prestige & learning',
-        description: 'Private masterclasses, early access to new-tech briefings, peer networking.',
+        icon: <Plane className="w-6 h-6 text-teal-600" />,
+        title: 'Mobility & freedom',
+        description: 'Travel to centres of excellence or have the mobile suite come to you.',
     },
     {
-        icon: <ShieldCheck className="w-6 h-6 text-teal-600" />,
-        title: 'Non-poaching pledge',
-        description: 'We contractually return your patient to you for all non-IR care—always.',
+        icon: <BookOpenCheck className="w-6 h-6 text-teal-600" />,
+        title: 'Academic growth',
+        description: 'In-house research cell, funded studies, virtual MDT boards.',
     },
 ];
 
 const toolkit = [
     {
-        icon: <LayoutDashboard className="w-6 h-6 text-teal-600" />,
-        label: 'Real-time case-tracking dashboard',
+        icon: <UserCheck className="w-6 h-6 text-teal-600" />,
+        label: 'Credentialing portal & malpractice cover',
     },
     {
         icon: <FileText className="w-6 h-6 text-teal-600" />,
-        label: 'Co-branded patient education sheets',
+        label: 'Case-based learning series',
     },
     {
-        icon: <PhoneCall className="w-6 h-6 text-teal-600" />,
-        label: '24/7 clinician hotline for complex queries',
+        icon: <Stethoscope className="w-6 h-6 text-teal-600" />,
+        label: 'Relocation & travel facilitation',
     },
 ];
 
-const EliteDoctorsCircle = () => {
+const AdvanceIRCareer = () => {
     return (
         <>
             <SEO
-                title="Elite Doctors Circle | Refer With Confidence | Docsy"
-                description="Join an invite-only circle to co-manage IR cases, earn shared-care revenue, and ensure evidence-based outcomes for every patient."
-                url={`${BASE_URL}/partners/doctors`}
+                title="Advance Your IR Career | Docsy for Clinicians"
+                description="Join Docsy's IR network and gain access to high-complexity cases, latest devices, and academic opportunities—without burnout."
+                url={`${BASE_URL}/partners/ir-doctors`}
             />
 
             <section className="bg-gradient-to-br from-white to-teal-50 py-20 px-6 text-center">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Refer With Confidence. Grow With Integrity.</h1>
+                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Practice Cutting-Edge IR—Minus the Burnout.</h1>
                     <p className="text-lg text-gray-600">
-                        Become part of an invite-only circle that lets you keep the primary relationship,
-                        share follow-up revenue, and guarantee evidence-based IR care for every patient.
+                        Docsy supplies a steady stream of ethically indicated cases, mobile advanced equipment,
+                        and research opportunities—so you can focus on medicine, not marketing.
                     </p>
                 </div>
             </section>
 
             <section className="py-20 bg-white px-6">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-2xl font-bold text-teal-700 mb-10 text-center">Why Clinicians Join</h2>
+                    <h2 className="text-2xl font-bold text-teal-700 mb-10 text-center">Why Clinicians Choose Docsy</h2>
                     <div className="grid md:grid-cols-2 gap-10">
                         {features.map((feature, idx) => (
                             <div key={idx} className="flex items-start gap-4">
@@ -82,16 +82,16 @@ const EliteDoctorsCircle = () => {
                     <h2 className="text-2xl font-bold text-teal-700 mb-12">How It Works</h2>
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="bg-white rounded-xl shadow-sm p-6 border-t-4 border-teal-600">
-                            <h3 className="font-bold text-lg text-gray-800 mb-2">Join the Circle</h3>
-                            <p className="text-sm text-gray-600">Digital contract & credential check.</p>
+                            <h3 className="font-bold text-lg text-gray-800 mb-2">Apply Online</h3>
+                            <p className="text-sm text-gray-600">Upload CV & licences.</p>
                         </div>
                         <div className="bg-white rounded-xl shadow-sm p-6 border-t-4 border-teal-600">
-                            <h3 className="font-bold text-lg text-gray-800 mb-2">Refer</h3>
-                            <p className="text-sm text-gray-600">Through your personalised portal or e-fax.</p>
+                            <h3 className="font-bold text-lg text-gray-800 mb-2">Peer Review</h3>
+                            <p className="text-sm text-gray-600">Advisory board vets credentials within a week.</p>
                         </div>
                         <div className="bg-white rounded-xl shadow-sm p-6 border-t-4 border-teal-600">
-                            <h3 className="font-bold text-lg text-gray-800 mb-2">Co-manage</h3>
-                            <p className="text-sm text-gray-600">Recovery via our app; payouts land quarterly.</p>
+                            <h3 className="font-bold text-lg text-gray-800 mb-2">Operate</h3>
+                            <p className="text-sm text-gray-600">Choose rosters that fit your lifestyle; Docsy handles everything else.</p>
                         </div>
                     </div>
                 </div>
@@ -113,23 +113,19 @@ const EliteDoctorsCircle = () => {
 
             <section className="bg-gradient-to-br from-teal-50 to-gray-100 py-16 px-6">
                 <div className="max-w-3xl mx-auto text-center">
-                    <div className="bg-white p-8 rounded-xl shadow-md relative">
-                        <svg className="absolute -top-5 left-6 w-10 h-10 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M7.17 5.59C4.23 7.38 2 10.65 2 14.29 2 18.97 5.91 23 11 23c1.31 0 2.58-.26 3.74-.73-.64-.96-1.02-2.15-1.02-3.42 0-3.31 2.69-6 6-6 .73 0 1.43.13 2.07.36A10.002 10.002 0 0 0 7.17 5.59Z" />
-                        </svg>
+                    <div className="bg-white p-8 rounded-xl shadow-md">
                         <blockquote className="italic text-gray-800 text-lg">
-                            “Docsy’s protocol keeps my patients safe and my time protected.”
+                            “Joining Docsy let me double my complex-case exposure without sacrificing weekends.”
                         </blockquote>
-                        <p className="text-sm text-gray-500 mt-4">— Dr K. Mehta, Diabetologist</p>
-                        <p className="text-xs text-gray-400 mt-2">NABH-accredited centres | ISO 27001 data security</p>
+                        <p className="text-sm text-gray-500 mt-4">— Dr R. Nair, IR Consultant</p>
                     </div>
                 </div>
             </section>
 
             <section className="bg-teal-600 py-20 px-6 text-white text-center">
                 <div className="max-w-2xl mx-auto">
-                    <h2 className="text-2xl font-bold mb-4">Reserve a 15-minute strategy call</h2>
-                    <p className="mb-6">Get a printable “Referral Workflow Cheat-Sheet” immediately after booking.</p>
+                    <h2 className="text-2xl font-bold mb-4">Book a confidential call</h2>
+                    <p className="mb-6">Receive our three-step onboarding guide.</p>
                     <a
                         href="/book-call"
                         className="inline-block bg-white text-teal-700 font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-100 transition"
@@ -147,4 +143,4 @@ const EliteDoctorsCircle = () => {
     );
 };
 
-export default EliteDoctorsCircle;
+export default AdvanceIRCareer;
