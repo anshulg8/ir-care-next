@@ -47,7 +47,7 @@ const paeBlock = () => {
                 At this point, physical size reduction is needed.
             </p>
             <p className="mb-8 text-lg">
-                Traditional surgeries (TURP, laser, Rezum) remove part of the prostate via the penis using shaving, steam, or lasers. These come with risks — permanent sexual or urinary issues (5–10%) due to nerve damage, and a 3–5% chance of urethral stricture, a painful blockage caused by scar tissue.
+                Traditional surgeries (TURP, laser) remove part of the prostate via the penis using shaving, steam, or lasers. These come with risks — permanent sexual or urinary issues (5–10%) due to nerve damage, and a 3–5% chance of urethral stricture, a painful blockage caused by scar tissue.
             </p>
 
             <div className="bg-teal-50 border border-teal-100 text-gray-800 p-4 rounded-lg mt-8 text-lg">

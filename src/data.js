@@ -663,7 +663,7 @@ export const proceduresArray = [
             "बार-बार पेशाब", "रात में पेशाब के लिये उठना", "धीमी धार", "पेशाब रुकना"
         ],
         conventionalTreatment: [
-            "TURP", "HoLEP", "Rezum™ steam", "UroLift® clips", "Laser prostate surgery"
+            "TURP", "HoLEP", "UroLift® clips", "Laser prostate surgery"
         ],
         irAlternative: "Prostatic Artery Embolization (PAE)",
         schemaMarkup: {

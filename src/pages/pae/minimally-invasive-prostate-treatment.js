@@ -82,7 +82,7 @@ const comparisonRows = [
 ];
 
 const title = "No Surgery. Just Relief. Walk Out Free"
-const description = "Prostate Artery Embolization (PAE) is a US-FDA approved, superior, non-surgical alternative to TURP (including bipolar, channel & saline), GreenLight laser surgery and Rezum steam therapy. It shrinks the prostate via a pinhole procedure done by a vascular specialist—no cutting, no hospital stay, no catheter. Unlike TURP or it's other alternatives, PAE avoids the risk of permanent Erectile Dysfunction, Incontinence (urine leakage) or even potentially life-threatening Stricture complication."
+const description = "Prostate Artery Embolization (PAE) is a US-FDA approved, superior, non-surgical alternative to TURP (including bipolar, channel & saline), GreenLight laser surgery. It shrinks the prostate via a pinhole procedure done by a vascular specialist—no cutting, no hospital stay, no catheter. Unlike TURP or it's other alternatives, PAE avoids the risk of permanent Erectile Dysfunction, Incontinence (urine leakage) or even potentially life-threatening Stricture complication."
 
 const procedureInfoSections = [
     {
