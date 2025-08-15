@@ -12,7 +12,7 @@ export default function CtaBlock({ heading }) {
   });
 
   const [forceOpen, setForceOpen] = useState(false);
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  // const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -44,8 +44,11 @@ export default function CtaBlock({ heading }) {
 
     // Optional: Clear form or show feedback
     // alert('Thank you! Our expert will contact you shortly.');
-    setShowSuccessModal(true);
+    // setShowSuccessModal(true);
     setFormData({ name: '', phone: '', city: '', procedure: '', referralCode: '' });
+
+    // Redirect to thank you page
+    window.location.href = '/thank-you';
   };
 
   return (
@@ -88,9 +91,12 @@ export default function CtaBlock({ heading }) {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          placeholder="Mobile Number"
+          placeholder="Enter 10 Digit Mobile Number"
           required
+          pattern="[0-9]{10}"
           className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-400 text-sm"
+          onInvalid={(e) => e.target.setCustomValidity("Please only enter 10-digit number")}
+          onInput={(e) => e.target.setCustomValidity("")}
         />
 
         <button
@@ -101,7 +107,7 @@ export default function CtaBlock({ heading }) {
         </button>
       </form>
 
-      {showSuccessModal && (
+      {/* {showSuccessModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm z-40">
           <div className="bg-white rounded-lg shadow-lg px-6 py-4 max-w-sm w-full text-center">
             <h4 className="text-lg font-semibold mb-2 text-green-700">Appointment requested successfully</h4>
@@ -117,7 +123,7 @@ export default function CtaBlock({ heading }) {
             </button>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Modal component rendered based on forceOpen */}
       <ContactFloatingButton
