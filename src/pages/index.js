@@ -8,7 +8,7 @@ import ProcedureSection from '../components/ProcedureSection';
 import TestimonialSection from '../components/TestimonialSection';
 import FAQSection from '../components/FAQSection';
 import SwiperSection from '../components/SwiperSection';
-import CentersCarousel from '../components/CentersCarousel';
+// import CentersCarousel from '../components/CentersCarousel';
 import { centers, generalFaqs, landingTestimonials } from '../data';
 import StickyButtons from '../components/StickyButtons';
 import ContactFloatingButton from '../components/ContactFloatingButton';
@@ -62,7 +62,7 @@ const Home = () => {
                 <ProcedureSection />
                 <DiseaseSearch />
                 <FeaturedDoctorsSection />
-                <CentersCarousel centers={centers} />
+                {/* <CentersCarousel centers={centers} /> */}
                 <WhyChooseUsSection />
                 <HowItWorks />
                 <TestimonialSection testimonials={landingTestimonials} />

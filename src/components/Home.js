@@ -8,7 +8,6 @@ import ProcedureSection from './ProcedureSection';
 import TestimonialSection from './TestimonialSection';
 import FAQSection from './FAQSection';
 import SwiperSection from './SwiperSection';
-import CentersCarousel from './CentersCarousel';
 import { centers, generalFaqs, landingTestimonials } from '../data.js';
 import StickyButtons from './StickyButtons.js';
 import ContactFloatingButton from './ContactFloatingButton.js';
@@ -26,7 +25,7 @@ const Home = () => {
             <DiseaseIconsGrid />
             <DiseaseSearch />
             <FeaturedDoctorsSection />
-            <CentersCarousel centers={centers} />
+            {/* <CentersCarousel centers={centers} /> */}
             <WhyChooseUsSection />
             <HowItWorks />
             <ProcedureSection />
