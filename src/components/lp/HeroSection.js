@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function HeroSection({ heading, bulletPoints }) {
+export default function HeroSection({ heading, bulletPoints, doctor }) {
   return (
     <section className="relative w-full overflow-hidden bg-white">
       {/* Background Image */}
@@ -32,15 +32,15 @@ export default function HeroSection({ heading, bulletPoints }) {
           {/* Right Doctor Image Section */}
           <div className="flex flex-col items-center min-w-[120px] max-w-[40%]">
             <Image
-              src="/doctor3-min.png"
+              src={doctor.picture}
               alt="Doctor"
               width={120}
               height={120}
               className="object-contain"
             />
             <div className="text-center mt-2">
-              <p className="text-sm font-semibold text-black">Dr. Kanishk Patil, Urologist</p>
-              <p className="text-xs text-gray-600">MCh (Uro), FRCS (UK)</p>
+              <p className="text-sm font-semibold text-black">{doctor.title}</p>
+              <p className="text-xs text-gray-600">{doctor.description}</p>
             </div>
           </div>
         </div>

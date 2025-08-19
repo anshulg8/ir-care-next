@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FIELD_CITY_ID, FIELD_DISEASE_ID, FIELD_NAME_ID, FIELD_PHONE_ID, GOOGLE_FORM_ACTION_URL, PHONE_NUMBER, YOUR_REFERRAL_CODE_FIELD_ID } from "@/constants";
 import ContactFloatingButton from '../ContactFloatingButton';
 
-export default function CtaBlock({ heading }) {
+export default function CtaBlock({ heading, primaryCTA, formCTA }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -69,7 +69,7 @@ export default function CtaBlock({ heading }) {
 
         className="w-[90%] bg-[#ff8300] text-white font-semibold py-3 rounded-full text-center text-base shadow-md mb-6"
       >
-        Speak to a Urologist for Free
+        {primaryCTA}
       </button>
 
       {/* Title */}
@@ -103,7 +103,7 @@ export default function CtaBlock({ heading }) {
           type="submit"
           className="w-[90%] bg-[#ff8300] text-white font-semibold py-3 rounded-full text-base mx-auto block shadow-md"
         >
-          Submit & Speak to a Urologist for Free
+          {formCTA}
         </button>
       </form>
 

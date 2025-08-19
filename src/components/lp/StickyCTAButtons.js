@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import ContactFloatingButton from '../ContactFloatingButton';
 
-export default function StickyCTAButtons() {
+export default function StickyCTAButtons({ primaryStickyCTA, secondaryCTA }) {
   const [show, setShow] = useState(false);
   const [forceOpen, setForceOpen] = useState(false);
 
@@ -37,7 +37,7 @@ export default function StickyCTAButtons() {
           }}
           className="flex-1 bg-[#ff8300] text-white text-sm font-semibold py-3 rounded-full"
         >
-          Speak to a Urologist
+          {primaryStickyCTA}
         </button>
 
         {/* Book Free Appointment */}
@@ -54,7 +54,7 @@ export default function StickyCTAButtons() {
           }}
           className="flex-1 bg-white text-teal-700 border border-teal-600 text-sm font-semibold py-3 rounded-full shadow-sm"
         >
-          Book Free Appointment
+          {secondaryCTA}
         </button>
 
       </div>

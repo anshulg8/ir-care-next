@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ContactFloatingButton from '../ContactFloatingButton';
 
-export default function BottomCTA({ sectionId }) {
+export default function BottomCTA({ sectionId, primaryCTA, secondaryCTA }) {
   const [forceOpen, setForceOpen] = useState(false);
 
   return (
@@ -20,7 +20,7 @@ export default function BottomCTA({ sectionId }) {
         }}
         className="w-full bg-[#ff8300] text-white font-semibold py-3 rounded-full text-center text-base shadow-md"
       >
-        Speak to a Urologist for Free
+        {primaryCTA}
       </button>
 
       <button
@@ -38,7 +38,7 @@ export default function BottomCTA({ sectionId }) {
         }}
         className="w-full bg-white-100 text-teal-700 font-semibold py-3 rounded-full text-center text-base shadow-sm border border-teal-600"
       >
-        Book Free Appointment
+        {secondaryCTA}
       </button>
 
       {/* Inject the modal */}

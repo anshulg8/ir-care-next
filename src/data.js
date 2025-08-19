@@ -559,6 +559,25 @@ export const uaeTestimonials = [landingTestimonials[2], landingTestimonials[0], 
 export const haeTestimonials = landingTestimonials;
 export const tameTestimonials = [landingTestimonials[3], landingTestimonials[0], landingTestimonials[1], landingTestimonials[2]];;
 
+export const blogsArray = [
+    {
+        "slug": "what-is-hae",
+        "title": "What is HAE?",
+        "date": "2025-08-12",
+        "author": "Dr. Kanishk Patil",
+        "excerpt": "HAE is a non-surgical treatment for hemorrhoids. Learn how it works, its benefits, and patient experiences.",
+        htmlPath: 'whatIsHAE',
+    },
+    {
+        "slug": "ufe-vs-hysterectomy",
+        "title": "UFE vs Hysterectomy: What's Better?",
+        "date": "2025-07-22",
+        "author": "Dr. Kanishk Patil",
+        "excerpt": "Compare Uterine Fibroid Embolization with hysterectomy for fibroid treatment.",
+        htmlPath: 'whatIsHAE',
+    }
+]
+
 export const proceduresArray = [
     {
         id: 1,
@@ -1376,3 +1395,21 @@ Dr Advay is committed to building innovative healthcare delivery models leveragi
 Anshul is passionate about crafting seamless digital care experiences for our patients by building from a first principles perspective, incorporating patient-centric design and behavioural science paradigms into health-tech systems.`
     },
 ];
+
+export const consultants = [
+    {
+        title: "Dr. Kanishk Patil, Urologist",
+        description: "MCh (Uro), FRCS (UK)",
+        picture: "/doctor1.png",
+    },
+    {
+        title: "Dr Seema Aundhekar, Gynaecologist",
+        description: "MBBS, DGO",
+        picture: "/doctor2.png",
+    },
+    {
+        title: "Dr. Anirudh Dhar, General Surgeon",
+        description: "MBBS, MS (Gen Surgery), MRCS (UK)",
+        picture: "/doctor3.png",
+    }
+]

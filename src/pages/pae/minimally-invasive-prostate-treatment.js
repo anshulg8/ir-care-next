@@ -12,7 +12,7 @@ import VideoSection from '../../components/lp/VideoSection';
 import FaqSection from '../../components/lp/FaqSection';
 import StickyCTAButtons from '@/components/lp/StickyCTAButtons';
 import prostateImage from '@/assets/prostate-169.png';
-import { proceduresArray } from '@/data';
+import { consultants, proceduresArray } from '@/data';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
 
@@ -118,6 +118,11 @@ const procedureInfoSections = [
 const videoTitle = 'Real Stories of Painless PAE – Watch Now'
 const videoLink = 'https://www.youtube.com/embed/9zEgpuenvLU'
 
+const primaryCTA = 'Speak to a Urologist for Free';
+const secondaryCTA = 'Book Free Appointment';
+const formCTA = 'Submit & Speak to a Urologist for Free';
+const primaryStickyCTA = 'Speak to a Urologist';
+
 export default function Page2() {
     return (
         <>
@@ -127,22 +132,22 @@ export default function Page2() {
                 url={`${BASE_URL || ''}/m/landing`}
             // schemaMarkup={procedure.schemaMarkup}
             />
-            <HeroSection heading={heading} bulletPoints={bulletPoints} />
-            <CtaBlock heading="Book a Free Consultation" />
+            <HeroSection heading={heading} bulletPoints={bulletPoints} doctor={consultants[0]} />
+            <CtaBlock heading="Book a Free Consultation" primaryCTA={primaryCTA} formCTA={formCTA} />
             <TrustStrip />
             <OurDoctors />
             <BenefitsSection benefits={benefits} />
-            <BottomCTA sectionId={"afterBenefits"} />
+            <BottomCTA sectionId={"afterBenefits"} primaryCTA={primaryCTA} secondaryCTA={secondaryCTA} />
             <FeatureHighlights features={features} />
             <ComparisonTable rows={comparisonRows} />
-            <BottomCTA sectionId={"afterComparison"} />
+            <BottomCTA sectionId={"afterComparison"} primaryCTA={primaryCTA} secondaryCTA={secondaryCTA} />
             <WhatIsPAE title={title} description={description} image={prostateImage} />
             <ProcedureInfoSection procedureInfo={procedureInfoSections} />
             <VideoSection videoTitle={videoTitle} videoLink={videoLink} />
             <FaqSection faqs={proceduresArray[0].faqs} />
-            <BottomCTA sectionId={"afterFaqs"} />
+            <BottomCTA sectionId={"afterFaqs"} primaryCTA={primaryCTA} secondaryCTA={secondaryCTA} />
             {/* <DisclaimerSection /> */}
-            <StickyCTAButtons />
+            <StickyCTAButtons primaryStickyCTA={primaryStickyCTA} secondaryCTA={secondaryCTA} />
         </>
     );
 }
