@@ -16,101 +16,101 @@ import { consultants, proceduresArray } from '@/data';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
 
-const heading = 'No Cuts. No Pain. Choose Painless HAE Today';
+const heading = 'No Cuts. No Pain. Try Gentle HAE Treatment Today';
 const bulletPoints = [
-    'Senior Interventional Radiologists (20+ years experience)',
-    'No Incisions, No General Anesthesia, Preserve Anal Anatomy',
-    '45–60‑Minute Procedure with Same‑Day Discharge'
+    'Experienced Senior Doctors (20+ years expertise)',
+    'No Surgery, No General Anesthesia',
+    '45–60‑Minute Procedure, Go Home Same Day'
 ];
 
 const benefits = [
     {
-        title: 'Benefits of Minimally Invasive HAE',
+        title: 'Benefits of Gentle HAE Treatment',
         points: [
-            'Outpatient Procedure, Walk Home Same Day',
-            'No Surgical Wound, No Risk to Continence',
-            '90%+ Success in Reducing Bleeding & Swelling',
+            'No Hospital Stay—Walk Out Same Day',
+            'No Cutting, No Risk to Bowel Control',
+            'Over 90% See Less Bleeding & Swelling',
         ],
         bg: '#fff9f2',
     },
     {
-        title: 'Why Avoid Hemorrhoidectomy or Banding?',
+        title: 'Why Avoid Surgery or Band Treatment?',
         points: [
-            'Painful Recovery and Longer Downtime',
-            'Risk of Incontinence or Anal Damage',
-            'Scarring and Recurrence Risk',
+            'Pain After Surgery and Long Healing Time',
+            'Possible Loss of Bowel Control or Damage',
+            'Risk of Scars or Return of Hemorrhoids',
         ],
         bg: '#f5f8fb',
     },
     {
         title: 'Why Choose Docsy?',
         points: [
-            'Only Senior Interventional Specialists (20+ yrs exp)',
-            '6 World‑Class Centres with US‑Grade Imaging Tech',
-            'End‑to‑End Insurance & Claims Assistance',
-            'Free Pickup & Drop, Meals For Family',
+            'Only Senior Experts with 20+ Years’ Experience',
+            '6 Top Clinics with Advanced Imaging Technology',
+            'Full Help with Insurance and Claims',
+            'Free Travel Arrangements, Meals for Family',
         ],
         bg: '#faf8fd',
     },
     {
-        title: 'Who Is a Good Candidate for HAE?',
+        title: 'Who Should Consider HAE?',
         points: [
-            'Patients with Persistent Bleeding from Internal Hemorrhoids',
-            'Those Who Prefer to Avoid Surgery',
-            'Not Cleared for Anesthesia or High-Risk for Surgery',
-            'Looking for Fast Recovery & Less Pain',
-            'Concerned About Bowel Control or Scarring',
+            'People with Regular Bleeding from Piles (Internal Hemorrhoids)',
+            'Those Who Want to Avoid Surgery or Painful Options',
+            'Not Fit for Surgery or Strong Anesthesia',
+            'Want Quick Relief and Fast Return to Normal Life',
+            'Worried About Bowel Control or Cuts/Scars',
         ],
         bg: '#fff9f2',
     },
 ];
 
 const features = [
-    { icon: '✅', label: '20+ Yrs Avg. Doctor Experience' },
-    { icon: '✂️', label: '100% Non‑Surgical Hemorrhoid Relief' },
-    { icon: '🔒', label: 'No Interrupted Continence' },
-    { icon: '🏥', label: '6 NABH‑Certified Locations' },
+    { icon: '✅', label: '20+ Years Doctor Experience' },
+    { icon: '✂️', label: '100% Non‑Surgical Piles Relief' },
+    { icon: '🔒', label: 'Bowel Control Fully Protected' },
+    { icon: '🏥', label: '6 NABH‑Approved Clinics' },
 ];
 
 const comparisonRows = [
-    ['Local Anesthesia Only (awake during HAE)', 'No', 'Yes'],
-    ['Tissue Removed or Cut (surgical risk)', 'Yes', 'No'],
-    ['Anal Trauma or Scarring', 'Yes', 'No'],
-    ['Hospital Stay & Bed Rest', 'Yes', 'No'],
-    ['Risk of Incontinence', 'Yes', 'No'],
-    ['Long Painful Recovery', 'Yes', 'No'],
+    ['Only Local Numbing (awake during HAE)', 'No', 'Yes'],
+    ['Cutting or Tissue Removal', 'Yes', 'No'],
+    ['Damage or Scars in Anal Area', 'Yes', 'No'],
+    ['Hospital Stay & Long Bed Rest', 'Yes', 'No'],
+    ['Risk of Losing Bowel Control', 'Yes', 'No'],
+    ['Painful and Long Recovery', 'Yes', 'No'],
 ];
 
-const title = "No Surgery. Just Relief. Head Home Same Day";
-const description = "Hemorrhoidal Artery Embolization (HAE) is a minimally invasive, image‑guided alternative to hemorrhoidectomy or banding. Tiny embolic particles block the blood supply to internal hemorrhoids, causing them to shrink—no cuts, no hospital stay, and quick recovery, with preserved continence and long‑lasting relief.";
+const title = "No Surgery. Just Relief. Return Home the Same Day";
+const description = "HAE (Hemorrhoid Artery Embolization) is a simple, non-surgical option instead of painful surgery or banding. It works by gently blocking the blood flow to swollen veins (piles), helping them shrink. No cuts, no hospital stay—just fast relief and full control, with a smooth and easy recovery.";
 
 const procedureInfoSections = [
     {
-        title: 'How to Prepare for Your HAE Procedure',
+        title: 'Getting Ready for Your HAE Procedure',
         points: [
-            'Brief imaging (CT or Doppler) pre‑procedure',
-            'Stop blood thinners if advised',
-            '6‑hour fasting before procedure',
-            'Share your medical history and meds',
-            'Minimal paperwork—outpatient setup',
+            'Quick scan (CT or Doppler) before the procedure',
+            'Stop any blood-thinning medicines if advised',
+            'No food or drink for 6 hours before the procedure',
+            'Share your health history and medication list',
+            'Quick registration—no overnight stay needed',
         ],
     },
     {
         title: 'What Happens During the HAE Procedure',
         points: [
-            'Catheter inserted via wrist or groin under local anesthesia',
-            'Guided by X‑ray to superior rectal arteries feeding hemorrhoids',
-            'Embolic particles or coils injected to stop blood flow',
-            'No cuts, no general anesthesia, stay awake comfortably',
+            'Doctor places a thin tube in the wrist or groin area with numbing only',
+            'Using X-ray guidance, blood vessels feeding the piles are targeted',
+            'Tiny particles are used to block blood supply—no cutting',
+            'You stay awake and comfortable during the 45–60 minute procedure',
         ],
     },
     {
         title: 'What to Expect After HAE?',
         points: [
-            'Go home within hours',
-            'Return to work or light activity in 1–2 days',
-            'Mild groin or pelvic soreness possible for a few days',
-            'Bleeding reduction within days; full relief in 2–6 weeks',
+            'Go home within a few hours',
+            'Back to work or light tasks in 1–2 days',
+            'Mild soreness in the groin or lower tummy may occur',
+            'Less bleeding in a few days, full relief in 2 to 6 weeks',
         ],
     },
 ];
@@ -133,7 +133,7 @@ export default function Page2() {
             // schemaMarkup={procedure.schemaMarkup}
             />
             <HeroSection heading={heading} bulletPoints={bulletPoints} doctor={consultants[2]} />
-            <CtaBlock heading="Book a Free Consultation" primaryCTA={primaryCTA} formCTA={formCTA} />
+            <CtaBlock heading="Book a Free Consultation" primaryCTA={primaryCTA} formCTA={formCTA} procedure="HAE" />
             <TrustStrip />
             <OurDoctors />
             <BenefitsSection benefits={benefits} />
@@ -144,7 +144,7 @@ export default function Page2() {
             <WhatIsPAE title={title} description={description} image={pilesImage} />
             <ProcedureInfoSection procedureInfo={procedureInfoSections} />
             <VideoSection videoTitle={videoTitle} videoLink={videoLink} />
-            <FaqSection faqs={proceduresArray[0].faqs} />
+            <FaqSection faqs={proceduresArray[2].faqs} />
             <BottomCTA sectionId={"afterFaqs"} primaryCTA={primaryCTA} secondaryCTA={secondaryCTA} />
             {/* <DisclaimerSection /> */}
             <StickyCTAButtons primaryStickyCTA={primaryStickyCTA} secondaryCTA={secondaryCTA} />

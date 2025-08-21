@@ -16,101 +16,101 @@ import { consultants, proceduresArray } from '@/data';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
 
-const heading = 'Shrink Fibroids—Uterus Intact with Painless UFE';
+const heading = 'Shrink Fibroids—Keep Your Uterus with Pain-Free UFE';
 const bulletPoints = [
-    'Expert Interventional Radiologists (20+ yrs experience)',
-    'No Cuts, No Hysterectomy, Preserve Fertility',
-    '1–2‑Hour Procedure with Same‑Day Discharge'
+    'Experienced Doctors (20+ Years in Treatment)',
+    'No Surgery, No Uterus Removal, Fertility Safe',
+    '1–2‑Hour Procedure, Go Home Same Day'
 ];
 
 const benefits = [
     {
         title: 'Benefits of Scar‑Free UFE',
         points: [
-            '1–2‑Hour Procedure, Home Same Day',
-            'No Incisions, No General Anesthesia, Uterus Preserved',
-            '85–90% Experience Lighter Periods & Less Pain',
+            'Short 1–2 Hour Procedure, Discharge Same Day',
+            'No Cuts, No Full Anesthesia, Uterus Stays Intact',
+            '85–90% Report Lighter Periods & Less Pain',
         ],
         bg: '#fff9f2',
     },
     {
-        title: 'Why Avoid Hysterectomy or Myomectomy?',
+        title: 'Why Avoid Surgery to Remove Fibroids?',
         points: [
-            'Longer Recovery, Higher Complication Risk',
-            'Potential Loss of Fertility with Hysterectomy',
-            'Surgical Scarring and Hospital Stay',
+            'Takes Longer to Recover, Higher Risk of Side Effects',
+            'Removing Uterus Means No Future Pregnancy',
+            'Surgical Cuts, Scars, and Days in Hospital',
         ],
         bg: '#f5f8fb',
     },
     {
         title: 'Why Choose Docsy?',
         points: [
-            'Only Senior Vascular Specialists (20+ yrs exp)',
-            '6 World‑Class Centres with Latest US‑CE Technology',
-            'Full Insurance Claim Support & Patient Logistics',
-            'Free Pickup & Drop, Meals For Family',
+            'Only Senior Vascular Experts (20+ Years Experience)',
+            '6 Leading Centres with Latest Global Technology',
+            'Support with Insurance & All Travel Help',
+            'Free Pickup & Drop, Food for Family Members',
         ],
         bg: '#faf8fd',
     },
     {
-        title: 'Who is a Good Candidate for UFE?',
+        title: 'Who Can Choose UFE?',
         points: [
-            'Women with heavy bleeding or pelvic pressure',
-            'Those who wish to preserve fertility',
-            'Avoid major surgery or general anesthesia',
-            'Prefer minimally invasive, fast‑recovery options',
-            'Concerned about surgical risks or scarring',
+            'Women with heavy periods or lower belly pressure',
+            'Want to keep the option to have kids',
+            'Don’t want big surgery or sleep-through anesthesia',
+            'Prefer quicker, simpler treatments',
+            'Worried about cuts, scars, or long hospital stays',
         ],
         bg: '#fff9f2',
     },
 ];
 
 const features = [
-    { icon: '✅', label: '20+ Yrs Avg. Doctor Experience' },
-    { icon: '✂️', label: '100% Organ‑Preserving Embolization' },
-    { icon: '🔒', label: 'Quick Return to Daily Life' },
-    { icon: '🏥', label: '6 NABH‑Certified Locations' },
+    { icon: '✅', label: '20+ Years Doctor Experience' },
+    { icon: '✂️', label: 'Keeps All Organs—No Removal' },
+    { icon: '🔒', label: 'Back to Normal Life Quickly' },
+    { icon: '🏥', label: '6 NABH‑Approved Centres' },
 ];
 
 const comparisonRows = [
-    ['Local Anesthesia (awake during UFE)', 'No', 'Yes'],
-    ['Uterus Removed (hysterectomy risk)', 'Yes', 'No'],
-    ['Large Abdominal Incision & Scar', 'Yes', 'No'],
-    ['Hospital Stay & Bed Rest', 'Yes', 'No'],
-    ['Long‑Term Fertility Loss', 'Yes', 'No'],
-    ['Risk of Surgical Complications', 'Yes', 'No'],
+    ['Local Numbing (awake during UFE)', 'No', 'Yes'],
+    ['Uterus Taken Out (surgical removal)', 'Yes', 'No'],
+    ['Big Cut on Belly & Scar', 'Yes', 'No'],
+    ['Need to Stay in Hospital', 'Yes', 'No'],
+    ['Chance of Not Getting Pregnant Again', 'Yes', 'No'],
+    ['Higher Chance of Surgery Problems', 'Yes', 'No'],
 ];
 
-const title = "No Hysterectomy. Just Relief. Return Home Same Day";
-const description = "Uterine Fibroid Embolization (UFE) is a minimally invasive, effective alternative to hysterectomy or myomectomy. It’s a pin‑hole procedure performed by interventional radiologists that shrinks fibroids, preserves the uterus, avoids major surgery, and enables lighter periods and less pain—all with same‑day discharge and faster recovery.";
+const title = "No Surgery. Just Relief. Go Home Same Day";
+const description = "UFE (Uterine Fibroid Embolization) is a safe, simple way to shrink fibroids without surgery. It’s a small pinhole procedure done by expert doctors to block blood flow to fibroids. No uterus removal, no big cuts—just lighter periods, less pain, and same-day discharge with fast recovery.";
 
 const procedureInfoSections = [
     {
-        title: 'How to Prepare for Your UFE Procedure',
+        title: 'Getting Ready for Your UFE Procedure',
         points: [
-            'Pelvic MRI or ultrasound imaging prior',
-            'Complete blood work & gynecological evaluation',
-            '6‑hour fasting on day of procedure',
-            'Share your medications & medical history',
-            'Minimal paperwork, outpatient setup only',
+            'Ultrasound or MRI of the pelvic area before treatment',
+            'Basic blood tests and checkup by women’s health doctor',
+            'Don’t eat or drink for 6 hours before the procedure',
+            'Tell us about your health and medicines you take',
+            'Quick paperwork, no hospital stay needed',
         ],
     },
     {
         title: 'What Happens During the UFE Procedure',
         points: [
-            'Interventional Radiologist inserts tiny catheter via wrist or groin under local anesthesia',
-            'Embolic agents block blood flow to fibroids—no cuts, no general anesthesia',
-            'Procedure lasts 1–2 hours and is entirely pain‑free',
-            'Stay awake and comfortable throughout',
+            'Doctor inserts a tiny tube through the wrist or groin with numbing only',
+            'Tiny particles block blood flow to fibroids—no cuts, no full sleep',
+            'Takes 1–2 hours, completely pain-free',
+            'You’re awake, relaxed, and monitored the whole time',
         ],
     },
     {
         title: 'What to Expect After UFE?',
         points: [
-            'Discharge within a few hours',
-            'Desk work in a few days, full return within a week',
-            'No incisions, no surgical recovery',
-            'Noticeably lighter periods and reduced pelvic pressure within cycles, matching surgical outcomes',
+            'Leave clinic after a few hours of rest',
+            'Back to desk work in a few days, full recovery in a week',
+            'No stitches or wound healing needed',
+            'Periods become lighter and pain lessens in a few months—just like with surgery',
         ],
     },
 ];
@@ -133,7 +133,7 @@ export default function Page2() {
             // schemaMarkup={procedure.schemaMarkup}
             />
             <HeroSection heading={heading} bulletPoints={bulletPoints} doctor={consultants[1]} />
-            <CtaBlock heading="Book a Free Consultation" primaryCTA={primaryCTA} formCTA={formCTA} />
+            <CtaBlock heading="Book a Free Consultation" primaryCTA={primaryCTA} formCTA={formCTA} procedure="UFE" />
             <TrustStrip />
             <OurDoctors />
             <BenefitsSection benefits={benefits} />
@@ -144,7 +144,7 @@ export default function Page2() {
             <WhatIsPAE title={title} description={description} image={fibroidImage} />
             <ProcedureInfoSection procedureInfo={procedureInfoSections} />
             <VideoSection videoTitle={videoTitle} videoLink={videoLink} />
-            <FaqSection faqs={proceduresArray[0].faqs} />
+            <FaqSection faqs={proceduresArray[1].faqs} />
             <BottomCTA sectionId={"afterFaqs"} primaryCTA={primaryCTA} secondaryCTA={secondaryCTA} />
             {/* <DisclaimerSection /> */}
             <StickyCTAButtons primaryStickyCTA={primaryStickyCTA} secondaryCTA={secondaryCTA} />

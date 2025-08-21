@@ -133,7 +133,7 @@ export default function Page2() {
             // schemaMarkup={procedure.schemaMarkup}
             />
             <HeroSection heading={heading} bulletPoints={bulletPoints} doctor={consultants[0]} />
-            <CtaBlock heading="Book a Free Consultation" primaryCTA={primaryCTA} formCTA={formCTA} />
+            <CtaBlock heading="Book a Free Consultation" primaryCTA={primaryCTA} formCTA={formCTA} procedure="PAE" />
             <TrustStrip />
             <OurDoctors />
             <BenefitsSection benefits={benefits} />
