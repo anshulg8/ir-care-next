@@ -560,21 +560,21 @@ export const haeTestimonials = landingTestimonials;
 export const tameTestimonials = [landingTestimonials[3], landingTestimonials[0], landingTestimonials[1], landingTestimonials[2]];;
 
 export const blogsArray = [
+    // {
+    //     "slug": "what-is-hae",
+    //     "title": "What is HAE?",
+    //     "date": "2025-08-12",
+    //     "author": "Dr. Kanishk Patil",
+    //     "excerpt": "HAE is a non-surgical treatment for hemorrhoids. Learn how it works, its benefits, and patient experiences.",
+    //     htmlPath: 'whatIsHAE',
+    // },
     {
-        "slug": "what-is-hae",
-        "title": "What is HAE?",
-        "date": "2025-08-12",
+        "slug": "enlarged-prostate-pae-mumbai",
+        "title": "Living with an Enlarged Prostate in Mumbai? Here’s What You Can Do",
+        "date": "2025-08-21",
         "author": "Dr. Kanishk Patil",
-        "excerpt": "HAE is a non-surgical treatment for hemorrhoids. Learn how it works, its benefits, and patient experiences.",
-        htmlPath: 'whatIsHAE',
-    },
-    {
-        "slug": "ufe-vs-hysterectomy",
-        "title": "UFE vs Hysterectomy: What's Better?",
-        "date": "2025-07-22",
-        "author": "Dr. Kanishk Patil",
-        "excerpt": "Compare Uterine Fibroid Embolization with hysterectomy for fibroid treatment.",
-        htmlPath: 'whatIsHAE',
+        "excerpt": "If you're a man over 50 in Mumbai experiencing a weak urine stream, frequent nighttime urination, or the feeling of not fully emptying your bladder, you could be dealing with an enlarged prostate — medically known as Benign Prostatic Hyperplasia (BPH). Though not life-threatening, BPH can significantly impact daily life. The good news? You have options, including modern non-surgical treatments available right here in Mumbai.",
+        htmlPath: 'EnlargedProstateMumbai',
     }
 ]
 

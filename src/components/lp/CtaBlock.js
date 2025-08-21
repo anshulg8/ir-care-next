@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { FIELD_CITY_ID, FIELD_DISEASE_ID, FIELD_NAME_ID, FIELD_PHONE_ID, GOOGLE_FORM_ACTION_URL, PHONE_NUMBER, YOUR_REFERRAL_CODE_FIELD_ID } from "@/constants";
 import ContactFloatingButton from '../ContactFloatingButton';
 
-export default function CtaBlock({ heading, primaryCTA, formCTA }) {
+export default function CtaBlock({ heading, primaryCTA, formCTA, procedure }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     city: 'NA',
-    procedure: 'PAE',
+    procedure: procedure,
     referralCode: ''
   });
 
