@@ -109,7 +109,7 @@ const Layout = ({ children }) => {
                             <Link href="/contact" className="hover:text-white transition">Contact Us</Link>
                         </div>
                         <div>
-                            © {new Date().getFullYear()} Docsy. All rights reserved.
+                            © {new Date().getFullYear()} Docsy Medtech Private Limited. All rights reserved.
                         </div>
                     </div>
                 </div>

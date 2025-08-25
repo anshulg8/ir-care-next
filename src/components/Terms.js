@@ -68,6 +68,13 @@ const Terms = () => {
                             We reserve the right to update or modify these terms at any time without prior notice. Your continued use of the site
                             after changes indicates your acceptance of the new terms.
                         </p>
+                        <h4 className="text-xl font-semibold text-gray-800">6. Refund Policy</h4>
+                        <p>
+                            As this platform serves solely as an intermediary between users and healthcare providers, and all payments for medical services
+                            are processed through insurance carriers or third-party administration providers, we do not collect payments directly other than
+                            an advance security deposit from users for medical services. Therefore, we do not offer refunds. Any billing, reimbursement or
+                            refund questions should be directed to your healthcare provider or insurance company.
+                        </p>
                     </div>
                 </div>
             </section>
