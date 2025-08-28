@@ -1,81 +1,93 @@
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import HTMLBlockRenderer from '@/components/HTMLBlockRenderer';
+import React from 'react';
+import Image from 'next/image';
 import SEO from '@/components/SEO';
-import { BASE_URL } from '@/constants';
-import { blogsArray } from '@/data';
+import { BASE_URL, GHOST_API_URL, GHOST_CONTENT_API_KEY } from '@/constants';
+import { useRouter } from 'next/router';
 
-const BlogDetailPage = ({ blog }) => {
-    const [showContent, setShowContent] = useState(false);
+export async function getStaticPaths() {
+    const res = await fetch(
+        `${GHOST_API_URL}/ghost/api/content/posts/?key=${GHOST_CONTENT_API_KEY}&fields=slug&limit=all`
+    );
+    const data = await res.json();
 
-    useEffect(() => {
-        // Delay mounting heavy HTML component for smoother load
-        setShowContent(true);
-    }, []);
+    const paths = data.posts.map(post => ({
+        params: { slug: post.slug }
+    }));
 
-    if (!blog) {
-        return (
-            <div className="min-h-screen flex items-center justify-center">
-                <div className="text-center">
-                    <h1 className="text-3xl font-bold text-gray-800">Blog Post Not Found</h1>
-                    <Link href="/blog" className="text-teal-600 hover:underline mt-4 block">
-                        ← Back to Blog
-                    </Link>
-                </div>
-            </div>
-        );
-    }
+    return {
+        paths,
+        fallback: false, // Or 'blocking' if you want to support ISR later
+    };
+}
+
+export async function getStaticProps({ params }) {
+    const res = await fetch(
+        `${GHOST_API_URL}/ghost/api/content/posts/slug/${params.slug}/?key=${GHOST_CONTENT_API_KEY}&include=authors`
+    );
+    const data = await res.json();
+    const post = data.posts[0];
+
+    return {
+        props: {
+            post: {
+                title: post.title,
+                slug: post.slug,
+                date: new Date(post.published_at).toLocaleDateString(),
+                author: post.authors?.[0]?.name || 'Unknown',
+                html: post.html,
+                excerpt: post.excerpt,
+                feature_image: post.feature_image || null,
+            },
+        },
+    };
+}
+
+const ArticleShowPage = ({ post }) => {
+    const router = useRouter();
 
     return (
         <>
             <SEO
-                title={`${blog.title} | Docsy Blog`}
-                description={blog.excerpt}
-                url={`${BASE_URL}/blog/${blog.slug}`}
+                title={post.title}
+                description={post.excerpt}
+                url={`${BASE_URL}/article/${post.slug}`}
             />
 
-            <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-3xl mx-auto">
-                    <h1 className="text-4xl font-bold text-gray-900 mb-2">{blog.title}</h1>
-                    <p className="text-sm text-gray-500 mb-6">
-                        {blog.date} • {blog.author}
-                    </p>
+            <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+                <h1 className="text-4xl font-bold text-gray-900 mb-4">{post.title}</h1>
+                <p className="text-sm text-gray-500 mb-6">
+                    {post.date} • {post.author}
+                </p>
 
-                    {/* Render HTML content from public/blog/html/[slug].html */}
-                    {showContent && (
-                        <div className="prose prose-lg max-w-none">
-                            <HTMLBlockRenderer type={blog.htmlPath} />
-                        </div>
-                    )}
-
-                    <div className="mt-12 text-center">
-                        <Link href="/blog" className="text-teal-600 hover:underline text-lg font-medium">
-                            ← Back to All Blog Posts
-                        </Link>
+                {post.feature_image && (
+                    <div className="mb-8">
+                        <Image
+                            src={post.feature_image}
+                            alt={post.title}
+                            width={800}
+                            height={400}
+                            className="rounded-lg object-cover w-full h-auto"
+                        />
                     </div>
+                )}
+
+                {/* <div
+                    className="prose prose-lg max-w-none text-gray-800"
+                    dangerouslySetInnerHTML={{ __html: post.html }}
+                /> */}
+                {/* <div
+                    className="prose prose-teal prose-img:rounded-xl prose-headings:text-gray-900 prose-a:text-teal-600 max-w-none text-gray-800"
+                    dangerouslySetInnerHTML={{ __html: post.html }}
+                /> */}
+
+                <div className="prose prose-lg prose-blue max-w-none">
+                    <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 </div>
-            </div>
+
+
+            </article>
         </>
     );
 };
 
-export default BlogDetailPage;
-
-export async function getStaticPaths() {
-
-    const paths = blogsArray.map((post) => ({
-        params: { slug: post.slug },
-    }));
-
-    return { paths, fallback: false };
-}
-
-export async function getStaticProps({ params }) {
-    const blog = blogsArray.find((p) => p.slug === params.slug) || null;
-
-    return {
-        props: {
-            blog,
-        },
-    };
-}
+export default ArticleShowPage;

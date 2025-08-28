@@ -11,3 +11,6 @@ export const X_URL = "https://x.com/mydocsy/";
 export const INSTA_URL = "https://www.instagram.com/mydocsy";
 export const FB_URL = "https://www.facebook.com/mydocsy";
 export const DEFAULT_PAGE_DESCRIPTION = "Docsy offers India's Most Advanced Surgical Care Experiences by pioneering minimally invasive, image guided pin-hole treatments using interventional radiology (IR). By partnering with only the best top interventional radiologists (average 20+ years experience) and premium IR centers with the latest equipment, Docsy provides safe, modern alternatives to traditional surgery - offering solutions which are Minimally Invasive and Maximally Effective."
+export const BOT_URL = "https://docsy-chat.onrender.com"
+export const GHOST_API_URL = 'https://blog.mydocsy.com';
+export const GHOST_CONTENT_API_KEY = '177eac5ca351465fcc51bf089a';
