@@ -1,8 +1,11 @@
-import { founders } from '@/data';
+import { featuredDoctors, founders } from '@/data';
 import AboutComponent from '../components/About';
 
-export default function About() {
+export default function AboutUs() {
     return <>
-        <AboutComponent founders={founders.slice(1, 3)} />;
+        <AboutComponent
+            founders={founders}
+            advisors={featuredDoctors.slice(0, 2)}
+        />
     </>
 }
