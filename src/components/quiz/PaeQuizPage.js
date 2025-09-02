@@ -70,8 +70,8 @@ const PaeQuizPage = () => {
     return (
         <>
             <SEO
-                title="PAE Quiz | Docsy"
-                description={DEFAULT_PAGE_DESCRIPTION}
+                title="Enlarged Prostate (BPH) Online Test | Docsy"
+                description="Prostate Enlargement affects more than half the males above 60 years age, sometimes even sooner. Take the free 2 min, internationally clinically validated IPSS Test by answering a few questions, and getting your accurate severity score."
                 url={`${BASE_URL || ''}/quiz/prostatic-artery-embolization-pae`}
             />
             <div className="min-h-screen bg-gray-50 py-12">
