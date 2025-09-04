@@ -9,10 +9,11 @@ const Header = () => {
     const router = useRouter();
 
     const navLinks = [
+        { path: '/about', label: 'About Us' },
+        { path: '/procedures', label: 'Our Top Procedures' },
         { path: '/doctors', label: 'Our Doctors' },
-        // { path: '/centres', label: 'Our Centres' },
-        { path: '/procedures', label: 'Our Procedures' },
-        { path: '/treatments', label: 'Treatments' },
+        { path: '/treatments', label: 'All Procedures List' },
+        // { path: '/blog', label: 'Blog' },
     ];
 
     const isActive = (path) => {

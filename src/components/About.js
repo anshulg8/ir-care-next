@@ -131,10 +131,10 @@ export default function About({ founders = [], advisors = [] }) {
                 <section className="bg-gray-50 px-4 py-4 sm:py-6 mt-8">
                     <div className="max-w-6xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
-                            Strategic <span className="text-teal-600">Advisors</span>
+                            Clinical <span className="text-teal-600">Advisors</span>
                         </h2>
                         <p className="text-sm sm:text-base text-gray-500 mb-6">
-                            Global experts providing guidance across clinical strategy, research, and operations.
+                            Global experts providing guidance across clinical strategy & ops, research and quality control.
                         </p>
                     </div>
 
