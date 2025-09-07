@@ -8,7 +8,7 @@ import PaeQuizResult from './PaeQuizResult';
 import StickyButtons from '../StickyButtons.js';
 import { useModal } from '../../context/ModalContext.js';
 import SEO from '../SEO';
-import { BASE_URL, DEFAULT_PAGE_DESCRIPTION } from '@/constants';
+import { BASE_URL } from '@/constants';
 
 const PaeQuizPage = () => {
 
