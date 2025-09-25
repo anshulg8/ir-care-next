@@ -12,8 +12,8 @@ const Header = () => {
         { path: '/about', label: 'About Us' },
         { path: '/procedures', label: 'Our Top Procedures' },
         { path: '/doctors', label: 'Our Doctors' },
-        { path: '/treatments', label: 'All Procedures List' },
-        // { path: '/blog', label: 'Blog' },
+        { path: '/treatments', label: 'All Procedures' },
+        { path: '/blog', label: 'Blog' },
     ];
 
     const isActive = (path) => {

@@ -6,13 +6,15 @@ import ScrollToTop from '../components/ScrollToTop';
 import ContactFloatingButton from '../components/ContactFloatingButton';
 import { ModalProvider } from '../context/ModalContext';
 import Head from 'next/head';
+import ChatWidget from '@/components/ChatWidget';
 
 function MyApp({ Component, pageProps }) {
     // Use the layout defined at the page level, if available
     const getLayout = Component.getLayout || ((page) => (
         <Layout>
+            <ChatWidget />
             <ScrollToTop />
-            <ContactFloatingButton />
+            {/* <ContactFloatingButton /> */}
             <ModalProvider>
                 {page}
             </ModalProvider>
