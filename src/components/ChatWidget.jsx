@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Send } from "lucide-react";
 import { BiMessageDots } from "react-icons/bi";
-import { BOT_URL } from "@/constants";
+import { AWS_BOT_URL } from "@/constants";
 
 // ✅ Detect final confirmation in bot's reply
 function isFinalConfirmation(reply) {
@@ -97,7 +97,7 @@ export default function ChatWidget() {
         setLoading(true);
 
         try {
-            const res = await fetch(`${BOT_URL}/chat`, {
+            const res = await fetch(`${AWS_BOT_URL}/chat`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ sessionId, message: input }),
@@ -123,7 +123,7 @@ export default function ChatWidget() {
                 console.log("📦 Extracted patientData:", extracted);
                 setPatientData(extracted);
 
-                await fetch(`${BOT_URL}/submit`, {
+                await fetch(`${AWS_BOT_URL}/submit`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({

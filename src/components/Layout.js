@@ -3,7 +3,7 @@ import Header from './Header';
 import { FB_URL, INSTA_URL, PHONE_NUMBER, WHATSAPP_LINK, X_URL } from '../constants';
 import Link from 'next/link';
 import InsurancePartners from './InsurancePartners';
-import { FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaFacebook, FaPhone, FaWhatsapp } from 'react-icons/fa6';
 
 const Layout = ({ children }) => {
     return (
@@ -20,24 +20,27 @@ const Layout = ({ children }) => {
                         Speak to our care navigators today. Zero obligation, 100% clarity.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        {/* Phone Button */}
+                        {/* 📞 Call Now Button */}
                         <a
-                            href={`tel:${PHONE_NUMBER}`}
-                            className="bg-white text-teal-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors inline-block"
+                            href={`tel:${PHONE_NUMBER.replace(/\s+/g, '')}`}
+                            className="bg-white text-teal-800 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center w-full sm:w-auto"
                         >
+                            <FaPhone className="h-5 w-5 mr-2" />
                             Call Now: {PHONE_NUMBER}
                         </a>
 
-                        {/* WhatsApp Button */}
+                        {/* 💬 WhatsApp Button */}
                         <a
                             href={WHATSAPP_LINK}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="border border-white hover:bg-teal-800 px-8 py-3 rounded-lg font-medium transition-colors inline-block"
+                            className="border border-white text-white hover:bg-white hover:text-teal-800 px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center w-full sm:w-auto"
                         >
+                            <FaWhatsapp className="h-5 w-5 mr-2" />
                             WhatsApp
                         </a>
                     </div>
+
                     <br />
                     <p>Limited daily slots - Please book in advance</p>
                 </div>
