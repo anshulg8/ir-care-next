@@ -116,6 +116,12 @@ export default function ChatWidget() {
             if (isFinalConfirmation(replyText)) {
                 console.log("✅ Final confirmation detected in reply");
 
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: "chatbot_event_submitted",
+                    cta_source: "ChatBot",
+                });
+
                 replyText = replyText.replace("[FINAL_CONFIRMATION]", "").trim();
 
                 const extracted = extractPatientData(replyText);
