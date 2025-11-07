@@ -15,7 +15,7 @@ const CareNavigator = () => {
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-white to-teal-50 py-20 px-6 text-center">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Be a Care Navigator @MyDocsy</h1>
+                    <h1 className="text-4xl font-bold text-gray-900 mb-4 text-teal-700">Be a Care Navigator @MyDocsy</h1>
                     <h2 className="text-xl text-gray-700 font-medium">
                         For doctors who can earn a patient’s trust, not just their time.
                     </h2>
