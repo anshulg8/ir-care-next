@@ -17,3 +17,4 @@ export const BOT_URL = "https://docsy-chat.onrender.com" // TODO: Deprecate
 export const AWS_BOT_URL = "https://chatbot.mydocsy.com"
 export const GHOST_API_URL = 'https://blog.mydocsy.com';
 export const GHOST_CONTENT_API_KEY = '177eac5ca351465fcc51bf089a';
+export const CALLERID_APPRUNNER_URL = 'https://ibm4pjmrec.ap-south-1.awsapprunner.com/api/caller-info'
