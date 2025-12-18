@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
     // Use the layout defined at the page level, if available
     const getLayout = Component.getLayout || ((page) => (
         <Layout>
-            {/* <ChatWidget /> */}
+            <ChatWidget />
             <ScrollToTop />
             {/* <ContactFloatingButton /> */}
             <ModalProvider>
