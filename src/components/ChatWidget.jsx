@@ -78,7 +78,7 @@ export default function ChatWidget() {
         setMessages([
             {
                 sender: "bot",
-                text: "👋 Hi, I'm Docsy, your pre-consultation assistant. Could you please tell me what symptoms you're experiencing right now?",
+                text: "👋 Hi, I'm your pre-consultation assistant. Let me know if you need any help.",
             },
         ]);
     }, []);
