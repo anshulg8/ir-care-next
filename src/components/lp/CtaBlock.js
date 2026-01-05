@@ -67,13 +67,15 @@ export default function CtaBlock({ heading, primaryCTA, formCTA, procedure }) {
           });
         }}
 
-        className="w-[90%] bg-[#ff8300] text-white font-semibold py-3 rounded-full text-center text-base shadow-md mb-6"
+        className="w-full sm:w-[80%] md:w-[60%] lg:w-auto bg-[#ff8300] text-white font-semibold py-3 px-6 rounded-full text-center text-base sm:text-lg md:text-xl shadow-md mb-6"
       >
         {primaryCTA}
       </button>
 
       {/* Title */}
-      <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">{heading}</h3>
+      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4 text-center lg:text-left">
+        {heading}
+      </h3>
 
       {/* Form */}
       <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">

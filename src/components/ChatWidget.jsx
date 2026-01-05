@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Send } from "lucide-react";
-import { BiMessageDots } from "react-icons/bi";
+import { BiMessageRoundedCheck } from "react-icons/bi";
 import { AWS_BOT_URL } from "@/constants";
 
 // ✅ Detect final confirmation in bot's reply
@@ -47,7 +47,7 @@ function extractPatientData(reply) {
 }
 
 export default function ChatWidget() {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(false);
@@ -166,7 +166,7 @@ export default function ChatWidget() {
                     onClick={() => setIsOpen(true)}
                     className="fixed bottom-35 right-0 w-14 h-14 rounded-l-xl bg-teal-600 text-white flex items-center justify-center shadow-lg hover:bg-teal-700 transition"
                 >
-                    <BiMessageDots size={28} />
+                    <BiMessageRoundedCheck size={28} />
                 </button>
             )}
 

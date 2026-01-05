@@ -15,6 +15,7 @@ import pilesImage from '@/assets/piles-169.png';
 import { consultants, proceduresArray } from '@/data';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
+import DoctorScrollList from '@/components/new/DoctorScrollList';
 
 const heading = 'No Cuts. No Pain. Try Gentle HAE Treatment Today';
 const bulletPoints = [
@@ -135,7 +136,8 @@ export default function Page2() {
             <HeroSection heading={heading} bulletPoints={bulletPoints} doctor={consultants[2]} />
             <CtaBlock heading="Book a Free Consultation" primaryCTA={primaryCTA} formCTA={formCTA} procedure="HAE" />
             <TrustStrip />
-            <OurDoctors />
+            {/* <OurDoctors /> */}
+            <DoctorScrollList />
             <BenefitsSection benefits={benefits} />
             <BottomCTA sectionId={"afterBenefits"} primaryCTA={primaryCTA} secondaryCTA={secondaryCTA} />
             <FeatureHighlights features={features} />

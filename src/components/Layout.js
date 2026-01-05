@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
                         <div>
                             <h3 className="text-white text-lg font-bold mb-4">Minimally Invasive. Maximally Effective.</h3>
                             <p className="mb-4">
-                                Skip the Scalpel, Pick the Pinhole - Heal in Hours, not Weeks.
+                                Crafting India’s Best Advanced Treatment Experiences
                             </p>
                             <div className="flex space-x-4">
                                 <a href={X_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white flex items-center space-x-2">

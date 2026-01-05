@@ -526,7 +526,8 @@ export const landingTestimonials = [
         name: "Pradeep Dhokia, 59",
         city: "Mumbai",
         condition: "Enlarged Prostate (PAE)",
-        message: "Wonderful experience, the best... and I should suggest for everyone. Thank God I found Dr Rochan Pant, I was in trouble since a year. Now it's all well, no dribbling, no emergency urine, everything is fine."
+        message: "Wonderful experience, the best... and I should suggest for everyone. Thank God I found Dr Rochan Pant, I was in trouble since a year. Now it's all well, no dribbling, no emergency urine, everything is fine.",
+        doctor: "Dr. Rochan Pant",
     },
     {
         id: 2,
@@ -534,7 +535,8 @@ export const landingTestimonials = [
         name: "Lukhwinder Singh, 66",
         city: "Gujarat",
         condition: "Enlarged Prostate (PAE)",
-        message: "I had a prostate problem. I really liked the treatment, it was very nice...and it happens within 2 hours, without any problems...my experience was very nice, there's no better treatment anywhere else...it's so much better than surgery, the surgery process is such a headache...the best part here is there is no discomfort, the treatment happens within 2 hours, and the service here is also very good... I will recommend to my friends and others, there's no better treatment than this...it's better than surgery"
+        message: "I had a prostate problem. I really liked the treatment, it was very nice...and it happens within 2 hours, without any problems...my experience was very nice, there's no better treatment anywhere else...it's so much better than surgery, the surgery process is such a headache...the best part here is there is no discomfort, the treatment happens within 2 hours, and the service here is also very good... I will recommend to my friends and others, there's no better treatment than this...it's better than surgery",
+        doctor: "Dr. Rochan Pant",
     },
     {
         id: 3,
@@ -542,7 +544,8 @@ export const landingTestimonials = [
         name: "Tejal Mhamunkar, 47",
         city: "Thane",
         condition: "Fibroids",
-        message: "I saw Dr. Pant's video online. This gave me more confidence that this would work. I was tense, but the doctors and nurses here gave me confidence and support. It is now 4 months since I took the treatment, and I have not had any problem. I am satisfied."
+        message: "I saw Dr. Pant's video online. This gave me more confidence that this would work. I was tense, but the doctors and nurses here gave me confidence and support. It is now 4 months since I took the treatment, and I have not had any problem. I am satisfied.",
+        doctor: "Dr. Rochan Pant",
     },
     {
         id: 4,
@@ -550,7 +553,8 @@ export const landingTestimonials = [
         name: "Divya Mathur, 45",
         city: "Mumbai",
         condition: "Chronic Pain",
-        message: "Overall experience was quite cool. This is not something which is commonly known and I think it was awesome."
+        message: "Overall experience was quite cool. This is not something which is commonly known and I think it was awesome.",
+        doctor: "Dr. Rochan Pant",
     },
 ];
 
@@ -673,7 +677,7 @@ export const proceduresArray = [
         synonyms: [
             "BPH", "Enlarged prostate", "Big prostate", "Prostate swelling",
             "prostate bada", "prostate ki sujan", "prostate bada hona",
-            "प्रोस्टेट बढ़ा होना", "प्रोस्टेट सूजन",
+            "प्रोस्टेट बढ़ा होना", "प्रोस्टेट सूजन", "PAE",
             "prostrate", "prostste", "bpn", "bphh"
         ],
         symptoms: [

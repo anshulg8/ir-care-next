@@ -15,6 +15,7 @@ import prostateImage from '@/assets/prostate-169.png';
 import { consultants, proceduresArray } from '@/data';
 import SEO from '@/components/SEO';
 import { BASE_URL } from '@/constants';
+import DoctorScrollList from '@/components/new/DoctorScrollList';
 
 const heading = 'Worried About High PSA? We Can Help';
 const bulletPoints = [
@@ -132,7 +133,8 @@ export default function Page3() {
             <HeroSection heading={heading} bulletPoints={bulletPoints} doctor={consultants[0]} />
             <CtaBlock heading="Book a Free Consultation" primaryCTA={primaryCTA} formCTA={formCTA} procedure="PAE" />
             <TrustStrip />
-            <OurDoctors />
+            {/* <OurDoctors /> */}
+            <DoctorScrollList />
             <BenefitsSection benefits={benefits} />
             <BottomCTA sectionId={"afterBenefits"} primaryCTA={primaryCTA} secondaryCTA={secondaryCTA} />
             <FeatureHighlights features={features} />

@@ -1,5 +1,7 @@
+import { PHONE_NUMBER } from '@/constants';
 import { featuredDoctors } from '@/data';
 import Image from 'next/image';
+import { FaCalendarCheck, FaPhone } from 'react-icons/fa6';
 
 const doctors = featuredDoctors.slice(0, 2).map((doc) => ({
   name: doc.name,
@@ -54,6 +56,23 @@ export default function OurDoctors() {
                   />
                 </div>
               ))}
+            </div>
+            {/* Bottom section: Buttons in same row */}
+            <div className="flex gap-2 mt-3">
+              <a
+                href={`tel:${PHONE_NUMBER}`}
+                className="flex-none w-32 flex items-center justify-center gap-2 bg-[#ff8300] text-white py-2.5 rounded-lg font-semibold text-sm"
+              >
+                <FaPhone />
+                Call
+              </a>
+              <button
+                className="flex-1 flex items-center justify-center gap-2 bg-teal-600 text-white py-2.5 rounded-lg font-semibold text-sm"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
+                <FaCalendarCheck />
+                Book Free
+              </button>
             </div>
           </div>
         ))}
