@@ -33,16 +33,6 @@ const GoogleFormWithProcedureInput = ({ onClose }) => {
     const [isLoadingCities, setIsLoadingCities] = useState(false);
     const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
-    // CAPTURE & STORE GCLID ON FIRST PAGE LOAD
-    useEffect(() => {
-        const params = new URLSearchParams(window.location.search);
-        const gclid = params.get('gclid');
-
-        if (gclid) {
-            localStorage.setItem('gclid', gclid);
-        }
-    }, []);
-
     // Fetch nearby cities using IP + Overpass API
     useEffect(() => {
         const fetchNearbyCities = async () => {

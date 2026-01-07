@@ -122,6 +122,8 @@ export default function ChatWidget() {
                     cta_source: "ChatBot",
                 });
 
+                const gclid = window.localStorage.getItem("gclid");
+
                 replyText = replyText.replace("[FINAL_CONFIRMATION]", "").trim();
 
                 const extracted = extractPatientData(replyText);
@@ -135,6 +137,7 @@ export default function ChatWidget() {
                     body: JSON.stringify({
                         sessionId,
                         ...extracted,
+                        gclid,
                     }),
                 });
 

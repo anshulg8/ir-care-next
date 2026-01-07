@@ -23,19 +23,7 @@ const GoogleFormSubmit = ({ procedure, onClose }) => {
     const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
     /* ---------------------------------------------------
-    1. CAPTURE & STORE GCLID ON FIRST PAGE LOAD
-    --------------------------------------------------- */
-    useEffect(() => {
-        const params = new URLSearchParams(window.location.search);
-        const gclid = params.get('gclid');
-
-        if (gclid) {
-            localStorage.setItem('gclid', gclid);
-        }
-    }, []);
-
-    /* ---------------------------------------------------
-       2. FETCH NEARBY CITIES
+       1. FETCH NEARBY CITIES
     --------------------------------------------------- */
     useEffect(() => {
         const fetchNearbyCities = async () => {
@@ -77,7 +65,7 @@ const GoogleFormSubmit = ({ procedure, onClose }) => {
     }, []);
 
     /* ---------------------------------------------------
-       3. LOCATION HANDLER
+       2. LOCATION HANDLER
     --------------------------------------------------- */
     const handleGetLocation = () => {
         if (!navigator.geolocation) {
@@ -128,14 +116,14 @@ const GoogleFormSubmit = ({ procedure, onClose }) => {
     // }, []);
 
     /* ---------------------------------------------------
-       4. INPUT HANDLER
+       3. INPUT HANDLER
     --------------------------------------------------- */
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     /* ---------------------------------------------------
-    5. FORM SUBMIT (GCLID + BACKEND + GTM)
+    4. FORM SUBMIT (GCLID + BACKEND + GTM)
     --------------------------------------------------- */
     const handleSubmit = (e) => {
         e.preventDefault();
