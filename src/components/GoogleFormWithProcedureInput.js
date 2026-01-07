@@ -9,6 +9,7 @@ import {
     GOOGLE_FORM_ACTION_URL,
     PHONE_NUMBER,
     YOUR_REFERRAL_CODE_FIELD_ID,
+    FIELD_GCLID_ID,
 } from '../constants';
 import StatsBanner from './StatsBanner';
 import LeadDr from '../assets/leadform-doc.png';
@@ -31,6 +32,16 @@ const GoogleFormWithProcedureInput = ({ onClose }) => {
     const [nearbyCities, setNearbyCities] = useState([]);
     const [isLoadingCities, setIsLoadingCities] = useState(false);
     const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+
+    // CAPTURE & STORE GCLID ON FIRST PAGE LOAD
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const gclid = params.get('gclid');
+
+        if (gclid) {
+            localStorage.setItem('gclid', gclid);
+        }
+    }, []);
 
     // Fetch nearby cities using IP + Overpass API
     useEffect(() => {
@@ -161,6 +172,8 @@ const GoogleFormWithProcedureInput = ({ onClose }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        const gclid = localStorage.getItem('gclid');
+
         // Push custom event to dataLayer
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
@@ -177,6 +190,10 @@ const GoogleFormWithProcedureInput = ({ onClose }) => {
 
         if (formData.referralCode) {
             formBody.append(YOUR_REFERRAL_CODE_FIELD_ID, formData.referralCode);
+        }
+
+        if (gclid) {
+            formBody.append(FIELD_GCLID_ID, gclid);
         }
 
         fetch(GOOGLE_FORM_ACTION_URL, {

@@ -9,6 +9,7 @@ import {
     GOOGLE_FORM_ACTION_URL,
     PHONE_NUMBER,
     YOUR_REFERRAL_CODE_FIELD_ID,
+    FIELD_GCLID_ID,
 } from '../constants';
 import StatsBanner from './StatsBanner';
 import LeadDr from '../assets/leadform-doc.png';
@@ -21,6 +22,21 @@ const GoogleFormSubmit = ({ procedure, onClose }) => {
     const [isLoadingCities, setIsLoadingCities] = useState(false);
     const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
+    /* ---------------------------------------------------
+    1. CAPTURE & STORE GCLID ON FIRST PAGE LOAD
+    --------------------------------------------------- */
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const gclid = params.get('gclid');
+
+        if (gclid) {
+            localStorage.setItem('gclid', gclid);
+        }
+    }, []);
+
+    /* ---------------------------------------------------
+       2. FETCH NEARBY CITIES
+    --------------------------------------------------- */
     useEffect(() => {
         const fetchNearbyCities = async () => {
             setIsLoadingCities(true);
@@ -60,6 +76,9 @@ const GoogleFormSubmit = ({ procedure, onClose }) => {
         fetchNearbyCities();
     }, []);
 
+    /* ---------------------------------------------------
+       3. LOCATION HANDLER
+    --------------------------------------------------- */
     const handleGetLocation = () => {
         if (!navigator.geolocation) {
             alert('Geolocation is not supported by your browser');
@@ -108,12 +127,20 @@ const GoogleFormSubmit = ({ procedure, onClose }) => {
     //     };
     // }, []);
 
+    /* ---------------------------------------------------
+       4. INPUT HANDLER
+    --------------------------------------------------- */
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+    /* ---------------------------------------------------
+    5. FORM SUBMIT (GCLID + BACKEND + GTM)
+    --------------------------------------------------- */
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const gclid = localStorage.getItem('gclid');
 
         // Push custom event to dataLayer
         window.dataLayer = window.dataLayer || [];
@@ -123,6 +150,7 @@ const GoogleFormSubmit = ({ procedure, onClose }) => {
             // pagePath: window.location.pathname // GTM captures it automatically
         });
 
+        /* ---- GOOGLE FORM SUBMISSION ---- */
         const formBody = new FormData();
         formBody.append(FIELD_NAME_ID, formData.name);
         formBody.append(FIELD_PHONE_ID, formData.phone);
@@ -131,6 +159,10 @@ const GoogleFormSubmit = ({ procedure, onClose }) => {
 
         if (formData.referralCode) {
             formBody.append(YOUR_REFERRAL_CODE_FIELD_ID, formData.referralCode);
+        }
+
+        if (gclid) {
+            formBody.append(FIELD_GCLID_ID, gclid);
         }
 
         fetch(GOOGLE_FORM_ACTION_URL, {
