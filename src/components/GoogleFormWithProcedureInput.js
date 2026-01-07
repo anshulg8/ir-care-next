@@ -72,6 +72,25 @@ const GoogleFormWithProcedureInput = ({ onClose }) => {
         fetchNearbyCities();
     }, []);
 
+    useEffect(() => {
+        // Initial load
+        const storedCity = localStorage.getItem("selectedCity");
+        if (storedCity) {
+            setFormData((prev) => ({ ...prev, city: storedCity }));
+        }
+
+        // Listen for header updates
+        const handleCityUpdate = (e) => {
+            setFormData((prev) => ({ ...prev, city: e.detail }));
+        };
+
+        window.addEventListener("cityChanged", handleCityUpdate);
+
+        return () => {
+            window.removeEventListener("cityChanged", handleCityUpdate);
+        };
+    }, []);
+
     // Get city from browser GPS
     const handleGetLocation = () => {
         if (!navigator.geolocation) {
@@ -178,8 +197,9 @@ const GoogleFormWithProcedureInput = ({ onClose }) => {
             <div className="relative max-w-md mx-auto">
 
                 <div className="absolute top-10 left-4 z-10 text-gray-800">
-                    <p className="text-teal-700 text-lg font-semibold leading-tight">Book Free Consult</p>
-                    {/* <p className="text-lg font-semibold leading-tight">Appointment</p> */}
+                    <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                        Advanced Treatment <br />Matlab <span className="text-teal-600"> MyDocsy</span>
+                    </h2>
                 </div>
 
                 {/* Doctor's image in top-right */}
@@ -336,7 +356,7 @@ const GoogleFormWithProcedureInput = ({ onClose }) => {
                         Call Us 📞 {PHONE_NUMBER}
                     </a>
 
-                    <StatsBanner />
+                    {/* <StatsBanner /> */}
                     {status && <p className="text-sm text-teal-700">{status}</p>}
                 </form>
 

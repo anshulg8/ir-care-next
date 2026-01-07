@@ -5,7 +5,7 @@ import kidneyTumor from "./kidneyTumor";
 import prostateCancer from "./prostateCancer";
 import urologicCancers from "./urologicCancers";
 
-export const conditionsList = [
+const conditionsPages = [
     bph,
     kidneyStones,
     lutsIncontinence,
@@ -14,10 +14,25 @@ export const conditionsList = [
     urologicCancers
 ];
 
-export const conditionsById = Object.fromEntries(
-    conditionsList.map(c => [c.id, c])
-);
-
-export const conditionsBySlug = Object.fromEntries(
-    conditionsList.map(c => [c.slug, c])
-);
+export const conditions = {
+    list: conditionsPages.map((page) => ({
+        title: page.blocks[0]?.title || page.metadata?.title || page.title,
+        slug: page.page?.slug?.split("/").pop(),
+        overview: {
+            whatItIs: page.blocks[0]?.content || page.metadata?.description || "Overview coming soon."
+        },
+        id: page.id || page.page?.slug?.split("/").pop(),
+    })),
+    bySlug: conditionsPages.reduce((acc, page) => {
+        const slug = page.page?.slug?.split("/").pop();
+        if (slug) {
+            acc[slug] = {
+                ...page,
+                overview: {
+                    whatItIs: page.blocks[0]?.content || page.metadata?.description || "Overview coming soon."
+                }
+            };
+        }
+        return acc;
+    }, {})
+};

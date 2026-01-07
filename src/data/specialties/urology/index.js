@@ -1,42 +1,22 @@
-import {
-    proceduresList,
-    proceduresById,
-    proceduresBySlug,
-} from "./procedures";
-
-import {
-    conditionsList,
-    conditionsById,
-    conditionsBySlug,
-} from "./conditions";
-
-import {
-    symptomsList,
-    symptomsById,
-    symptomsBySlug,
-} from "./symptoms";
+import { symptoms } from "./symptoms";
+import { conditions } from "./conditions";
+import { procedures } from "./procedures";
 
 export const urologyData = {
     specialty: "urology",
 
     symptoms: {
         category: "symptoms",
-        list: symptomsList,
-        byId: symptomsById,
-        bySlug: symptomsBySlug,
+        ...symptoms
     },
 
     conditions: {
         category: "conditions",
-        list: conditionsList,
-        byId: conditionsById,
-        bySlug: conditionsBySlug,
+        ...conditions
     },
 
     procedures: {
         category: "procedures",
-        list: proceduresList,
-        byId: proceduresById,
-        bySlug: proceduresBySlug,
-    },
+        ...procedures
+    }
 };

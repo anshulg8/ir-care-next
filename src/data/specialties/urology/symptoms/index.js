@@ -5,7 +5,7 @@ import recurrentUti from "./recurrentUti";
 import flankPain from "./flankPain";
 import bloodInUrine from "./bloodInUrine";
 
-export const symptomsList = [
+const symptomsPages = [
     frequentUrination,
     difficultyUrinating,
     urineLeakage,
@@ -14,10 +14,25 @@ export const symptomsList = [
     bloodInUrine
 ];
 
-export const symptomsById = Object.fromEntries(
-    symptomsList.map(s => [s.id, s])
-);
-
-export const symptomsBySlug = Object.fromEntries(
-    symptomsList.map(s => [s.slug, s])
-);
+export const symptoms = {
+    list: symptomsPages.map((page) => ({
+        title: page.blocks[0]?.title || page.metadata?.title || page.title,
+        slug: page.page?.slug?.split("/").pop(),
+        overview: {
+            whatItIs: page.metadata?.content || page.metadata?.description || "Overview coming soon."
+        },
+        id: page.id || page.page?.slug?.split("/").pop(),
+    })),
+    bySlug: symptomsPages.reduce((acc, page) => {
+        const slug = page.page?.slug?.split("/").pop();
+        if (slug) {
+            acc[slug] = {
+                ...page,
+                overview: {
+                    whatItIs: page.metadata?.content || page.metadata?.description || "Overview coming soon."
+                }
+            };
+        }
+        return acc;
+    }, {})
+};

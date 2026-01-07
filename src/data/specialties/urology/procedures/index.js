@@ -7,9 +7,10 @@ import ursl from "./ursl";
 import miniPcnl from "./miniPcnl";
 import pelvicFloorBiofeedback from "./pelvicFloorBiofeedback";
 import kidneyTumorAblation from "./kidneyTumorAblation";
-import cystoscopy from "./cystoscopy";
+import cryoablation from "./cryoablation";
+import focalTherapy from "./focalTherapy";
 
-export const proceduresList = [
+const proceduresPages = [
     pae,
     rezum,
     turp,
@@ -19,13 +20,29 @@ export const proceduresList = [
     miniPcnl,
     pelvicFloorBiofeedback,
     kidneyTumorAblation,
-    cystoscopy
+    cryoablation,
+    focalTherapy
 ];
 
-export const proceduresById = Object.fromEntries(
-    proceduresList.map(p => [p.id, p])
-);
-
-export const proceduresBySlug = Object.fromEntries(
-    proceduresList.map(p => [p.slug, p])
-);
+export const procedures = {
+    list: proceduresPages.map((page) => ({
+        title: page.blocks[0]?.title || page.metadata?.title || page.title,
+        slug: page.page?.slug?.split("/").pop(),
+        overview: {
+            whatItIs: page.metadata?.content || page.metadata?.description || "Overview coming soon."
+        },
+        id: page.id || page.page?.slug?.split("/").pop(),
+    })),
+    bySlug: proceduresPages.reduce((acc, page) => {
+        const slug = page.page?.slug?.split("/").pop();
+        if (slug) {
+            acc[slug] = {
+                ...page,
+                overview: {
+                    whatItIs: page.metadata?.content || page.metadata?.description || "Overview coming soon."
+                }
+            };
+        }
+        return acc;
+    }, {})
+};

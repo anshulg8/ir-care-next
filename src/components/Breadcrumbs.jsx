@@ -7,6 +7,7 @@ export default function Breadcrumbs({ items = [] }) {
 
     return (
         <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+            {/* <div className="max-w-4xl mx-auto px-4"> */}
             <ol className="flex flex-wrap items-center gap-1">
                 {items.map((item, index) => (
                     <li key={index} className="flex items-center">
@@ -21,6 +22,7 @@ export default function Breadcrumbs({ items = [] }) {
                     </li>
                 ))}
             </ol>
+            {/* </div> */}
         </nav>
     );
 }
