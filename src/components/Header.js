@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Fuse from "fuse.js";
 import logo from "../assets/trans-logo3.png";
-import { urologySearchIndex } from "@/data/specialties/urology/searchIndex";
+// import { urologySearchIndex } from "@/data/specialties/urology/searchIndex";
 
 const Header = () => {
     const [query, setQuery] = useState("");
@@ -48,14 +48,14 @@ const Header = () => {
     };
 
     /* ================= SEARCH ================= */
-    const fuse = useMemo(() => {
-        return new Fuse(urologySearchIndex, {
-            keys: [{ name: "title", weight: 0.7 }],
-            threshold: 0.4,
-        });
-    }, []);
+    // const fuse = useMemo(() => {
+    //     return new Fuse(urologySearchIndex, {
+    //         keys: [{ name: "title", weight: 0.7 }],
+    //         threshold: 0.4,
+    //     });
+    // }, []);
 
-    const results = query ? fuse.search(query).map((r) => r.item) : [];
+    // const results = query ? fuse.search(query).map((r) => r.item) : [];
 
     /* ========== MOBILE DROPDOWN POSITION ========== */
     useEffect(() => {
@@ -135,7 +135,7 @@ const Header = () => {
                                 placeholder="Search conditions, symptoms, procedures..."
                                 className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none"
                             />
-                            <SearchDropdown />
+                            {/* <SearchDropdown /> */}
                         </div>
                     </div>
 
@@ -185,7 +185,7 @@ const Header = () => {
                         />
                     </div>
 
-                    <SearchDropdown />
+                    {/* <SearchDropdown /> */}
                 </div>
 
                 {/* ================= MOBILE NAV ================= */}
