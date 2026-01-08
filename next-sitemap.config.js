@@ -15,7 +15,7 @@ const specialties = {
         procedures: [
             'cryoablation',
             'focal-therapy',
-            'focal-therapy',
+            'holep-thulep',
             'kidney-tumor-ablation',
             'mini-pcnl',
             'pae',

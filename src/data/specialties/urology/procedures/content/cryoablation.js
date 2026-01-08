@@ -1,4 +1,4 @@
-const cystoscopy = {
+const cryoablation = {
     "page": {
         "type": "procedure",
         "specialty": "urology",
@@ -248,4 +248,4 @@ const cystoscopy = {
     ]
 };
 
-export default cystoscopy;
+export default cryoablation;

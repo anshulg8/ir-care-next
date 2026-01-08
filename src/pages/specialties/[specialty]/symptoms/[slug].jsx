@@ -1,57 +1,86 @@
+// src/pages/specialties/[specialty]/symptoms/[slug].jsx
+import React from 'react';
 import { useRouter } from 'next/router';
-import SEO from '@/components/SEO';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { urologyData } from '@/data/specialties/urology';
+import SEO from '@/components/SEO';
+import fs from 'fs';
+import path from 'path';
 import { BlockRenderer } from '@/components/BlockRenderer';
+import { titleCase } from '@/lib/utils';
 
-export default function SymptomDetailPage() {
+export default function SymptomPage({ content }) {
     const router = useRouter();
     const { specialty, slug } = router.query;
 
-    if (!specialty || !slug) return <div>Loading...</div>;
-
-    const specialtyMap = { urology: urologyData };
-    const specialtyData = specialtyMap[specialty];
-
-    if (!specialtyData) {
-        router.replace('/404');
-        return null;
+    if (!content) {
+        return (
+            <div className="text-center py-10 text-gray-600">
+                Content coming soon.
+            </div>
+        );
     }
-
-    const symptom = specialtyData.symptoms.bySlug[slug];
-
-    if (!symptom) {
-        router.replace('/404');
-        return null;
-    }
-
-    const { page, metadata, blocks } = symptom;
 
     const breadcrumbs = [
         { label: 'Home', href: '/' },
         { label: 'Specialties', href: '/specialties' },
         { label: specialty.charAt(0).toUpperCase() + specialty.slice(1), href: `/specialties/${specialty}` },
         { label: 'Symptoms', href: `/specialties/${specialty}/symptoms` },
-        { label: blocks[0].title },
+        { label: titleCase(slug) },
     ];
 
     return (
         <>
             <SEO
-                title={metadata.title}
-                description={metadata.description}
-                url={`https://mydocsy.com${page.slug}`}
+                title={content.metadata.title}
+                description={content.metadata.description}
+                url={`https://mydocsy.com/specialties/${specialty}/symptoms/${slug}`}
             />
 
-            <div className="max-w-6xl mx-auto px-4 py-10">
+            <div className="max-w-6xl mx-auto px-4 py-8">
                 <Breadcrumbs items={breadcrumbs} />
+                {/* <h1 className="text-3xl font-bold mb-4">{content.metadata.title}</h1> */}
 
-                {blocks.length > 0 ? (
-                    blocks.map((block, i) => <BlockRenderer key={i} block={block} />)
-                ) : (
-                    <p className="text-gray-600">Content coming soon.</p>
-                )}
+                <div className="prose max-w-full">
+                    <div className="max-w-full">
+                        {content.blocks.map((block, index) => (
+                            <BlockRenderer key={index} block={block} />
+                        ))}
+                    </div>
+
+                </div>
             </div>
         </>
     );
+}
+
+export async function getStaticPaths() {
+    const baseDir = path.join(
+        process.cwd(),
+        "src/data/specialties/urology/symptoms/content"
+    );
+
+    const slugs = fs
+        .readdirSync(baseDir)
+        .filter(f => f.endsWith(".js"))
+        .map(f => f.replace(".js", ""));
+
+    const paths = slugs.map(slug => ({
+        params: { specialty: "urology", slug },
+    }));
+
+    return {
+        paths,
+        fallback: false,
+    };
+}
+
+export async function getStaticProps({ params }) {
+    const { specialty, slug } = params;
+
+    try {
+        const module = await import(`@/data/specialties/${specialty}/symptoms/content/${slug}.js`);
+        return { props: { content: module.default } };
+    } catch (error) {
+        return { notFound: true };
+    }
 }
