@@ -135,7 +135,7 @@ const Header = () => {
                                 placeholder="Search conditions, symptoms, procedures..."
                                 className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none"
                             />
-                            {/* <SearchDropdown /> */}
+                            <SearchDropdown />
                         </div>
                     </div>
 
@@ -185,7 +185,7 @@ const Header = () => {
                         />
                     </div>
 
-                    {/* <SearchDropdown /> */}
+                    <SearchDropdown />
                 </div>
 
                 {/* ================= MOBILE NAV ================= */}
