@@ -5,6 +5,7 @@ import { AWS_BOT_URL } from "@/constants";
 
 // ✅ Detect final confirmation in bot's reply
 function isFinalConfirmation(reply) {
+    if (typeof reply !== "string") return false;
     return (
         reply.includes("[FINAL_CONFIRMATION]") ||
         reply.toLowerCase().includes("i’ll schedule a doctor’s call") ||
@@ -47,7 +48,7 @@ function extractPatientData(reply) {
 }
 
 export default function ChatWidget() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(false);
